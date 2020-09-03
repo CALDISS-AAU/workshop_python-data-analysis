@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kategoriske variable on Introduktion til Python til Dataanalyse</title>
+    <link>/kategoriske/</link>
+    <description>Recent content in Kategoriske variable on Introduktion til Python til Dataanalyse</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/kategoriske/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Typer af kategoriske variable (nominal, ordinal)</title>
+      <link>/kategoriske/typer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kategoriske/typer/</guid>
+      <description>Check: Er variabel ordinal eller nominal? (&amp;ldquo;teoretisk&amp;rdquo;)</description>
+    </item>
+    
+    <item>
+      <title>Kategoriske variable i Python</title>
+      <link>/kategoriske/kategoriske/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kategoriske/kategoriske/</guid>
+      <description>Check: Er variabel ordinal eller nominal? (kodning i python)
+ Øvelse: Konverter fra karakter til kategorisk Øvelse: Konverter fra nominal til ordinal  </description>
+    </item>
+    
+    <item>
+      <title>Rekodning af kategoriske variable</title>
+      <link>/kategoriske/rekodning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kategoriske/rekodning/</guid>
+      <description>Øvelse: Rekod kategorisk med mapping</description>
+    </item>
+    
+  </channel>
+</rss>

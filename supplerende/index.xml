@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Supplerende materiale on Introduktion til Python til Dataanalyse</title>
+    <link>/supplerende/</link>
+    <description>Recent content in Supplerende materiale on Introduktion til Python til Dataanalyse</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/supplerende/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Litteratur</title>
+      <link>/supplerende/litteratur/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/supplerende/litteratur/</guid>
+      <description>Python for Data Analysis, kap 5
+ Python for Data Analysis, kap 9 - seaborn Python for Data Analysis, kap 12 - categorical  </description>
+    </item>
+    
+  </channel>
+</rss>

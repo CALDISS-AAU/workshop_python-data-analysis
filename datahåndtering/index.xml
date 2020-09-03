@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datahåndtering med pandas on Introduktion til Python til Dataanalyse</title>
+    <link>/datah%C3%A5ndtering/</link>
+    <description>Recent content in Datahåndtering med pandas on Introduktion til Python til Dataanalyse</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/datah%C3%A5ndtering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Subsetting</title>
+      <link>/datah%C3%A5ndtering/subsetting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/datah%C3%A5ndtering/subsetting/</guid>
+      <description>loc, iloc
+ booleans Check: hvornår bruges loc og iloc?  </description>
+    </item>
+    
+    <item>
+      <title>Rekodning</title>
+      <link>/datah%C3%A5ndtering/rekodning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/datah%C3%A5ndtering/rekodning/</guid>
+      <description>Check: hvornår ændres variable ved rekodning?</description>
+    </item>
+    
+    <item>
+      <title>Variabelgenerering</title>
+      <link>/datah%C3%A5ndtering/variabelgenerering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/datah%C3%A5ndtering/variabelgenerering/</guid>
+      <description>Øvelse: Dan subset med ny variabel</description>
+    </item>
+    
+    <item>
+      <title>Variabeltyper (numerisk og tekst)</title>
+      <link>/datah%C3%A5ndtering/variabeltyper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/datah%C3%A5ndtering/variabeltyper/</guid>
+      <description>Check: Hvilken variabeltype?
+ Øvelse: Ændr variabeltype  </description>
+    </item>
+    
+  </channel>
+</rss>

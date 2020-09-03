@@ -11,12 +11,140 @@
     
     
     <item>
-      <title></title>
+      <title>Data og datasæt</title>
       <link>/data/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/data/data/</guid>
+      <description>I disse Python lektioner gennemgås, hvordan Python anvendes til dataanalyse, men hvad er data overhovedet for noget?
+Som udgangspunkt arbejder vi med en meget bred forståelse af data: alle former for information om noget. Grunden til at der i dag er så meget snak om data, dataanalyse, maskinlæring osv., er fordi at stadig mere og mere information digitaliseres, hvorfor det kan gøres til genstand for analyser.
+Navn, alder, uddannelse, indkomst, yndlingsfilm, mest aflyttede sange i 2020, antal gange rejst med bus 2 i Aalborg, køb i supermarkeder, størrelse på bolig, indbo, brug af el, varme og vand osv.</description>
+    </item>
+    
+    <item>
+      <title>Deskriptive statistikker</title>
+      <link>/udforsk/deskriptive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/udforsk/deskriptive/</guid>
+      <description>Øvelse: Inspicer data
+ Øvelse: Hvad er mean for X?  </description>
+    </item>
+    
+    <item>
+      <title>Litteratur</title>
+      <link>/supplerende/litteratur/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/supplerende/litteratur/</guid>
+      <description>Python for Data Analysis, kap 5
+ Python for Data Analysis, kap 9 - seaborn Python for Data Analysis, kap 12 - categorical  </description>
+    </item>
+    
+    <item>
+      <title>Subsetting</title>
+      <link>/datah%C3%A5ndtering/subsetting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/datah%C3%A5ndtering/subsetting/</guid>
+      <description>loc, iloc
+ booleans Check: hvornår bruges loc og iloc?  </description>
+    </item>
+    
+    <item>
+      <title>Typer af kategoriske variable (nominal, ordinal)</title>
+      <link>/kategoriske/typer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kategoriske/typer/</guid>
+      <description>Check: Er variabel ordinal eller nominal? (&amp;ldquo;teoretisk&amp;rdquo;)</description>
+    </item>
+    
+    <item>
+      <title>Introduktion til pandas</title>
+      <link>/data/introduktion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data/introduktion/</guid>
+      <description>pandas` (https://pandas.pydata.org/) er et Python bibliotek til datahåndtering og dataanalyse. Pandas egner sig særligt til data i tabeller struktureret i rækker og kolonner. En datatabel kaldes inden for pandas en &amp;ldquo;DataFrame&amp;rdquo;; et bestemt Python objekt specifikt til at lagre og bearbejde data i tabeller.
+Denne lektion gennemgår diverse basale funktioner til at indlæse, udforske og håndtere en pandas DataFrame. Se også den officielle dokumentation for flere guides, introduktioner og beskrivelser til at arbejde med pandas: https://pandas.</description>
+    </item>
+    
+    <item>
+      <title>Kategoriske variable i Python</title>
+      <link>/kategoriske/kategoriske/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kategoriske/kategoriske/</guid>
+      <description>Check: Er variabel ordinal eller nominal? (kodning i python)
+ Øvelse: Konverter fra karakter til kategorisk Øvelse: Konverter fra nominal til ordinal  </description>
+    </item>
+    
+    <item>
+      <title>Rekodning</title>
+      <link>/datah%C3%A5ndtering/rekodning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/datah%C3%A5ndtering/rekodning/</guid>
+      <description>Check: hvornår ændres variable ved rekodning?</description>
+    </item>
+    
+    <item>
+      <title>Visualisering med seaborn</title>
+      <link>/udforsk/visualisering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/udforsk/visualisering/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Indlæsning af data i Python</title>
+      <link>/data/indl%C3%A6sning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data/indl%C3%A6sning/</guid>
+      <description>Øvelse: indlæs data
+  Check: hvilken type data?
+  Serier og data frames
+  </description>
+    </item>
+    
+    <item>
+      <title>Rekodning af kategoriske variable</title>
+      <link>/kategoriske/rekodning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kategoriske/rekodning/</guid>
+      <description>Øvelse: Rekod kategorisk med mapping</description>
+    </item>
+    
+    <item>
+      <title>Variabelgenerering</title>
+      <link>/datah%C3%A5ndtering/variabelgenerering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/datah%C3%A5ndtering/variabelgenerering/</guid>
+      <description>Øvelse: Dan subset med ny variabel</description>
+    </item>
+    
+    <item>
+      <title>Visualiseringer (tidsserier, scatter, søjler, boxplots)</title>
+      <link>/udforsk/visualiseringer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/udforsk/visualiseringer/</guid>
+      <description>Øvelse: Visualisering - hvad kan udledes umiddelbart?</description>
+    </item>
+    
+    <item>
+      <title>Variabeltyper (numerisk og tekst)</title>
+      <link>/datah%C3%A5ndtering/variabeltyper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/datah%C3%A5ndtering/variabeltyper/</guid>
+      <description>Check: Hvilken variabeltype?
+ Øvelse: Ændr variabeltype  </description>
     </item>
     
   </channel>

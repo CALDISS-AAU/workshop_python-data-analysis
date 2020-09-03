@@ -11,12 +11,36 @@
     
     
     <item>
-      <title></title>
+      <title>Data og datasæt</title>
       <link>/data/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/data/data/</guid>
-      <description></description>
+      <description>I disse Python lektioner gennemgås, hvordan Python anvendes til dataanalyse, men hvad er data overhovedet for noget?
+Som udgangspunkt arbejder vi med en meget bred forståelse af data: alle former for information om noget. Grunden til at der i dag er så meget snak om data, dataanalyse, maskinlæring osv., er fordi at stadig mere og mere information digitaliseres, hvorfor det kan gøres til genstand for analyser.
+Navn, alder, uddannelse, indkomst, yndlingsfilm, mest aflyttede sange i 2020, antal gange rejst med bus 2 i Aalborg, køb i supermarkeder, størrelse på bolig, indbo, brug af el, varme og vand osv.</description>
+    </item>
+    
+    <item>
+      <title>Introduktion til pandas</title>
+      <link>/data/introduktion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data/introduktion/</guid>
+      <description>pandas` (https://pandas.pydata.org/) er et Python bibliotek til datahåndtering og dataanalyse. Pandas egner sig særligt til data i tabeller struktureret i rækker og kolonner. En datatabel kaldes inden for pandas en &amp;ldquo;DataFrame&amp;rdquo;; et bestemt Python objekt specifikt til at lagre og bearbejde data i tabeller.
+Denne lektion gennemgår diverse basale funktioner til at indlæse, udforske og håndtere en pandas DataFrame. Se også den officielle dokumentation for flere guides, introduktioner og beskrivelser til at arbejde med pandas: https://pandas.</description>
+    </item>
+    
+    <item>
+      <title>Indlæsning af data i Python</title>
+      <link>/data/indl%C3%A6sning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data/indl%C3%A6sning/</guid>
+      <description>Øvelse: indlæs data
+  Check: hvilken type data?
+  Serier og data frames
+  </description>
     </item>
     
   </channel>

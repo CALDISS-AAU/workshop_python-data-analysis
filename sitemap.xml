@@ -7,16 +7,83 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/data/data/</loc>
   </url>
   
   <url>
+    <loc>/udforsk/deskriptive/</loc>
+  </url>
+  
+  <url>
+    <loc>/supplerende/litteratur/</loc>
+  </url>
+  
+  <url>
+    <loc>/datah%C3%A5ndtering/subsetting/</loc>
+  </url>
+  
+  <url>
+    <loc>/kategoriske/typer/</loc>
+  </url>
+  
+  <url>
+    <loc>/data/introduktion/</loc>
+  </url>
+  
+  <url>
+    <loc>/kategoriske/kategoriske/</loc>
+  </url>
+  
+  <url>
+    <loc>/datah%C3%A5ndtering/rekodning/</loc>
+  </url>
+  
+  <url>
+    <loc>/udforsk/</loc>
+  </url>
+  
+  <url>
+    <loc>/udforsk/visualisering/</loc>
+  </url>
+  
+  <url>
+    <loc>/datah%C3%A5ndtering/</loc>
+  </url>
+  
+  <url>
+    <loc>/data/indl%C3%A6sning/</loc>
+  </url>
+  
+  <url>
+    <loc>/kategoriske/rekodning/</loc>
+  </url>
+  
+  <url>
+    <loc>/datah%C3%A5ndtering/variabelgenerering/</loc>
+  </url>
+  
+  <url>
+    <loc>/udforsk/visualiseringer/</loc>
+  </url>
+  
+  <url>
+    <loc>/kategoriske/</loc>
+  </url>
+  
+  <url>
+    <loc>/datah%C3%A5ndtering/variabeltyper/</loc>
+  </url>
+  
+  <url>
+    <loc>/supplerende/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
   </url>
   
   <url>
