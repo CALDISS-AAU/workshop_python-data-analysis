@@ -10,12 +10,12 @@ from os import listdir
 from os.path import isfile, join
 
 # Setting paths
-notebooks_path = "./notebooks/"
+notebooks_path = "./notebooks/markdown/"
 content_path = "./content/"
 filename_in = [f for f in listdir(notebooks_path) if isfile(join(notebooks_path, f))][0]
 
 # Import notebook file
-with open(notebooks_path + filename_in, 'r') as file:
+with open(notebooks_path + filename_in, 'r', encoding = 'utf-8') as file:
     doc = file.read()
     file.close()
 
@@ -46,10 +46,12 @@ def get_chapter_text(chapter):
     chapter_title = get_chapter_titles(chapter)[0]
     chapter_text = re.findall(chapter_text_regex, chapter)[0]
     
-    chapter_text = chapter_text.replace(chapter_title, "")
+    chapter_text = chapter_text.replace(chapter_title, "", 1)
 
     while re.match("\W", chapter_text[0]):
         chapter_text = re.sub("^\W", "", chapter_text)
+        if chapter_text == "":
+            break
     
     return(chapter_text)
 
@@ -73,15 +75,17 @@ def get_section_text(section):
     section_title = get_section_title(section)
     section_text = re.findall(section_text_regex, section)[0]
     
-    section_text = section_text.replace(section_title, "")
+    section_text = section_text.replace(section_title, "", 1)
     
     while re.match("\W", section_text[0]):
         section_text = re.sub("^\W", "", section_text)
+        if section_text == "":
+            break
     
     return(section_text)
 
 def create_section_filename(title):
-    first_word = re.findall(r'^.*?(?=\s)', title)[0].lower()
+    first_word = re.findall(r'^.*?(?=\s|$)', title)[0].lower()
     filename = first_word + '.md'
     
     return(filename)
