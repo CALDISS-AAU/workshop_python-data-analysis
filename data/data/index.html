@@ -12,19 +12,19 @@
     <title>Data og datasæt :: Introduktion til Python til Dataanalyse</title>
 
     
-    <link href="../../css/nucleus.css?1599145327" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1599145327" rel="stylesheet">
-    <link href="../../css/hybrid.css?1599145327" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1599145327" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1599145327" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1599145327" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1599145327" rel="stylesheet">
-    <link href="../../css/theme.css?1599145327" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1599145327" rel="stylesheet">
+    <link href="../../css/nucleus.css?1599145638" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1599145638" rel="stylesheet">
+    <link href="../../css/hybrid.css?1599145638" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1599145638" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1599145638" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1599145638" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1599145638" rel="stylesheet">
+    <link href="../../css/theme.css?1599145638" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1599145638" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1599145327"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1599145638"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1599145327"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1599145327"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1599145638"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1599145638"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1599145327"></script>
+<script type="text/javascript" src="../../js/search.js?1599145638"></script>
 
     
   </div>
@@ -679,17 +679,17 @@
 <p><strong>Ustruktureret data</strong></p>
 <p><em>Ustruktureret data</em> er data, som - kort sagt - ikke er sat i system. Hvis data ikke er struktureret, vil man typisk kalde det ustruktureret data. Tekst, billeder og video er typiske eksempler på ustruktureret data, da disse blot er rå information uden nogen måde at adskille en type information fra en anden. Mange moderne dataanalyseteknikker fokuserer på ustruktureret data, hvor man enten udvikler teknikker til at skabe overblik over ustruktureret data eller forsøger at give data en form for struktur.</p>
 <p>Nedenstående er et eksempel på ustruktureret data:</p>
-<p>[&ldquo;Hvorfor går man ikke i dialog med ⁦@DRC_dk⁩ i stedet for at opsige kontrakten uden varsel. Er det kun for at føre stærk mand politik? DRC yder en fremragende indsats på baggrund af den opgave de har fået #dkpol&rdquo;,
-&ldquo;Alle tæller &ldquo;,
-&ldquo;Det er så godt arbejde &ldquo;,
-&ldquo;Tilfreds med den klima og energiaftale, der er lavet nu. Det er den første delaftale om at nå 70% reduktion i 2030. Særligt glad for at den indeholder principaftale om en CO2 afgiftsreform #dkpol #dkgreen&rdquo;,
-&ldquo;Godt første skridt for den fri natur #dkpol #dkgreen ⁦@alternativet_⁩ &ldquo;,
-&ldquo;Spændende udmelding. ⁦@alternativet_⁩ ønsker også en grøn   Klimaafgift, hvor udgangspunktet er at forureneren betaler #dkgreen #dkpol &ldquo;,
-&ldquo;Så vigtigt at KL tager ansvar for den proces #dkpol #dkgreen &ldquo;,
-&ldquo;Hurra - stor dag for Danmark &ldquo;,
-&ldquo;Til klimaforhandlinger i Finansministeriet. Vi sidder og diskuterer rammerne - de næste dage bliver intensive #dkpol #dkgreen @alternativet_ @ Christiansborg Palace  &ldquo;,
-&ldquo;Aftale om mindre affald, mindre forbrænding og mere genbrug - god dag for klimaet og miljøet. 1. skridt i en stor miljøpakke #dkpol ⁦@alternativet_⁩ &ldquo;]</p>
-<p>I ovenstående kan man stadig overføre ideen om observationer (i dette tilfælde tweets fra danske politikere), men der er ingen variable eller features givet på forhånd. Der er derfor ingen umiddelbar struktur at gøre brug af for at foretage sig analyser.</p>
+<pre><code>[&quot;Hvorfor går man ikke i dialog med ⁦@DRC_dk⁩ i stedet for at opsige kontrakten uden varsel. Er det kun for at føre stærk mand politik? DRC yder en fremragende indsats på baggrund af den opgave de har fået #dkpol&quot;,
+&quot;Alle tæller &quot;,
+&quot;Det er så godt arbejde &quot;,
+&quot;Tilfreds med den klima og energiaftale, der er lavet nu. Det er den første delaftale om at nå 70% reduktion i 2030. Særligt glad for at den indeholder principaftale om en CO2 afgiftsreform #dkpol #dkgreen&quot;,
+&quot;Godt første skridt for den fri natur #dkpol #dkgreen ⁦@alternativet_⁩ &quot;,
+&quot;Spændende udmelding. ⁦@alternativet_⁩ ønsker også en grøn   Klimaafgift, hvor udgangspunktet er at forureneren betaler #dkgreen #dkpol &quot;,
+&quot;Så vigtigt at KL tager ansvar for den proces #dkpol #dkgreen &quot;,
+&quot;Hurra - stor dag for Danmark &quot;,
+&quot;Til klimaforhandlinger i Finansministeriet. Vi sidder og diskuterer rammerne - de næste dage bliver intensive #dkpol #dkgreen @alternativet_ @ Christiansborg Palace  &quot;,
+&quot;Aftale om mindre affald, mindre forbrænding og mere genbrug - god dag for klimaet og miljøet. 1. skridt i en stor miljøpakke #dkpol ⁦@alternativet_⁩ &quot;]
+</code></pre><p>I ovenstående kan man stadig overføre ideen om observationer (i dette tilfælde tweets fra danske politikere), men der er ingen variable eller features givet på forhånd. Der er derfor ingen umiddelbar struktur at gøre brug af for at foretage sig analyser.</p>
 <h2 id="fra-data-til-dataanalyse">Fra data til dataanalyse</h2>
 <p>Uanset om data er struktureret eller ustruktureret, er de næsten aldrig klar til at analysere med det samme. Data skal næsten altid tilpasses den analyse, som man ønsker at foretage og de spørgsmål, som man ønsker at få svar på med sin analyse.</p>
 <p>For struktureret data indebærer dette at få identificeret de relevante dele af sine data (er det fx alle observationer, der er relevante?) samt undersøge og rekode variable sådan, at de meningsfuldt kan bruges i sin analyse.</p>
@@ -1106,19 +1106,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1599145327"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1599145327"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1599145327"></script>
-    <script src="../../js/jquery.sticky.js?1599145327"></script>
-    <script src="../../js/featherlight.min.js?1599145327"></script>
-    <script src="../../js/highlight.pack.js?1599145327"></script>
+    <script src="../../js/clipboard.min.js?1599145638"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1599145638"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1599145638"></script>
+    <script src="../../js/jquery.sticky.js?1599145638"></script>
+    <script src="../../js/featherlight.min.js?1599145638"></script>
+    <script src="../../js/highlight.pack.js?1599145638"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1599145327"></script>
-    <script src="../../js/learn.js?1599145327"></script>
-    <script src="../../js/hugo-learn.js?1599145327"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1599145638"></script>
+    <script src="../../js/learn.js?1599145638"></script>
+    <script src="../../js/hugo-learn.js?1599145638"></script>
 
-    <link href="../../mermaid/mermaid.css?1599145327" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1599145327"></script>
+    <link href="../../mermaid/mermaid.css?1599145638" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1599145638"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
