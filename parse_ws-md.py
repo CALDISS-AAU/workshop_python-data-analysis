@@ -15,7 +15,7 @@ content_path = "./content/"
 filename_in = [f for f in listdir(notebooks_path) if isfile(join(notebooks_path, f))][0]
 
 # Import notebook file
-with open(notebooks_path + filename_in, 'r', encoding = 'utf-8') as file:
+with open(notebooks_path + filename_in, 'r', encoding = 'utf8') as file:
     doc = file.read()
     file.close()
 
@@ -33,6 +33,7 @@ section_text_regex = re.compile('(?<=\n# {#Afsnit}).*$', re.DOTALL)
 
 table_regex = re.compile('<div>.*?</div>', re.DOTALL)
 
+
 # Define functions
 def get_chapters(doc):
     chapters = re.findall(chapter_regex, doc)
@@ -48,11 +49,15 @@ def get_chapter_text(chapter):
     
     chapter_text = chapter_text.replace(chapter_title, "", 1)
 
-    while re.match("\W", chapter_text[0]):
-        chapter_text = re.sub("^\W", "", chapter_text)
-        if chapter_text == "":
+    while True:
+        try:
+            if re.match("\W", chapter_text[0]):
+                chapter_text = re.sub("^\W", "", chapter_text)
+            else:
+                break
+        except IndexError:
             break
-    
+
     return(chapter_text)
 
 def create_chapter_front(title, weight):
@@ -77,9 +82,13 @@ def get_section_text(section):
     
     section_text = section_text.replace(section_title, "", 1)
     
-    while re.match("\W", section_text[0]):
-        section_text = re.sub("^\W", "", section_text)
-        if section_text == "":
+    while True:
+        try:
+            if re.match("\W", section_text[0]):
+                section_text = re.sub("^\W", "", section_text)
+            else:
+                break
+        except IndexError:
             break
     
     return(section_text)
@@ -143,7 +152,7 @@ for chaptkey,chapter in chapters_dict.items():
     
     if not os.path.isdir(folder):
         os.mkdir(folder)
-    with open(folder + '/_index.md', 'w') as outfile:
+    with open(folder + '/_index.md', 'w', encoding = "utf8") as outfile:
         outfile.write(chapter_out)
         outfile.close()
     
@@ -154,9 +163,15 @@ for chaptkey,chapter in chapters_dict.items():
         if re.search(table_regex, section['text']):
             table_files.append(folder + filename)
         
-        with open(folder + filename, 'w') as outfile:
+        with open(folder + filename, 'w', encoding = "utf8") as outfile:
             outfile.write(section_out)
             outfile.close()
+        
+    
+
+if len(table_files) > 0:            
+    table_files_print = '\n'.join(table_files)
+    print("The following files contain tables:\n" + table_files_print)
         
     
 
