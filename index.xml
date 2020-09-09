@@ -22,13 +22,16 @@ Navn, alder, uddannelse, indkomst, yndlingsfilm, mest aflyttede sange i 2020, an
     </item>
     
     <item>
-      <title>Deskriptive statistikker</title>
+      <title>Deskriptive mål</title>
       <link>/udforsk/deskriptive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/udforsk/deskriptive/</guid>
-      <description>Øvelse: Inspicer data
- Øvelse: Hvad er mean for X?  </description>
+      <description>Én måde at udforske et datasæt er ved at se nærmere på forskellige deskriptive mål for variable i datasættet.
+Metoden .describe() danner deskriptive mål for alle (kompatible) variable i datasættet:
+ess2014.describe()  [TABLE 2]
+Metoden fungerer også på enkeltvariable:
+ess2014[&#39;weight&#39;].describe()  count 1473.000000 mean 75.855261 std 15.599516 min 38.000000 25% 65.000000 50% 74.000000 75% 85.000000 max 137.000000 Name: weight, dtype: float64  .describe() danner følgende mål: - count: Antal svar ekskl.</description>
     </item>
     
     <item>
@@ -37,18 +40,23 @@ Navn, alder, uddannelse, indkomst, yndlingsfilm, mest aflyttede sange i 2020, an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/supplerende/litteratur/</guid>
-      <description>Python for Data Analysis, kap 5
- Python for Data Analysis, kap 9 - seaborn Python for Data Analysis, kap 12 - categorical  </description>
+      <description>Python for Data Analysis, kap 5 - Python for Data Analysis, kap 9 - seaborn - Python for Data Analysis, kap 12 - categorical</description>
     </item>
     
     <item>
-      <title>Subsetting</title>
+      <title>Subsetting (draft)</title>
       <link>/datah%C3%A5ndtering/subsetting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/datah%C3%A5ndtering/subsetting/</guid>
-      <description>loc, iloc
- booleans Check: hvornår bruges loc og iloc?  </description>
+      <description>Subsetting&amp;rdquo; vil sige at udvælge specifikke dele af data.
+Man subsetter pandas med metoderne .loc() og .iloc(). .loc() bruges til at subsette ud fra række- og kolonnenavne, mens .iloc() bruges til at subsette ud fra række- og kolnneindeks.
+Format for subsetting: data.loc[rækker, kolonner]
+Selekter bestemte rækker:
+ess2014.loc[2:10, :]  [TABLE 3]
+Selekter bestemte kolonner (specificeres som en liste):
+ess2014.loc[:, [&#39;gndr&#39;, &#39;alcfreq&#39;]].head()  [TABLE 4]
+Selekter bestemte rækker og kolonner:</description>
     </item>
     
     <item>
@@ -66,7 +74,7 @@ Navn, alder, uddannelse, indkomst, yndlingsfilm, mest aflyttede sange i 2020, an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/data/introduktion/</guid>
-      <description>pandas` (https://pandas.pydata.org/) er et Python bibliotek til datahåndtering og dataanalyse. Pandas egner sig særligt til data i tabeller struktureret i rækker og kolonner. En datatabel kaldes inden for pandas en &amp;ldquo;DataFrame&amp;rdquo;; et bestemt Python objekt specifikt til at lagre og bearbejde data i tabeller.
+      <description>Pakken pandas (https://pandas.pydata.org/) er et Python bibliotek til datahåndtering og dataanalyse. Pandas egner sig særligt til data i tabeller struktureret i rækker og kolonner. En datatabel kaldes inden for pandas en &amp;ldquo;DataFrame&amp;rdquo;; et bestemt Python objekt specifikt til at lagre og bearbejde data i tabeller.
 Denne lektion gennemgår diverse basale funktioner til at indlæse, udforske og håndtere en pandas DataFrame. Se også den officielle dokumentation for flere guides, introduktioner og beskrivelser til at arbejde med pandas: https://pandas.</description>
     </item>
     
@@ -76,38 +84,32 @@ Denne lektion gennemgår diverse basale funktioner til at indlæse, udforske og 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/kategoriske/kategoriske/</guid>
-      <description>Check: Er variabel ordinal eller nominal? (kodning i python)
- Øvelse: Konverter fra karakter til kategorisk Øvelse: Konverter fra nominal til ordinal  </description>
+      <description>Check: Er variabel ordinal eller nominal? (kodning i python) - Øvelse: Konverter fra karakter til kategorisk - Øvelse: Konverter fra nominal til ordinal</description>
     </item>
     
     <item>
-      <title>Rekodning</title>
-      <link>/datah%C3%A5ndtering/rekodning/</link>
+      <title>Variabelgenerering og rekodning (draft)</title>
+      <link>/datah%C3%A5ndtering/variabelgenerering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/datah%C3%A5ndtering/rekodning/</guid>
-      <description>Check: hvornår ændres variable ved rekodning?</description>
+      <guid>/datah%C3%A5ndtering/variabelgenerering/</guid>
+      <description>Variabelgenerering
+Ofte har man brug for at tilføje oplysninger til et datasæt i form af nye variable.
+Man danner en ny variabel blot ved at referere til et kolonnenavn, som endnu ikke er brugt.
+I nedenstående dannes height_m; en variabel for højde i meter:
+ess2014[&#39;height_m&#39;] = ess2014[&#39;height&#39;] / 100 ess2014.head()  [TABLE 11]
+ØVELSE: Dan en aldersvariabel Tilføj en aldersvariabel til ESS2014DK datasættet (husk at data er fra 2014)</description>
     </item>
     
     <item>
-      <title>Visualisering med seaborn</title>
+      <title>Visualisering af data med seaborn</title>
       <link>/udforsk/visualisering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/udforsk/visualisering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Indlæsning af data i Python</title>
-      <link>/data/indl%C3%A6sning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/data/indl%C3%A6sning/</guid>
-      <description>Øvelse: indlæs data
-  Check: hvilken type data?
-  Serier og data frames
-  </description>
+      <description>En god måde at udforske sit datasæt er ved at anvende visualiseringer. På den måde kan man visuelt orientere sig i, hvad data indeholder og hvordan data fordeler sig.
+I dette afsnit bruges pakken seaborn til at danne visualiseringer. seaborn bygger ovenpå matplotlib, men giver visualiseringerne et mere moderne udseende, og giver flere muligheder for at passe visualiseringen til.
+Fordi seaborn bygger ovenpå matplotlib skal begge biblioteker importeres (læg mærke til importkonventionerne).</description>
     </item>
     
     <item>
@@ -116,25 +118,17 @@ Denne lektion gennemgår diverse basale funktioner til at indlæse, udforske og 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/kategoriske/rekodning/</guid>
-      <description>Øvelse: Rekod kategorisk med mapping</description>
+      <description>Check: hvornår ændres variable ved rekodning? - Øvelse: Rekod kategorisk med mapping</description>
     </item>
     
     <item>
-      <title>Variabelgenerering</title>
-      <link>/datah%C3%A5ndtering/variabelgenerering/</link>
+      <title>Variabeltyper</title>
+      <link>/data/variabeltyper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/datah%C3%A5ndtering/variabelgenerering/</guid>
-      <description>Øvelse: Dan subset med ny variabel</description>
-    </item>
-    
-    <item>
-      <title>Visualiseringer (tidsserier, scatter, søjler, boxplots)</title>
-      <link>/udforsk/visualiseringer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/udforsk/visualiseringer/</guid>
-      <description>Øvelse: Visualisering - hvad kan udledes umiddelbart?</description>
+      <guid>/data/variabeltyper/</guid>
+      <description>Man adskiller overordnet mellem to typer af variable; særligt inden for strukuterede datasæt: kontinuerlige og kategoriske.
+Kontinuerlige variable Kontinuerlige variable kan tage en nærmest uafgrænset mængde af forskellige numeriske værdier, hvor man ikke i forvejen kan afgrænse, hvilke værdier, som variablen kan antage. Indkomst, vægt og alder er eksempler på kontinuerlige variable. Selvfølgelig er der værdier, som disse variable ikke kan tage - fx negative værdier - men man kan med disse variable ikke vide i forvejen, hvilke værdier, man vil ende ud med.</description>
     </item>
     
     <item>
@@ -143,8 +137,7 @@ Denne lektion gennemgår diverse basale funktioner til at indlæse, udforske og 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/datah%C3%A5ndtering/variabeltyper/</guid>
-      <description>Check: Hvilken variabeltype?
- Øvelse: Ændr variabeltype  </description>
+      <description>Check: Hvilken variabeltype? - Øvelse: Ændr variabeltype</description>
     </item>
     
   </channel>

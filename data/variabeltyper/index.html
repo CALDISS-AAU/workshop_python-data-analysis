@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Kategoriske variable i Python :: Introduktion til Python til Dataanalyse</title>
+    <title>Variabeltyper :: Introduktion til Python til Dataanalyse</title>
 
     
     <link href="../../css/nucleus.css?1599662829" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/kategoriske/kategoriske/">
+  <body class="" data-url="/data/variabeltyper/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/data/" title="Data i Python" class="dd-item 
-        
+        parent
         
         
         ">
@@ -144,7 +144,7 @@
  
   
     
-      <li data-nav-id="/data/variabeltyper/" title="Variabeltyper" class="dd-item ">
+      <li data-nav-id="/data/variabeltyper/" title="Variabeltyper" class="dd-item active">
         <a href="../../data/variabeltyper/">
         Variabeltyper
         
@@ -346,7 +346,7 @@
   
     
     <li data-nav-id="/kategoriske/" title="Kategoriske variable" class="dd-item 
-        parent
+        
         
         
         ">
@@ -393,7 +393,7 @@
  
   
     
-      <li data-nav-id="/kategoriske/kategoriske/" title="Kategoriske variable i Python" class="dd-item active">
+      <li data-nav-id="/kategoriske/kategoriske/" title="Kategoriske variable i Python" class="dd-item ">
         <a href="../../kategoriske/kategoriske/">
         Kategoriske variable i Python
         
@@ -550,7 +550,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../kategoriske/'>Kategoriske variable</a> > Kategoriske variable i Python
+            <a href='../../'></a> > <a href='../../data/'>Data i Python</a> > Variabeltyper
           
         
           
@@ -563,7 +563,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#kontinuerlige-variable">Kontinuerlige variable</a></li>
+<li><a href="#kategoriske-variable">Kategoriske variable</a></li>
+<li><a href="#videnscheck">VIDENSCHECK</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -579,16 +588,99 @@
           
             <h1>
               
-              Kategoriske variable i Python
+              Variabeltyper
             </h1>
           
 
         
 
 
-<p>Check: Er variabel ordinal eller nominal? (kodning i python)
-- Øvelse: Konverter fra karakter til kategorisk
-- Øvelse: Konverter fra nominal til ordinal</p>
+
+
+<p>Man adskiller overordnet mellem to typer af variable; særligt inden for strukuterede datasæt: kontinuerlige og kategoriske.</p>
+
+<h2 id="kontinuerlige-variable">Kontinuerlige variable</h2>
+
+<p>Kontinuerlige variable kan tage en nærmest uafgrænset mængde af forskellige numeriske værdier, hvor man ikke i forvejen kan afgrænse, hvilke værdier, som variablen kan antage. Indkomst, vægt og alder er eksempler på kontinuerlige variable. Selvfølgelig er der værdier, som disse variable ikke kan tage - fx negative værdier - men man kan med disse variable ikke vide i forvejen, hvilke værdier, man vil ende ud med.</p>
+
+<p>I datasættet ESS2014DK er <code>weight</code>, <code>height</code> og <code>yrbrn</code> eksempler på kontinuerlige variable.</p>
+
+<p>Tag fx et kig på værdierne i <code>height</code>:</p>
+
+<pre><code class="language-python">ess2014['height'].head(10)
+</code></pre>
+
+<pre><code>0    178.0
+1    172.0
+2    176.0
+3    162.0
+4    175.0
+5    160.0
+6    167.0
+7    194.0
+8    176.0
+9    157.0
+Name: height, dtype: float64
+</code></pre>
+
+<p>Variablen indeholder personens højde i cm og kan derfor antale et stort antal forskellige værdier. Variablen er kontinuerlig, fordi selvom variablen selvfølgelig ikke kan antage alle værdier (fx -157 eller 1.234), så kan det ikke i forvejen afgrænses præcist, hvilke værdier der vil ende i datasættet.</p>
+
+<h2 id="kategoriske-variable">Kategoriske variable</h2>
+
+<p>Kategoriske variable kan i modsætning til kontinuerlige kun antage et afgrænset og i forvejen defineret sæt af værdier.</p>
+
+<p>Fødselskommune, partitilhør eller hvorvidt man kan lide jazz, er eksempler på kategoriske variable. Spørgsmål i spørgeskemaer med forhåndsdefinerede svarmuligheder er altid kategoriske.</p>
+
+<p>I datasættet ESS2014DK er <code>happy</code>, <code>health</code> og <code>alcfreq</code> eksempler på kategoriske variable.</p>
+
+<p>Tag et kig på værdierne i <code>health</code>:</p>
+
+<pre><code class="language-python">ess2014['health'].head(10)
+</code></pre>
+
+<pre><code>0    Very good
+1    Very good
+2         Good
+3         Good
+4    Very good
+5         Fair
+6         Good
+7         Fair
+8         Fair
+9         Good
+Name: health, dtype: object
+</code></pre>
+
+<p>Variablen indeholder personens vurdering af eget helbred fra &ldquo;Very bad&rdquo; til &ldquo;Very good&rdquo;. Det er derfor i forvejen afgrænset, hvilke værdier, der kan optræde i datasættet, hvorfor den er kategorisk.</p>
+
+<hr />
+
+<h2 id="videnscheck">VIDENSCHECK</h2>
+
+<p>Tag et kig på variablerne <code>cgtsday</code> og <code>ppltrst</code>.</p>
+
+<p><em>Hvilken type variabel er de?</em></p>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <p><code>cgtsday</code> er kontinuerlig, da den kan antage et ikke i forvejen afgrænset forskellige numeriske værdier.</p>
+
+<p><code>ppltrst</code> er kategorisk, da den kun kan antage i forvejen definerede værdier.</p>
+
+    </div>
+</div>
+
+<hr />
 
 
 <footer class="footline">
@@ -626,8 +718,125 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -733,130 +942,10 @@
             
         
                     
-            
-        
-                    
                         
             
             
                 
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -913,10 +1002,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../kategoriske/typer/" title="Typer af kategoriske variable (nominal, ordinal)"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../data/introduktion/" title="Introduktion til pandas"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../kategoriske/rekodning/" title="Rekodning af kategoriske variable" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../udforsk/" title="Udforsk Data i Python" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

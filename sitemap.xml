@@ -35,11 +35,11 @@
   </url>
   
   <url>
-    <loc>/datah%C3%A5ndtering/rekodning/</loc>
+    <loc>/udforsk/</loc>
   </url>
   
   <url>
-    <loc>/udforsk/</loc>
+    <loc>/datah%C3%A5ndtering/variabelgenerering/</loc>
   </url>
   
   <url>
@@ -51,23 +51,11 @@
   </url>
   
   <url>
-    <loc>/data/indl%C3%A6sning/</loc>
-  </url>
-  
-  <url>
     <loc>/kategoriske/rekodning/</loc>
   </url>
   
   <url>
-    <loc>/datah%C3%A5ndtering/variabelgenerering/</loc>
-  </url>
-  
-  <url>
-    <loc>/udforsk/visualiseringer/</loc>
-  </url>
-  
-  <url>
-    <loc>/kategoriske/</loc>
+    <loc>/data/variabeltyper/</loc>
   </url>
   
   <url>
@@ -75,15 +63,20 @@
   </url>
   
   <url>
+    <loc>/kategoriske/</loc>
+  </url>
+  
+  <url>
     <loc>/supplerende/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>

@@ -11,31 +11,27 @@
     
     
     <item>
-      <title>Deskriptive statistikker</title>
+      <title>Deskriptive mål</title>
       <link>/udforsk/deskriptive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/udforsk/deskriptive/</guid>
-      <description>Øvelse: Inspicer data
- Øvelse: Hvad er mean for X?  </description>
+      <description>Én måde at udforske et datasæt er ved at se nærmere på forskellige deskriptive mål for variable i datasættet.
+Metoden .describe() danner deskriptive mål for alle (kompatible) variable i datasættet:
+ess2014.describe()  [TABLE 2]
+Metoden fungerer også på enkeltvariable:
+ess2014[&#39;weight&#39;].describe()  count 1473.000000 mean 75.855261 std 15.599516 min 38.000000 25% 65.000000 50% 74.000000 75% 85.000000 max 137.000000 Name: weight, dtype: float64  .describe() danner følgende mål: - count: Antal svar ekskl.</description>
     </item>
     
     <item>
-      <title>Visualisering med seaborn</title>
+      <title>Visualisering af data med seaborn</title>
       <link>/udforsk/visualisering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/udforsk/visualisering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visualiseringer (tidsserier, scatter, søjler, boxplots)</title>
-      <link>/udforsk/visualiseringer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/udforsk/visualiseringer/</guid>
-      <description>Øvelse: Visualisering - hvad kan udledes umiddelbart?</description>
+      <description>En god måde at udforske sit datasæt er ved at anvende visualiseringer. På den måde kan man visuelt orientere sig i, hvad data indeholder og hvordan data fordeler sig.
+I dette afsnit bruges pakken seaborn til at danne visualiseringer. seaborn bygger ovenpå matplotlib, men giver visualiseringerne et mere moderne udseende, og giver flere muligheder for at passe visualiseringen til.
+Fordi seaborn bygger ovenpå matplotlib skal begge biblioteker importeres (læg mærke til importkonventionerne).</description>
     </item>
     
   </channel>
