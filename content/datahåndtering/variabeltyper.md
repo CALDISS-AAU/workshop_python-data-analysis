@@ -1,6 +1,6 @@
 ---
 title: Variabeltyper (numerisk og tekst)
-weight: 4
+weight: 3
 ---
 Check: Hvilken variabeltype?
 - Øvelse: Ændr variabeltype
