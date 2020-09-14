@@ -13,9 +13,7 @@ ess2014.describe()
 
 
 
-
-[TABLE 2]
-
+{[{TABLE 2}]}
 
 
 Metoden fungerer også på enkeltvariable:
@@ -28,14 +26,14 @@ ess2014['weight'].describe()
 
 
 
-    count    1473.000000
-    mean       75.855261
-    std        15.599516
-    min        38.000000
-    25%        65.000000
-    50%        74.000000
-    75%        85.000000
-    max       137.000000
+    count    740.000000
+    mean      76.178108
+    std       15.597381
+    min       43.000000
+    25%       65.000000
+    50%       74.500000
+    75%       85.000000
+    max      135.000000
     Name: weight, dtype: float64
 
 
@@ -50,7 +48,7 @@ ess2014['weight'].describe()
 - `75%`: 3. kvartil
 - `max`: Maksimumværdien
 
-Pakken `numpy` indeholder funktioner til, at disse værdier kan dannes enkeltvis.
+Der knytter sig også en række metoder til at danne de enkelte deskriptive mål.
 
 Herunder printes fx middelværdien, standardafvigelsen, minimums- og maksimumsværdien for variablen `weight`:
 
@@ -58,16 +56,28 @@ Herunder printes fx middelværdien, standardafvigelsen, minimums- og maksimumsv�
 ```python
 import numpy as np
 
-print(np.mean(ess2014['weight']))
-print(np.std(ess2014['weight']))
-print(np.min(ess2014['weight']))
-print(np.max(ess2014['weight']))
+print(ess2014['weight'].mean())
+print(ess2014['weight'].std())
+print(ess2014['weight'].min())
+print(ess2014['weight'].max())
 ```
 
-    75.85526137135099
-    15.594219726642477
-    38.0
-    137.0
+    76.17810810810812
+    15.597381262076514
+    43.0
+    135.0
+    
+
+
+```python
+type(ess2014['weight'].std())
+```
+
+
+
+
+    float
+
 
 
 Ovenstående værdier fortæller, at `weight` indeholder værdier fra 38.0 til 137.0 med en middelværdi på 75.86 og en standardafvigelse på 15.59 (middelværdien af de afstande, som hver observation afviger fra middelværdien).
@@ -88,10 +98,10 @@ ess2014['ppltrst'].describe()
 
 
 
-    count     1500
-    unique      11
-    top          8
-    freq       475
+    count     749
+    unique     11
+    top         8
+    freq      230
     Name: ppltrst, dtype: object
 
 
@@ -108,11 +118,11 @@ ess2014['ppltrst'].head()
 
 
 
-    0    6
-    1    8
-    2    8
-    3    8
-    4    5
+    0                             4
+    1    Most people can be trusted
+    2                             5
+    3                             8
+    4                             4
     Name: ppltrst, dtype: object
 
 
@@ -129,8 +139,8 @@ ess2014['ppltrst'].unique()
 
 
 
-    array(['6', '8', '5', '9', '7', '3', '4', 'Most people can be trusted',
-           '2', "You can't be too careful", '1', nan], dtype=object)
+    array(['4', 'Most people can be trusted', '5', '8', '7', '9', '2', '6',
+           '3', "You can't be too careful", '1', nan], dtype=object)
 
 
 
@@ -154,15 +164,15 @@ Husk at datasættet er fra 2014.
 
 
 ```python
-min_age = 2014 - np.max(ess2014['yrbrn'])
-max_age = 2014 - np.min(ess2014['yrbrn'])
-mean_age = 2014 - np.mean(ess2014['yrbrn'])
+min_age = 2014 - ess2014['yrbrn'].max()
+max_age = 2014 - ess2014['yrbrn'].min()
+mean_age = 2014 - ess2014['yrbrn'].mean()
 
 print(min_age, max_age, mean_age)
 ```
 
-    15 100 48.108521970705624
-
+    15 100 47.67509986684422
+    
 
 {{% notice tip %}} Brug "f-strings" til at indsætte python-objekter direkte i et stykke tekst: {{%/ notice%}}
 
@@ -171,10 +181,10 @@ print(min_age, max_age, mean_age)
 print(f"Den yngste person i datasættet er {min_age} år gammel, den ældste person i datasættet er {max_age} år gammel og gennemsnitsalderen er {mean_age} år.")
 ```
 
-    Den yngste person i datasættet er 15 år gammel, den ældste person i datasættet er 100 år gammel og gennemsnitsalderen er 48.108521970705624 år.
+    Den yngste person i datasættet er 15 år gammel, den ældste person i datasættet er 100 år gammel og gennemsnitsalderen er 47.67509986684422 år.
+    
 
-
-{{% notice tip %}} Brug `np.round()` til at afrunde værdier: {{% /notice%}}
+{{% notice tip %}} Brug `np.round()` (fra `numpy`) til at afrunde værdier: {{% /notice%}}
 
 
 ```python
@@ -184,6 +194,6 @@ print(f"Gennemsnitsalderen i datasættet er {mean_age_rounded} år.")
 ```
 
     Gennemsnitsalderen i datasættet er 48.0 år.
-
+    
 
 {{% /expand%}}

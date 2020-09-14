@@ -21,16 +21,16 @@ ess2014['height'].head(10)
 
 
 
-    0    178.0
-    1    172.0
-    2    176.0
-    3    162.0
-    4    175.0
-    5    160.0
-    6    167.0
-    7    194.0
-    8    176.0
-    9    157.0
+    0    167.0
+    1    168.0
+    2    182.0
+    3    188.0
+    4    156.0
+    5    167.0
+    6    169.0
+    7    184.0
+    8    182.0
+    9    172.0
     Name: height, dtype: float64
 
 
@@ -56,15 +56,15 @@ ess2014['health'].head(10)
 
 
     0    Very good
-    1    Very good
+    1         Good
     2         Good
-    3         Good
-    4    Very good
-    5         Fair
+    3    Very good
+    4          Bad
+    5         Good
     6         Good
-    7         Fair
-    8         Fair
-    9         Good
+    7         Good
+    8         Good
+    9    Very good
     Name: health, dtype: object
 
 

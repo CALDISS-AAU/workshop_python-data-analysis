@@ -19,9 +19,7 @@ ess2014.head()
 
 
 
-
-[TABLE 11]
-
+{[{TABLE 11}]}
 
 
 ---
@@ -41,12 +39,12 @@ ess2014.head()
 
 
 
-
-[TABLE 12]
-
+{[{TABLE 12}]}
 
 
 {{%/expand%}}
+
+---
 
 ## Rekodning
 
@@ -76,9 +74,7 @@ ess2014.head(10)
 
 
 
-
-[TABLE 13]
-
+{[{TABLE 13}]}
 
 
 Alternativt, hvis der bare skal deles i tre lige store grupper:
@@ -92,9 +88,7 @@ ess2014.head(10)
 
 
 
-
-[TABLE 14]
-
+{[{TABLE 14}]}
 
 
 ## Missingværdier
@@ -109,9 +103,9 @@ ess2014['cgtsday'].isnull().head()
 
 
 
-    0    False
+    0     True
     1     True
-    2     True
+    2    False
     3     True
     4     True
     Name: cgtsday, dtype: bool
@@ -127,9 +121,7 @@ ess2014.loc[ess2014['cgtsday'].isnull(), :].head()
 
 
 
-
-[TABLE 15]
-
+{[{TABLE 15}]}
 
 
 ---
@@ -155,9 +147,7 @@ ess2014.head(10)
 
 
 
-
-[TABLE 16]
-
+{[{TABLE 16}]}
 
 
 {{%/expand%}}

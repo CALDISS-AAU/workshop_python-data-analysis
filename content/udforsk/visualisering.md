@@ -40,17 +40,35 @@ ess2014['height'].plot.hist()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d23ba2e8>
+    <AxesSubplot:ylabel='Frequency'>
+
+
+
+
+![png](/output_76_1.png)
+
+
+Et histogram viser observationer som bjælker i intervaller sorteret efter værdi (lav til højest). På den måde kan man hurtigt danne sig et overblik over, hvordan data fordeler sig.
+
+Af ovenstående ses fx at omkring 340 personer har en højde på omkring 168-173 cm. Desuden ses at meget få har en højde omkring 200 cm.
+
+Størrelsen på bjælkerne kan ændres med argumentet `bins = `:
+
+
+```python
+ess2014['height'].plot.hist(bins = 30)
+```
+
+
+
+
+    <AxesSubplot:ylabel='Frequency'>
 
 
 
 
 ![png](/output_78_1.png)
 
-
-Et histogram viser observationer som bjælker i intervaller sorteret efter værdi (lav til højest). På den måde kan man hurtigt danne sig et overblik over, hvordan data fordeler sig.
-
-Af ovenstående ses fx at omkring 340 personer har en højde på omkring 168-173 cm. Desuden ses at meget få har en højde omkring 200 cm.
 
 ### Boxplot
 
@@ -64,12 +82,12 @@ ess2014['height'].plot.box()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d20d30b8>
+    <AxesSubplot:>
 
 
 
 
-![png](/output_81_1.png)
+![png](/output_80_1.png)
 
 
 Et boxplot er en anden måde at se på fordelingen af en variabel. Den vandrette linje i midten er middelværdien. De øvrige linjer angiver (fra top til bund): minimum, 1. kvartil, 3. kvartil, maksimum.
@@ -84,12 +102,12 @@ ess2014.plot.box()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d210c668>
+    <AxesSubplot:>
 
 
 
 
-![png](/output_83_1.png)
+![png](/output_82_1.png)
 
 
 Ovenstående plot giver ikke meget mening, da variable ikke har sammenlignelige værdier, hvorfor y-aksen bliver helt tosset.
@@ -122,12 +140,12 @@ sns.scatterplot(data = ess2014, x = 'height', y = 'weight')
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d23741d0>
+    <AxesSubplot:xlabel='height', ylabel='weight'>
 
 
 
 
-![png](/output_87_1.png)
+![png](/output_86_1.png)
 
 
 Et scatterplot danner en prik for hver observations placering på to variable. Plottet egner sig derfor særdeles godt til at udforske umiddelbare sammenhænge (om en variabel er beslægtet med en anden).
@@ -143,18 +161,20 @@ Dan et histogram over varialben `yrbrn` i ESS2014DK datasættet.
 
 
 ```python
-ess2014['yrbrn'].hist()
+ess2014['yrbrn'].hist(bins = 30)
 ```
 
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d21d05f8>
+    <AxesSubplot:>
 
 
 
 
-![png](/output_90_1.png)
+![png](/output_89_1.png)
 
 
 {{%/expand%}}
+
+---

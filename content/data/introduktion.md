@@ -17,7 +17,7 @@ I det nedenstående indlæses pandas biblioteket, hvorefter datasættet "ESS2014
 import numpy as np
 import pandas as pd
 
-ess2014 = pd.read_csv('https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_subset.csv')
+ess2014 = pd.read_csv('https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_sub1.csv')
 ```
 
 {{% notice note %}}
@@ -39,9 +39,7 @@ ess2014.head()
 
 
 
-
-[TABLE 1]
-
+{[{TABLE 1}]}
 
 
 Dataframes er et tabulært dataformat. Når en fil indlæses som en pandas dataframe, skal filen derfor være i et format, der kan konverteres til tabelformat (data i rækker og kolonner).
@@ -98,12 +96,12 @@ print(ess2014.health.head())
 ```
 
     0    Very good
-    1    Very good
+    1         Good
     2         Good
-    3         Good
-    4    Very good
+    3    Very good
+    4          Bad
     Name: health, dtype: object
-
+    
 
 Dog vil man typisk refere til enkeltkolonner på denne måde:
 
@@ -113,12 +111,12 @@ print(ess2014['health'].head())
 ```
 
     0    Very good
-    1    Very good
+    1         Good
     2         Good
-    3         Good
-    4    Very good
+    3    Very good
+    4          Bad
     Name: health, dtype: object
-
+    
 
 Der er ikke forskel mellem de to måder at gøre det på, men sidstviste måde er mere gængs og gør kode mere overskuelig.
 
@@ -132,7 +130,7 @@ print(type(ess2014['health']))
 
     <class 'pandas.core.frame.DataFrame'>
     <class 'pandas.core.series.Series'>
-
+    
 
 ### Pandas series og lister
 
@@ -146,7 +144,7 @@ print(ess2014['health'][122]) #Printer indeks 122
 ```
 
     Very good
-
+    
 
 Lister kan konverteres direkte til pandas series med `pd.Series()`:
 
@@ -166,7 +164,7 @@ print(a_series)
     3    12
     4    18
     dtype: int64
-
+    
 
 Læg i ovenstående mærke til, at når en series printes, printes elementernes indeks ud også. Dette er fordi, at man selv kan specificere indeksværdier i en pandas series:
 
@@ -184,7 +182,7 @@ print(a_series)
     value4    12
     value5    18
     dtype: int64
-
+    
 
 Gives en serie indeksværdier, kan enkeltelementer referes til både med deres indeksnummer og indeksværdi:
 
@@ -196,7 +194,7 @@ print(a_series['value3']) # Printer den 3. værdi ud fra indeksværdi ("value3")
 
     9
     9
-
+    
 
 **Operationer på serier**
 
@@ -256,9 +254,9 @@ np.mean(a_series)
 ---
 ## ØVELSE: Indlæs datasæt
 
-1. Indlæs datasættet ESS2014DK med `pd.read_csv()`. Funktionen kan indlæse data direkte fra et link (husk at importere pandas biblioteket).
+1. Indlæs datasættet ESS2014DK_sub1 med `pd.read_csv()`. Funktionen kan indlæse data direkte fra et link (husk at importere pandas biblioteket).
 
-    - Link til data: https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_subset.csv
+    - Link til data: https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_sub1.csv
     
 2. Brug `np.mean()` (`numpy.mean()`) til at udregne middelværdien af `height` variablen i datasættet. Hvad er middelværdien?
 
@@ -271,13 +269,13 @@ np.mean(a_series)
 import pandas as pd
 import numpy as np
 
-ess2014 = pd.read_csv('https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_subset.csv')
+ess2014 = pd.read_csv('https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_sub1.csv')
 
 print(np.mean(ess2014['height']))
 ```
 
-    173.75217100868403
-
+    174.15887850467288
+    
 
 {{% /expand%}}
 

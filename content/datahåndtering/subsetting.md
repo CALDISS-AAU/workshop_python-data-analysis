@@ -17,9 +17,7 @@ ess2014.loc[2:10, :]
 
 
 
-
-[TABLE 3]
-
+{[{TABLE 3}]}
 
 
 Selekter bestemte kolonner (specificeres som en liste):
@@ -31,9 +29,7 @@ ess2014.loc[:, ['gndr', 'alcfreq']].head()
 
 
 
-
-[TABLE 4]
-
+{[{TABLE 4}]}
 
 
 Selekter bestemte rækker og kolonner:
@@ -45,23 +41,19 @@ ess2014.loc[2:10, ['gndr', 'alcfreq']]
 
 
 
-
-[TABLE 5]
-
+{[{TABLE 5}]}
 
 
 Selekter ud fra kolonneindeks:
 
 
 ```python
-ess2014.iloc[2:10, [8, 6]]
+ess2014.iloc[2:10, [8, 5]]
 ```
 
 
 
-
-[TABLE 6]
-
+{[{TABLE 6}]}
 
 
 Bemærk at datasæt ikke ændres. Hvis subset skal gemmes, skal det gemmes i et nyt objekt (ny dataframe):
@@ -75,9 +67,7 @@ ess2014_subset.head()
 
 
 
-
-[TABLE 7]
-
+{[{TABLE 7}]}
 
 
 ## Subsetting med booleans (logiske værdier)
@@ -91,9 +81,7 @@ ess2014.loc[ess2014['height'] > 180, :].head()
 
 
 
-
-[TABLE 8]
-
+{[{TABLE 8}]}
 
 
 
@@ -103,9 +91,7 @@ ess2014.loc[(ess2014['height'] > 180) & (ess2014['gndr'] == 'Female'), :].head()
 
 
 
-
-[TABLE 9]
-
+{[{TABLE 9}]}
 
 
 ---
@@ -142,9 +128,7 @@ ess2014_subset.head()
 
 
 
-
-[TABLE 10]
-
+{[{TABLE 10}]}
 
 
 {{%/expand%}}
