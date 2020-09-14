@@ -191,12 +191,12 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
 
 
     ---------------------------------------------------------------------------
-
+    
     ValueError                                Traceback (most recent call last)
-
+    
     <ipython-input-67-8b2ee5027ea0> in <module>
     ----> 1 ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
-    
+
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\generic.py in astype(self, dtype, copy, errors)
        5535         else:
@@ -204,7 +204,7 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     -> 5537             new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors,)
        5538             return self._constructor(new_data).__finalize__(self, method="astype")
        5539 
-    
+
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\managers.py in astype(self, dtype, copy, errors)
         593         self, dtype, copy: bool = False, errors: str = "raise"
@@ -212,7 +212,7 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     --> 595         return self.apply("astype", dtype=dtype, copy=copy, errors=errors)
         596 
         597     def convert(
-    
+
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\managers.py in apply(self, f, align_keys, **kwargs)
         404                 applied = b.apply(f, **kwargs)
@@ -220,7 +220,7 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     --> 406                 applied = getattr(b, f)(**kwargs)
         407             result_blocks = _extend_blocks(applied, result_blocks)
         408 
-    
+
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\blocks.py in astype(self, dtype, copy, errors)
         587             vals1d = values.ravel()
@@ -228,7 +228,7 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     --> 589                 values = astype_nansafe(vals1d, dtype, copy=True)
         590             except (ValueError, TypeError):
         591                 # e.g. astype_nansafe can fail on object-dtype of strings
-    
+
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py in astype_nansafe(arr, dtype, copy, skipna)
         964         # work around NumPy brokenness, #1987
@@ -236,10 +236,10 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     --> 966             return lib.astype_intsafe(arr.ravel(), dtype).reshape(arr.shape)
         967 
         968         # if we have a datetime/timedelta array of objects
-    
+
 
     pandas\_libs\lib.pyx in pandas._libs.lib.astype_intsafe()
-    
+
 
     ValueError: invalid literal for int() with base 10: 'Most people can be trusted'
 
@@ -371,7 +371,7 @@ ess2014['happy_num'].mean()
 
     object
     float64
-    
+
 
 
 

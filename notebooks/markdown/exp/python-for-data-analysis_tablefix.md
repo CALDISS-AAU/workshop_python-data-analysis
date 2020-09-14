@@ -204,7 +204,7 @@ print(ess2014.health.head())
     3    Very good
     4          Bad
     Name: health, dtype: object
-
+    
 
 Dog vil man typisk refere til enkeltkolonner på denne måde:
 
@@ -219,7 +219,7 @@ print(ess2014['health'].head())
     3    Very good
     4          Bad
     Name: health, dtype: object
-
+    
 
 Der er ikke forskel mellem de to måder at gøre det på, men sidstviste måde er mere gængs og gør kode mere overskuelig.
 
@@ -233,7 +233,7 @@ print(type(ess2014['health']))
 
     <class 'pandas.core.frame.DataFrame'>
     <class 'pandas.core.series.Series'>
-
+    
 
 ### Pandas series og lister
 
@@ -247,7 +247,7 @@ print(ess2014['health'][122]) #Printer indeks 122
 ```
 
     Very good
-
+    
 
 Lister kan konverteres direkte til pandas series med `pd.Series()`:
 
@@ -267,7 +267,7 @@ print(a_series)
     3    12
     4    18
     dtype: int64
-
+    
 
 Læg i ovenstående mærke til, at når en series printes, printes elementernes indeks ud også. Dette er fordi, at man selv kan specificere indeksværdier i en pandas series:
 
@@ -285,7 +285,7 @@ print(a_series)
     value4    12
     value5    18
     dtype: int64
-
+    
 
 Gives en serie indeksværdier, kan enkeltelementer referes til både med deres indeksnummer og indeksværdi:
 
@@ -297,7 +297,7 @@ print(a_series['value3']) # Printer den 3. værdi ud fra indeksværdi ("value3")
 
     9
     9
-
+    
 
 **Operationer på serier**
 
@@ -378,7 +378,7 @@ print(np.mean(ess2014['height']))
 ```
 
     174.15887850467288
-
+    
 
 {{% /expand%}}
 
@@ -540,7 +540,7 @@ print(ess2014['weight'].max())
     15.597381262076514
     43.0
     135.0
-
+    
 
 
 ```python
@@ -646,7 +646,7 @@ print(min_age, max_age, mean_age)
 ```
 
     15 100 47.67509986684422
-
+    
 
 {{% notice tip %}} Brug "f-strings" til at indsætte python-objekter direkte i et stykke tekst: {{%/ notice%}}
 
@@ -656,7 +656,7 @@ print(f"Den yngste person i datasættet er {min_age} år gammel, den ældste per
 ```
 
     Den yngste person i datasættet er 15 år gammel, den ældste person i datasættet er 100 år gammel og gennemsnitsalderen er 47.67509986684422 år.
-
+    
 
 {{% notice tip %}} Brug `np.round()` (fra `numpy`) til at afrunde værdier: {{% /notice%}}
 
@@ -668,7 +668,7 @@ print(f"Gennemsnitsalderen i datasættet er {mean_age_rounded} år.")
 ```
 
     Gennemsnitsalderen i datasættet er 48.0 år.
-
+    
 
 {{% /expand%}}
 
@@ -691,7 +691,7 @@ sns.set()
 
 {{%notice info%}} Linjen `%matplotlib inline` er en såkaldt "magic function". Den bruges, når man skriver Python i Jupyter Notebook, da den gør sådan, at plots printes direkte i notebooken. Hvis ikke den linje er kørt, vil plots dukke op i et vindue for sig (nogen gange er indstillingen dog sat til i forvejen).
 
-{{%/notice%}}
+{{/%notice%}}
 
 Når man bruger `seaborn` sammen med `pandas` kan man lave visualiseringer/plots på to måder. Med den ene måde kalder man den specifikke visualiseringsfunktion fra seaborn og specificerer data, som skal bruges i visualisering. Med den anden måde referer man til den specifikke kolonne (series) fra dataframe, som man ønsker at visualisere og specificerer et plot (denne måde virker derfor kun til at visualisere én variabel).
 
@@ -1338,12 +1338,12 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
 
 
     ---------------------------------------------------------------------------
-    
+
     ValueError                                Traceback (most recent call last)
-    
+
     <ipython-input-67-8b2ee5027ea0> in <module>
     ----> 1 ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
-
+    
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\generic.py in astype(self, dtype, copy, errors)
        5535         else:
@@ -1351,7 +1351,7 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     -> 5537             new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors,)
        5538             return self._constructor(new_data).__finalize__(self, method="astype")
        5539 
-
+    
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\managers.py in astype(self, dtype, copy, errors)
         593         self, dtype, copy: bool = False, errors: str = "raise"
@@ -1359,7 +1359,7 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     --> 595         return self.apply("astype", dtype=dtype, copy=copy, errors=errors)
         596 
         597     def convert(
-
+    
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\managers.py in apply(self, f, align_keys, **kwargs)
         404                 applied = b.apply(f, **kwargs)
@@ -1367,7 +1367,7 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     --> 406                 applied = getattr(b, f)(**kwargs)
         407             result_blocks = _extend_blocks(applied, result_blocks)
         408 
-
+    
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\blocks.py in astype(self, dtype, copy, errors)
         587             vals1d = values.ravel()
@@ -1375,7 +1375,7 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     --> 589                 values = astype_nansafe(vals1d, dtype, copy=True)
         590             except (ValueError, TypeError):
         591                 # e.g. astype_nansafe can fail on object-dtype of strings
-
+    
 
     C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py in astype_nansafe(arr, dtype, copy, skipna)
         964         # work around NumPy brokenness, #1987
@@ -1383,10 +1383,10 @@ ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
     --> 966             return lib.astype_intsafe(arr.ravel(), dtype).reshape(arr.shape)
         967 
         968         # if we have a datetime/timedelta array of objects
-
+    
 
     pandas\_libs\lib.pyx in pandas._libs.lib.astype_intsafe()
-
+    
 
     ValueError: invalid literal for int() with base 10: 'Most people can be trusted'
 
@@ -1518,7 +1518,7 @@ ess2014['happy_num'].mean()
 
     object
     float64
-
+    
 
 
 

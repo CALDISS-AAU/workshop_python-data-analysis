@@ -66,7 +66,7 @@ print(ess2014['weight'].max())
     15.597381262076514
     43.0
     135.0
-    
+
 
 
 ```python
@@ -172,7 +172,7 @@ print(min_age, max_age, mean_age)
 ```
 
     15 100 47.67509986684422
-    
+
 
 {{% notice tip %}} Brug "f-strings" til at indsætte python-objekter direkte i et stykke tekst: {{%/ notice%}}
 
@@ -182,7 +182,7 @@ print(f"Den yngste person i datasættet er {min_age} år gammel, den ældste per
 ```
 
     Den yngste person i datasættet er 15 år gammel, den ældste person i datasættet er 100 år gammel og gennemsnitsalderen er 47.67509986684422 år.
-    
+
 
 {{% notice tip %}} Brug `np.round()` (fra `numpy`) til at afrunde værdier: {{% /notice%}}
 
@@ -194,6 +194,6 @@ print(f"Gennemsnitsalderen i datasættet er {mean_age_rounded} år.")
 ```
 
     Gennemsnitsalderen i datasættet er 48.0 år.
-    
+
 
 {{% /expand%}}

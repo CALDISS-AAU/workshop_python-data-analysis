@@ -101,7 +101,7 @@ print(ess2014.health.head())
     3    Very good
     4          Bad
     Name: health, dtype: object
-    
+
 
 Dog vil man typisk refere til enkeltkolonner på denne måde:
 
@@ -116,7 +116,7 @@ print(ess2014['health'].head())
     3    Very good
     4          Bad
     Name: health, dtype: object
-    
+
 
 Der er ikke forskel mellem de to måder at gøre det på, men sidstviste måde er mere gængs og gør kode mere overskuelig.
 
@@ -130,7 +130,7 @@ print(type(ess2014['health']))
 
     <class 'pandas.core.frame.DataFrame'>
     <class 'pandas.core.series.Series'>
-    
+
 
 ### Pandas series og lister
 
@@ -144,7 +144,7 @@ print(ess2014['health'][122]) #Printer indeks 122
 ```
 
     Very good
-    
+
 
 Lister kan konverteres direkte til pandas series med `pd.Series()`:
 
@@ -164,7 +164,7 @@ print(a_series)
     3    12
     4    18
     dtype: int64
-    
+
 
 Læg i ovenstående mærke til, at når en series printes, printes elementernes indeks ud også. Dette er fordi, at man selv kan specificere indeksværdier i en pandas series:
 
@@ -182,7 +182,7 @@ print(a_series)
     value4    12
     value5    18
     dtype: int64
-    
+
 
 Gives en serie indeksværdier, kan enkeltelementer referes til både med deres indeksnummer og indeksværdi:
 
@@ -194,7 +194,7 @@ print(a_series['value3']) # Printer den 3. værdi ud fra indeksværdi ("value3")
 
     9
     9
-    
+
 
 **Operationer på serier**
 
@@ -275,7 +275,7 @@ print(np.mean(ess2014['height']))
 ```
 
     174.15887850467288
-    
+
 
 {{% /expand%}}
 

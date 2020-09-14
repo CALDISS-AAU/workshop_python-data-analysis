@@ -19,7 +19,7 @@ sns.set()
 
 {{%notice info%}} Linjen `%matplotlib inline` er en såkaldt "magic function". Den bruges, når man skriver Python i Jupyter Notebook, da den gør sådan, at plots printes direkte i notebooken. Hvis ikke den linje er kørt, vil plots dukke op i et vindue for sig (nogen gange er indstillingen dog sat til i forvejen).
 
-{{/%notice%}}
+{{%/notice%}}
 
 Når man bruger `seaborn` sammen med `pandas` kan man lave visualiseringer/plots på to måder. Med den ene måde kalder man den specifikke visualiseringsfunktion fra seaborn og specificerer data, som skal bruges i visualisering. Med den anden måde referer man til den specifikke kolonne (series) fra dataframe, som man ønsker at visualisere og specificerer et plot (denne måde virker derfor kun til at visualisere én variabel).
 
