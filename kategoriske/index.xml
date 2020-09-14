@@ -20,8 +20,7 @@
 Ordinale
 Ordinalt skalerede variable er variable, som kan rangordnes; altså hvor der kan differentieres hierarkisk mellem værdierne.
 Af ESS2014 datasættet er health et eksempel på en ordinal-skaleret variabel.
-ess2014[&amp;#39;health&amp;#39;].unique() array([&#39;Very good&#39;, &#39;Good&#39;, &#39;Bad&#39;, &#39;Fair&#39;, &#39;Very bad&#39;, nan], dtype=object)
- Variablen indeholder personens egen vurdering af helbred.
+ess2014[&amp;#39;health&amp;#39;].unique() array([&#39;Very good&#39;, &#39;Good&#39;, &#39;Bad&#39;, &#39;Fair&#39;, &#39;Very bad&#39;, nan], dtype=object) Variablen indeholder personens egen vurdering af helbred.
 Den er kategorisk, da man kun kan vælge mellem i forvejen definerede svarmuligheder.
 Den er ordinal, da man kan rangere værdierne: &amp;ldquo;Good&amp;rdquo; er bedre end &amp;ldquo;Bad&amp;rdquo;, &amp;ldquo;Very bad&amp;rdquo; er værre end &amp;ldquo;Fair&amp;rdquo; osv.</description>
     </item>

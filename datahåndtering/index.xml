@@ -20,287 +20,11 @@
 Man subsetter pandas med metoderne .loc() og .iloc(). .loc() bruges til at subsette ud fra række- og kolonnenavne, mens .iloc() bruges til at subsette ud fra række- og kolnneindeks.
 Format for subsetting: data.loc[rækker, kolonner]
 Selekter bestemte rækker:
-ess2014.loc[2:10, :] 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>idno</th>
-      <th>ppltrst</th>
-      <th>happy</th>
-      <th>health</th>
-      <th>cgtsday</th>
-      <th>alcfreq</th>
-      <th>height</th>
-      <th>weight</th>
-      <th>gndr</th>
-      <th>yrbrn</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2</th>
-      <td>939019</td>
-      <td>5</td>
-      <td>8</td>
-      <td>Good</td>
-      <td>3.0</td>
-      <td>Once a week</td>
-      <td>182.0</td>
-      <td>90.0</td>
-      <td>Male</td>
-      <td>1980</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>924985</td>
-      <td>8</td>
-      <td>9</td>
-      <td>Very good</td>
-      <td>NaN</td>
-      <td>Once a week</td>
-      <td>188.0</td>
-      <td>85.0</td>
-      <td>Male</td>
-      <td>1946</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>925410</td>
-      <td>4</td>
-      <td>8</td>
-      <td>Bad</td>
-      <td>NaN</td>
-      <td>Several times a week</td>
-      <td>156.0</td>
-      <td>60.0</td>
-      <td>Female</td>
-      <td>1969</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>928947</td>
-      <td>5</td>
-      <td>Extremely happy</td>
-      <td>Good</td>
-      <td>20.0</td>
-      <td>Every day</td>
-      <td>167.0</td>
-      <td>75.0</td>
-      <td>Male</td>
-      <td>1950</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>947921</td>
-      <td>7</td>
-      <td>8</td>
-      <td>Good</td>
-      <td>NaN</td>
-      <td>Less than once a month</td>
-      <td>169.0</td>
-      <td>63.0</td>
-      <td>Female</td>
-      <td>1980</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>926953</td>
-      <td>Most people can be trusted</td>
-      <td>8</td>
-      <td>Good</td>
-      <td>NaN</td>
-      <td>Once a month</td>
-      <td>184.0</td>
-      <td>73.0</td>
-      <td>Male</td>
-      <td>1940</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>943553</td>
-      <td>8</td>
-      <td>8</td>
-      <td>Good</td>
-      <td>NaN</td>
-      <td>Once a week</td>
-      <td>182.0</td>
-      <td>86.0</td>
-      <td>Male</td>
-      <td>1971</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>936299</td>
-      <td>8</td>
-      <td>9</td>
-      <td>Very good</td>
-      <td>8.0</td>
-      <td>Several times a week</td>
-      <td>172.0</td>
-      <td>73.0</td>
-      <td>Female</td>
-      <td>1965</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>943317</td>
-      <td>9</td>
-      <td>9</td>
-      <td>Very good</td>
-      <td>NaN</td>
-      <td>Once a month</td>
-      <td>178.0</td>
-      <td>72.0</td>
-      <td>Male</td>
-      <td>1989</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+ess2014.loc[2:10, :] {[{TABLE 3}]}
 Selekter bestemte kolonner (specificeres som en liste):
-ess2014.loc[:, [&amp;#39;gndr&amp;#39;, &amp;#39;alcfreq&amp;#39;]].head() 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>gndr</th>
-      <th>alcfreq</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Female</td>
-      <td>Never</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Female</td>
-      <td>Several times a week</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Male</td>
-      <td>Once a week</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Male</td>
-      <td>Once a week</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Female</td>
-      <td>Several times a week</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+ess2014.loc[:, [&amp;#39;gndr&amp;#39;, &amp;#39;alcfreq&amp;#39;]].head() {[{TABLE 4}]}
 Selekter bestemte rækker og kolonner:
-ess2014.loc[2:10, [&amp;#39;gndr&amp;#39;, &amp;#39;alcfreq&amp;#39;]] 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>gndr</th>
-      <th>alcfreq</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2</th>
-      <td>Male</td>
-      <td>Once a week</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Male</td>
-      <td>Once a week</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Female</td>
-      <td>Several times a week</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Male</td>
-      <td>Every day</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Female</td>
-      <td>Less than once a month</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Male</td>
-      <td>Once a month</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Male</td>
-      <td>Once a week</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Female</td>
-      <td>Several times a week</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Male</td>
-      <td>Once a month</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</description>
+ess2014.loc[2:10, [&amp;#39;gndr&amp;#39;, &amp;#39;alcfreq&amp;#39;]] {[{TABLE 5}]}</description>
     </item>
     
     <item>
@@ -313,120 +37,9 @@ ess2014.loc[2:10, [&amp;#39;gndr&amp;#39;, &amp;#39;alcfreq&amp;#39;]]
 Ofte har man brug for at tilføje oplysninger til et datasæt i form af nye variable.
 Man danner en ny variabel blot ved at referere til et kolonnenavn, som endnu ikke er brugt.
 I nedenstående dannes height_m; en variabel for højde i meter:
-ess2014[&amp;#39;height_m&amp;#39;] = ess2014[&amp;#39;height&amp;#39;] / 100 ess2014.head() 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>idno</th>
-      <th>ppltrst</th>
-      <th>happy</th>
-      <th>health</th>
-      <th>cgtsday</th>
-      <th>alcfreq</th>
-      <th>height</th>
-      <th>weight</th>
-      <th>gndr</th>
-      <th>yrbrn</th>
-      <th>height_m</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>921490</td>
-      <td>4</td>
-      <td>Extremely happy</td>
-      <td>Very good</td>
-      <td>NaN</td>
-      <td>Never</td>
-      <td>167.0</td>
-      <td>62.0</td>
-      <td>Female</td>
-      <td>1965</td>
-      <td>1.67</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>938348</td>
-      <td>Most people can be trusted</td>
-      <td>7</td>
-      <td>Good</td>
-      <td>NaN</td>
-      <td>Several times a week</td>
-      <td>168.0</td>
-      <td>70.0</td>
-      <td>Female</td>
-      <td>1973</td>
-      <td>1.68</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>939019</td>
-      <td>5</td>
-      <td>8</td>
-      <td>Good</td>
-      <td>3.0</td>
-      <td>Once a week</td>
-      <td>182.0</td>
-      <td>90.0</td>
-      <td>Male</td>
-      <td>1980</td>
-      <td>1.82</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>924985</td>
-      <td>8</td>
-      <td>9</td>
-      <td>Very good</td>
-      <td>NaN</td>
-      <td>Once a week</td>
-      <td>188.0</td>
-      <td>85.0</td>
-      <td>Male</td>
-      <td>1946</td>
-      <td>1.88</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>925410</td>
-      <td>4</td>
-      <td>8</td>
-      <td>Bad</td>
-      <td>NaN</td>
-      <td>Several times a week</td>
-      <td>156.0</td>
-      <td>60.0</td>
-      <td>Female</td>
-      <td>1969</td>
-      <td>1.56</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+ess2014[&amp;#39;height_m&amp;#39;] = ess2014[&amp;#39;height&amp;#39;] / 100 ess2014.head() {[{TABLE 11}]}
  ØVELSE: Dan en aldersvariabel Tilføj en aldersvariabel til ESS2014DK datasættet (husk at data er fra 2014)
-
-
-Løsning
-
-
-ess2014[&amp;#39;age&amp;#39;] = 2014 - ess2014[&amp;#39;yrbrn&amp;#39;] ess2014.</description>
+Løsningess2014[&amp;#39;age&amp;#39;] = 2014 - ess2014[&amp;#39;yrbrn&amp;#39;] ess2014.</description>
     </item>
     
     <item>
@@ -437,23 +50,7 @@ ess2014[&amp;#39;age&amp;#39;] = 2014 - ess2014[&amp;#39;yrbrn&amp;#39;] ess2014
       <guid>/datah%C3%A5ndtering/variabeltyper/</guid>
       <description>Ligesom Python generelt adskiller mellem typer af objekter, har hver kolonne (series) i en data frame også en type.
 Typen kan tjekkes med .dtypes; enten for hele datasættet eller en enkelt kolonne.
-ess2014[&amp;#39;height&amp;#39;].dtypes dtype(&#39;float64&#39;)
- ess2014.dtypes idno int64
-ppltrst object
-happy object
-health object
-cgtsday float64
-alcfreq object
-height float64
-weight float64
-gndr object
-yrbrn int64
-height_m float64
-age int64
-height_cat category
-smoker object
-dtype: object
- Af ovenstående ses at datasættet indeholder typerne int64 (integer/heltal), float64 (&amp;ldquo;float point&amp;rdquo;/decimaltal) og object.</description>
+ess2014[&amp;#39;height&amp;#39;].dtypes dtype(&#39;float64&#39;) ess2014.dtypes idno int64ppltrst objecthappy objecthealth objectcgtsday float64alcfreq objectheight float64weight float64gndr objectyrbrn int64height_m float64age int64height_cat categorysmoker objectdtype: object Af ovenstående ses at datasættet indeholder typerne int64 (integer/heltal), float64 (&amp;ldquo;float point&amp;rdquo;/decimaltal) og object.</description>
     </item>
     
   </channel>
