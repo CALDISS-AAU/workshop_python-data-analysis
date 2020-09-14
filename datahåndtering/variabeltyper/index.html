@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Variabeltyper (numerisk og tekst) :: Introduktion til Python til Dataanalyse</title>
 
     
-    <link href="../../css/nucleus.css?1599662829" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/hybrid.css?1599662829" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1599662829" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1599662829" rel="stylesheet">
-    <link href="../../css/theme.css?1599662829" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1599662829" rel="stylesheet">
+    <link href="../../css/nucleus.css?1600111788" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/hybrid.css?1600111788" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1600111788" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1600111788" rel="stylesheet">
+    <link href="../../css/theme.css?1600111788" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1600111788" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1599662829"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1600111788"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1599662829"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1599662829"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1600111788"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1600111788"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1599662829"></script>
+<script type="text/javascript" src="../../js/search.js?1600111788"></script>
 
     
   </div>
@@ -405,27 +405,6 @@
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/kategoriske/rekodning/" title="Rekodning af kategoriske variable" class="dd-item ">
-        <a href="../../kategoriske/rekodning/">
-        Rekodning af kategoriske variable
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -472,6 +451,27 @@
       <li data-nav-id="/supplerende/litteratur/" title="Litteratur" class="dd-item ">
         <a href="../../supplerende/litteratur/">
         Litteratur
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/nyttige/" title="Nyttige links" class="dd-item ">
+        <a href="../../supplerende/nyttige/">
+        Nyttige links
         
         </a>
     </li>
@@ -563,7 +563,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#ændring-af-variabeltype">Ændring af variabeltype</a>
+      <ul>
+        <li><a href="#lad-pandas-gætte-typen">Lad pandas gætte typen</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -586,8 +594,225 @@
         
 
 
-<p>Check: Hvilken variabeltype?
-- Øvelse: Ændr variabeltype</p>
+<p>Ligesom Python generelt adskiller mellem typer af objekter, har hver kolonne (series) i en data frame også en type.</p>
+<p>Typen kan tjekkes med <code>.dtypes</code>; enten for hele datasættet eller en enkelt kolonne.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;height&#39;</span>]<span style="color:#f92672">.</span>dtypes
+</code></pre></div><pre><code>dtype('float64')
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014<span style="color:#f92672">.</span>dtypes
+</code></pre></div><pre><code>idno             int64
+ppltrst         object
+happy           object
+health          object
+cgtsday        float64
+alcfreq         object
+height         float64
+weight         float64
+gndr            object
+yrbrn            int64
+height_m       float64
+age              int64
+height_cat    category
+smoker          object
+dtype: object
+</code></pre>
+<p>Af ovenstående ses at datasættet indeholder typerne <code>int64</code> (integer/heltal), <code>float64</code> (&ldquo;float point&rdquo;/decimaltal) og <code>object</code>.</p>
+<p><code>object</code> typen bruges, når kolonnen både indeholder tekst og tal. På den måde mistes ikke noget information ved indlæsning Typen kan give problemer, da mange funktioner og metoder forventer enten en ren numerisk kolonne eller ren tekst/kategorisk kolonne. Det hænder også, at variable kun med tekst indlæses som <code>object</code>.</p>
+<p>Man bør altid undersøge variable af typen <code>object</code> nærmere og se, om en anden type er mere passende (numerisk, tekst/karakter eller kategorisk). Dette fordi at <code>object</code>-typen fortæller meget lidt om, hvad data indeholder, hvor de andre typer med det samme fortæller, hvilken type data, som kolonnen indeholder.</p>
+<h2 id="ændring-af-variabeltype">Ændring af variabeltype</h2>
+<p>Kolonnetypen ændres med metoden <code>.astype()</code>:</p>
+<ul>
+<li><code>astype('string')</code>: Konverter til string (tekstværdier)</li>
+<li><code>astype('categorical')</code>: Konverter til kategorisk</li>
+<li><code>astype('int')</code>: Til heltal</li>
+<li><code>astype('float')</code>: Til decimaltal</li>
+</ul>
+<p><strong>Konvertering til tekst</strong></p>
+<p>Tjek hvilke værdier kolonnen indeholder:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;gndr&#39;</span>]<span style="color:#f92672">.</span>unique()
+</code></pre></div><pre><code>array(['Female', 'Male'], dtype=object)
+</code></pre>
+<p>Kolonnen indeholder værdierne &ldquo;Male&rdquo; og &ldquo;Female&rdquo;; en kategorisk variabel bestående kun af tekst-værdier. Den kan derfor lige så godt konverteres til teksttype.</p>
+<p>Konvertering af kolonne til tekst gøres med <code>.astype('string')</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;gndr&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;gndr&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;string&#39;</span>)
+</code></pre></div><p>Typen er nu string/tekst (<code>StringDtype</code>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;gndr&#39;</span>]<span style="color:#f92672">.</span>dtypes
+</code></pre></div><pre><code>StringDtype
+</code></pre>
+
+<div class="notices note" ><p>Variable med afgrænsede tekstværdier er kategoriske variable, og det giver ofte mere mening at konvertere disse til kategorisk frem for tekst. Dette gennemgås senere i dette materiale.</p>
+</div>
+
+<p><strong>Konvertering til numerisk</strong></p>
+<p><code>yrbrn</code> konverteres til tekst for at have en variabel at konvertere til tal.</p>
+<p>Tjek først typen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>]<span style="color:#f92672">.</span>dtypes
+</code></pre></div><pre><code>dtype('int64')
+</code></pre>
+<p>Typen er <code>int64</code> (decimaltal). Konverter til tekst:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;string&#39;</span>)
+</code></pre></div><p>Tjek at typen er string:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>]<span style="color:#f92672">.</span>dtypes
+</code></pre></div><pre><code>StringDtype
+</code></pre>
+<p>Konvertering til heltal igen - Gøres med <code>.astype('int')</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+</code></pre></div><p>Tjek at typen er ændret tilbage:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>]<span style="color:#f92672">.</span>dtypes
+</code></pre></div><pre><code>dtype('int32')
+</code></pre>
+<p><strong>Konverter kolonne med blanding af typer</strong></p>
+<p>Ofte kan man rende ind i, at en kolonne indeholder en blanding af typer.</p>
+<p>Det gælder fx for <code>ppltrst</code> og <code>happy</code>.</p>
+<p>Tjek hvilke værdier kolonnen indeholder:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst&#39;</span>]<span style="color:#f92672">.</span>unique()
+</code></pre></div><pre><code>array(['4', 'Most people can be trusted', '5', '8', '7', '9', '2', '6',
+       '3', &quot;You can't be too careful&quot;, '1', nan], dtype=object)
+</code></pre>
+<p>Variablen indeholder både tal og tekst. Hvis der konverteres til tal, gives der fejl:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;ppltrst&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+</code></pre></div><pre><code>---------------------------------------------------------------------------
+
+ValueError                                Traceback (most recent call last)
+
+&lt;ipython-input-67-8b2ee5027ea0&gt; in &lt;module&gt;
+----&gt; 1 ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
+
+
+C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\generic.py in astype(self, dtype, copy, errors)
+   5535         else:
+   5536             # else, only a single dtype is given
+-&gt; 5537             new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors,)
+   5538             return self._constructor(new_data).__finalize__(self, method=&quot;astype&quot;)
+   5539 
+
+
+C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\managers.py in astype(self, dtype, copy, errors)
+    593         self, dtype, copy: bool = False, errors: str = &quot;raise&quot;
+    594     ) -&gt; &quot;BlockManager&quot;:
+--&gt; 595         return self.apply(&quot;astype&quot;, dtype=dtype, copy=copy, errors=errors)
+    596 
+    597     def convert(
+
+
+C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\managers.py in apply(self, f, align_keys, **kwargs)
+    404                 applied = b.apply(f, **kwargs)
+    405             else:
+--&gt; 406                 applied = getattr(b, f)(**kwargs)
+    407             result_blocks = _extend_blocks(applied, result_blocks)
+    408 
+
+
+C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\blocks.py in astype(self, dtype, copy, errors)
+    587             vals1d = values.ravel()
+    588             try:
+--&gt; 589                 values = astype_nansafe(vals1d, dtype, copy=True)
+    590             except (ValueError, TypeError):
+    591                 # e.g. astype_nansafe can fail on object-dtype of strings
+
+
+C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py in astype_nansafe(arr, dtype, copy, skipna)
+    964         # work around NumPy brokenness, #1987
+    965         if np.issubdtype(dtype.type, np.integer):
+--&gt; 966             return lib.astype_intsafe(arr.ravel(), dtype).reshape(arr.shape)
+    967 
+    968         # if we have a datetime/timedelta array of objects
+
+
+pandas\_libs\lib.pyx in pandas._libs.lib.astype_intsafe()
+
+
+ValueError: invalid literal for int() with base 10: 'Most people can be trusted'
+</code></pre>
+<p>Variablen er en skala fra 0-10, så den kan i princippet behandles som numerisk. Det kræver bare, at værdierne ændres sådan, at variablen kan tvinges om.</p>
+<ul>
+<li>&ldquo;Most people can be trusted&rdquo; skal være &ldquo;10&rdquo;</li>
+<li>&ldquo;You can&rsquo;t be too careful&rdquo; skal være &ldquo;0&rdquo;</li>
+</ul>
+<p>Værdier kan erstattes med metoden <code>.replace()</code>. Her ændres oplysninger i datasættet, hvorfor man altid bør lave en ny variabel:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst_num&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;ppltrst&#39;</span>]
+</code></pre></div><p>Nu kan værdierne erstattes i den nye variabel med <code>replace()</code>. Metoden skal bruge en dictionary, hvor nøglerne består af værdierne, som skal ændres, og værdierne skal være de værdier, som skal ændres.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst_num&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;ppltrst_num&#39;</span>]<span style="color:#f92672">.</span>replace({<span style="color:#e6db74">&#34;Most people can be trusted&#34;</span>: <span style="color:#e6db74">&#34;10&#34;</span>, <span style="color:#e6db74">&#34;You can&#39;t be too careful&#34;</span>: <span style="color:#e6db74">&#34;0&#34;</span>})
+</code></pre></div><p>Variabel indeholder nu værdierne &ldquo;0&rdquo; og &ldquo;10&rdquo;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst_num&#39;</span>]<span style="color:#f92672">.</span>unique()
+</code></pre></div><pre><code>array(['4', '10', '5', '8', '7', '9', '2', '6', '3', '0', '1', nan],
+      dtype=object)
+</code></pre>
+<p>Variablen kan nu konverteres til tal (der konverteres til float/decimaltal, da missingværdier (<code>NaN</code>) ikke kan være heltal):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst_num&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;ppltrst_num&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;float&#39;</span>)
+</code></pre></div><p>Variablen er nu numerisk, så man fx kan foretage beregninger:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst_num&#39;</span>]<span style="color:#f92672">.</span>mean()
+</code></pre></div><pre><code>6.998664886515354
+</code></pre>
+<h3 id="lad-pandas-gætte-typen">Lad pandas gætte typen</h3>
+<p>Metoden <code>convert_dtypes()</code> bruges til at lade pandas gætte den mest passende type</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>]<span style="color:#f92672">.</span>dtypes
+</code></pre></div><pre><code>dtype('O')
+</code></pre>
+<p>Variabeltypen er &lsquo;O&rsquo; (for <code>object</code>).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>]<span style="color:#f92672">.</span>convert_dtypes()
+</code></pre></div><p>Tjek hvilken type pandas har konverteret til ved at gætte:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>]<span style="color:#f92672">.</span>dtypes
+</code></pre></div><pre><code>StringDtype
+</code></pre>
+<p>Pandas gætter typen til at være string.</p>
+<hr>
+<h1 id="øvelse-ændr-variabeltypen">ØVELSE: Ændr variabeltypen</h1>
+<ol>
+<li>
+<p>Check hvilken type variabel <code>happy</code> er med <code>.dtypes</code>.</p>
+</li>
+<li>
+<p>Variablen kan laves til numerisk. Lav en kopi af variablen (evt. kald den <code>happy_num</code>).</p>
+</li>
+<li>
+<p>Rekod tekstværdierne til tal med <code>.replace()</code> - Husk at rekodninger skal specificeres som en dictionary ( <code>{&quot;gammel værdi&quot;: &quot;ny værdi&quot;, &quot;gammel værdi&quot;: &quot;ny værdi&quot;}</code> ).</p>
+<ul>
+<li>&ldquo;Extremely happy&rdquo; skal kodes til &ldquo;10&rdquo;</li>
+<li>&ldquo;Extremely unhappy&rdquo; skal kodes til &ldquo;0&rdquo;</li>
+</ul>
+</li>
+<li>
+<p>Konverter variablen til numerisk med <code>.astype('float')</code>.</p>
+</li>
+<li>
+<p>Udregn gennemsnit for variablen med <code>.mean()</code>.</p>
+</li>
+</ol>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(ess2014[<span style="color:#e6db74">&#39;happy&#39;</span>]<span style="color:#f92672">.</span>dtypes)
+
+ess2014[<span style="color:#e6db74">&#39;happy_num&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;happy&#39;</span>]
+ess2014[<span style="color:#e6db74">&#39;happy_num&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;happy_num&#39;</span>]<span style="color:#f92672">.</span>replace({<span style="color:#e6db74">&#34;Extremely happy&#34;</span>: <span style="color:#e6db74">&#34;10&#34;</span>, <span style="color:#e6db74">&#34;Extremely unhappy&#34;</span>: <span style="color:#e6db74">&#34;0&#34;</span>})
+ess2014[<span style="color:#e6db74">&#39;happy_num&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;happy_num&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;float&#39;</span>)
+
+<span style="color:#66d9ef">print</span>(ess2014[<span style="color:#e6db74">&#39;happy_num&#39;</span>]<span style="color:#f92672">.</span>dtypes)
+
+ess2014[<span style="color:#e6db74">&#39;happy_num&#39;</span>]<span style="color:#f92672">.</span>mean()
+</code></pre></div><pre><code>object
+float64
+
+
+
+
+
+8.278666666666666
+</code></pre>
+
+    </div>
+</div>
+<hr>
 
 
 <footer class="footline">
@@ -852,22 +1077,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -883,6 +1092,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -925,19 +1150,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1599662829"></script>
-    <script src="../../js/jquery.sticky.js?1599662829"></script>
-    <script src="../../js/featherlight.min.js?1599662829"></script>
-    <script src="../../js/highlight.pack.js?1599662829"></script>
+    <script src="../../js/clipboard.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1600111788"></script>
+    <script src="../../js/jquery.sticky.js?1600111788"></script>
+    <script src="../../js/featherlight.min.js?1600111788"></script>
+    <script src="../../js/highlight.pack.js?1600111788"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1599662829"></script>
-    <script src="../../js/learn.js?1599662829"></script>
-    <script src="../../js/hugo-learn.js?1599662829"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1600111788"></script>
+    <script src="../../js/learn.js?1600111788"></script>
+    <script src="../../js/hugo-learn.js?1600111788"></script>
 
-    <link href="../../mermaid/mermaid.css?1599662829" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1599662829"></script>
+    <link href="../../mermaid/mermaid.css?1600111788" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1600111788"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

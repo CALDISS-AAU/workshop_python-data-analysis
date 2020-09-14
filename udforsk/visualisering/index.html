@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Visualisering af data med seaborn :: Introduktion til Python til Dataanalyse</title>
 
     
-    <link href="../../css/nucleus.css?1599662829" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/hybrid.css?1599662829" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1599662829" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1599662829" rel="stylesheet">
-    <link href="../../css/theme.css?1599662829" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1599662829" rel="stylesheet">
+    <link href="../../css/nucleus.css?1600111788" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/hybrid.css?1600111788" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1600111788" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1600111788" rel="stylesheet">
+    <link href="../../css/theme.css?1600111788" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1600111788" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1599662829"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1600111788"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1599662829"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1599662829"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1600111788"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1600111788"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1599662829"></script>
+<script type="text/javascript" src="../../js/search.js?1600111788"></script>
 
     
   </div>
@@ -405,27 +405,6 @@
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/kategoriske/rekodning/" title="Rekodning af kategoriske variable" class="dd-item ">
-        <a href="../../kategoriske/rekodning/">
-        Rekodning af kategoriske variable
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -472,6 +451,27 @@
       <li data-nav-id="/supplerende/litteratur/" title="Litteratur" class="dd-item ">
         <a href="../../supplerende/litteratur/">
         Litteratur
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/nyttige/" title="Nyttige links" class="dd-item ">
+        <a href="../../supplerende/nyttige/">
+        Nyttige links
         
         </a>
     </li>
@@ -563,7 +563,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -587,133 +587,83 @@
 
 
 <p>En god måde at udforske sit datasæt er ved at anvende visualiseringer. På den måde kan man visuelt orientere sig i, hvad data indeholder og hvordan data fordeler sig.</p>
-
 <p>I dette afsnit bruges pakken <code>seaborn</code> til at danne visualiseringer. <code>seaborn</code> bygger ovenpå <code>matplotlib</code>, men giver visualiseringerne et mere moderne udseende, og giver flere muligheder for at passe visualiseringen til.</p>
-
 <p>Fordi <code>seaborn</code> bygger ovenpå <code>matplotlib</code> skal begge biblioteker importeres (læg mærke til importkonventionerne). Derefter aktiveres <code>seaborn</code> med <code>sns.set()</code>. Når aktiveret erstatter <code>seaborn</code> standard <code>matplotlib</code> plots:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">%</span>matplotlib inline
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#f92672">import</span> seaborn <span style="color:#f92672">as</span> sns
 
-<pre><code class="language-python">%matplotlib inline
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-sns.set()
-</code></pre>
-
-
+sns<span style="color:#f92672">.</span>set()
+</code></pre></div>
 <div class="notices info" ><p>Linjen <code>%matplotlib inline</code> er en såkaldt &ldquo;magic function&rdquo;. Den bruges, når man skriver Python i Jupyter Notebook, da den gør sådan, at plots printes direkte i notebooken. Hvis ikke den linje er kørt, vil plots dukke op i et vindue for sig (nogen gange er indstillingen dog sat til i forvejen).</p>
-
 <p>{{/%notice%}}</p>
-
 <p>Når man bruger <code>seaborn</code> sammen med <code>pandas</code> kan man lave visualiseringer/plots på to måder. Med den ene måde kalder man den specifikke visualiseringsfunktion fra seaborn og specificerer data, som skal bruges i visualisering. Med den anden måde referer man til den specifikke kolonne (series) fra dataframe, som man ønsker at visualisere og specificerer et plot (denne måde virker derfor kun til at visualisere én variabel).</p>
-
 <h2 id="plotting-af-series-og-dataframes">Plotting af series og dataframes</h2>
-
 <p>Der er en række metoder tilknyttet specifikt til pandas dataframe og series, så man kan danne et plot direkte fra.</p>
-
 <h3 id="histogram">Histogram</h3>
-
 <p><code>.plot.hist()</code> danner fx et histogram over variablen:</p>
-
-<pre><code class="language-python">sns.set(rc={'figure.figsize':(10,6)}) # Ændrer størrelsen af plots
-ess2014['height'].plot.hist()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sns<span style="color:#f92672">.</span>set(rc<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;figure.figsize&#39;</span>:(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">6</span>)}) <span style="color:#75715e"># Ændrer størrelsen af plots</span>
+ess2014[<span style="color:#e6db74">&#39;height&#39;</span>]<span style="color:#f92672">.</span>plot<span style="color:#f92672">.</span>hist()
+</code></pre></div><pre><code>&lt;AxesSubplot:ylabel='Frequency'&gt;
 </code></pre>
-
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x296d23ba2e8&gt;
-</code></pre>
-
-<p><img src="../../output_78_1.png" alt="png" /></p>
-
+<p><img src="../../output_76_1.png" alt="png"></p>
 <p>Et histogram viser observationer som bjælker i intervaller sorteret efter værdi (lav til højest). På den måde kan man hurtigt danne sig et overblik over, hvordan data fordeler sig.</p>
-
 <p>Af ovenstående ses fx at omkring 340 personer har en højde på omkring 168-173 cm. Desuden ses at meget få har en højde omkring 200 cm.</p>
-
+<p>Størrelsen på bjælkerne kan ændres med argumentet <code>bins = </code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;height&#39;</span>]<span style="color:#f92672">.</span>plot<span style="color:#f92672">.</span>hist(bins <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>)
+</code></pre></div><pre><code>&lt;AxesSubplot:ylabel='Frequency'&gt;
+</code></pre>
+<p><img src="../../output_78_1.png" alt="png"></p>
 <h3 id="boxplot">Boxplot</h3>
-
 <p><code>.plot.box()</code> danner et boxplot over variablen:</p>
-
-<pre><code class="language-python">ess2014['height'].plot.box()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;height&#39;</span>]<span style="color:#f92672">.</span>plot<span style="color:#f92672">.</span>box()
+</code></pre></div><pre><code>&lt;AxesSubplot:&gt;
 </code></pre>
-
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x296d20d30b8&gt;
-</code></pre>
-
-<p><img src="../../output_81_1.png" alt="png" /></p>
-
+<p><img src="../../output_80_1.png" alt="png"></p>
 <p>Et boxplot er en anden måde at se på fordelingen af en variabel. Den vandrette linje i midten er middelværdien. De øvrige linjer angiver (fra top til bund): minimum, 1. kvartil, 3. kvartil, maksimum.</p>
-
 <p>Metoden kan også anvendes på en dataframe:</p>
-
-<pre><code class="language-python">ess2014.plot.box()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014<span style="color:#f92672">.</span>plot<span style="color:#f92672">.</span>box()
+</code></pre></div><pre><code>&lt;AxesSubplot:&gt;
 </code></pre>
-
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x296d210c668&gt;
-</code></pre>
-
-<p><img src="../../output_83_1.png" alt="png" /></p>
-
+<p><img src="../../output_82_1.png" alt="png"></p>
 <p>Ovenstående plot giver ikke meget mening, da variable ikke har sammenlignelige værdier, hvorfor y-aksen bliver helt tosset.</p>
-
 <p>Hvis man har et datasættet med flere variable med sammenlignelige værdier, kan man visualisere disse ved at dannet et subset af datasættet og lave et plot (mere om dette senere).</p>
-
 <h3 id="andre-plots">Andre plots</h3>
-
 <p>Her er nogen andre plots, der kan dannes direkte på baggrund af en series (hvis variabeltypen tillader):</p>
-
 <ul>
 <li><code>.plot.bar()</code>: Danner et barplot over variablen</li>
 <li><code>.plot.pie()</code>: Danner et cirkelplotsover variablen</li>
 <li><code>.plot.line()</code>: Danner et linjeplot</li>
 </ul>
-
 <p>Barplots og cirkelplots egner sig bedre til kategoriske variable. Dog er kategoriske variable i datasættet (fx <code>happy</code> og <code>ppltrst</code>) lige nu kodet på en måde, der ikke tillader at lave plots over dem.</p>
-
 <p>Dette gennemgås senere.</p>
-
 <h2 id="plotting-med-seaborn">Plotting med seaborn</h2>
-
 <p>Plots kan også dannes ved først at refere specifikt til den plotting funtkion, som man vil bruge, og derefter specificere data.</p>
-
-<p>Nedenstående linje danner et scatterplot for <code>height</code> og <code>weight</code>. Ved <code>seaborn</code> plottingfunktioner specificeres, hvilke værdier der skal udgøre x-aksen og hvilke, der skal udgøre y-aksen. <code>seaborn</code> forventer typisk series, så man kan specificere series direkte i funktionerne. Dog kan man også, som i nedenstående, specificere kolonne/variabelnavne og til sidst specificere data med argumentet <code>data =</code>:</p>
-
-<pre><code class="language-python">sns.scatterplot(data = ess2014, x = 'height', y = 'weight')
+<p>Nedenstående linje danner et scatterplot for <code>height</code> og <code>weight</code>. Ved <code>seaborn</code> plottingfunktioner specificeres, hvilke værdier der skal udgøre x-aksen og hvilke, der skal udgøre y-aksen. <code>seaborn</code> forventer typisk series, så man kan specificere series direkte i funktionerne. Dog kan man også, som i nedenstående, specificere kolonne/variabelnavne og til sidst specificere data med argumentet <code>data = </code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sns<span style="color:#f92672">.</span>scatterplot(data <span style="color:#f92672">=</span> ess2014, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;height&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;weight&#39;</span>)
+</code></pre></div><pre><code>&lt;AxesSubplot:xlabel='height', ylabel='weight'&gt;
 </code></pre>
-
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x296d23741d0&gt;
-</code></pre>
-
-<p><img src="../../output_87_1.png" alt="png" /></p>
-
+<p><img src="../../output_86_1.png" alt="png"></p>
 <p>Et scatterplot danner en prik for hver observations placering på to variable. Plottet egner sig derfor særdeles godt til at udforske umiddelbare sammenhænge (om en variabel er beslægtet med en anden).</p>
-
 <p>Af ovenstående ses det, at vægt tenderer en smule til at stige i takt med højden (hvilket selvfølgelig ikke er overraskende).</p>
-
-<hr />
-
+<hr>
 <h2 id="øvelse-plotting">ØVELSE: Plotting</h2>
-
 <p>Dan et histogram over varialben <code>yrbrn</code> i ESS2014DK datasættet.</p>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-        
-        
-        Løsning
-        
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        <pre><code class="language-python">ess2014['yrbrn'].hist()
+<!-- raw HTML omitted -->
+<pre><code>    Løsning
+	
+    &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;expand-content&quot; style=&quot;display: none;&quot;&gt;
+    &lt;div class=&quot;highlight&quot;&gt;&lt;pre style=&quot;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;ess2014[&lt;span style=&quot;color:#e6db74&quot;&gt;&amp;#39;yrbrn&amp;#39;&lt;/span&gt;]&lt;span style=&quot;color:#f92672&quot;&gt;.&lt;/span&gt;hist(bins &lt;span style=&quot;color:#f92672&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color:#ae81ff&quot;&gt;30&lt;/span&gt;)
 </code></pre>
-
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x296d21d05f8&gt;
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->&lt;AxesSubplot:&gt;
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<pre><code>&lt;/div&gt;
 </code></pre>
-
-<p><img src="../../output_90_1.png" alt="png" /></p>
-
-    </div>
-</div>
+<!-- raw HTML omitted -->
+<hr>
 </div>
 
 
@@ -980,22 +930,6 @@ ess2014['height'].plot.hist()
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1011,6 +945,22 @@ ess2014['height'].plot.hist()
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1053,19 +1003,19 @@ ess2014['height'].plot.hist()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1599662829"></script>
-    <script src="../../js/jquery.sticky.js?1599662829"></script>
-    <script src="../../js/featherlight.min.js?1599662829"></script>
-    <script src="../../js/highlight.pack.js?1599662829"></script>
+    <script src="../../js/clipboard.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1600111788"></script>
+    <script src="../../js/jquery.sticky.js?1600111788"></script>
+    <script src="../../js/featherlight.min.js?1600111788"></script>
+    <script src="../../js/highlight.pack.js?1600111788"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1599662829"></script>
-    <script src="../../js/learn.js?1599662829"></script>
-    <script src="../../js/hugo-learn.js?1599662829"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1600111788"></script>
+    <script src="../../js/learn.js?1600111788"></script>
+    <script src="../../js/hugo-learn.js?1600111788"></script>
 
-    <link href="../../mermaid/mermaid.css?1599662829" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1599662829"></script>
+    <link href="../../mermaid/mermaid.css?1600111788" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1600111788"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

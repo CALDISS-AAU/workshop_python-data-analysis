@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Typer af kategoriske variable (nominal, ordinal) :: Introduktion til Python til Dataanalyse</title>
 
     
-    <link href="../../css/nucleus.css?1599662829" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/hybrid.css?1599662829" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1599662829" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1599662829" rel="stylesheet">
-    <link href="../../css/theme.css?1599662829" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1599662829" rel="stylesheet">
+    <link href="../../css/nucleus.css?1600111788" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/hybrid.css?1600111788" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1600111788" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1600111788" rel="stylesheet">
+    <link href="../../css/theme.css?1600111788" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1600111788" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1599662829"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1600111788"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1599662829"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1599662829"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1600111788"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1600111788"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1599662829"></script>
+<script type="text/javascript" src="../../js/search.js?1600111788"></script>
 
     
   </div>
@@ -405,27 +405,6 @@
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/kategoriske/rekodning/" title="Rekodning af kategoriske variable" class="dd-item ">
-        <a href="../../kategoriske/rekodning/">
-        Rekodning af kategoriske variable
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -472,6 +451,27 @@
       <li data-nav-id="/supplerende/litteratur/" title="Litteratur" class="dd-item ">
         <a href="../../supplerende/litteratur/">
         Litteratur
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/nyttige/" title="Nyttige links" class="dd-item ">
+        <a href="../../supplerende/nyttige/">
+        Nyttige links
         
         </a>
     </li>
@@ -563,7 +563,11 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#videnscheck">VIDENSCHECK</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -586,7 +590,57 @@
         
 
 
-<p>Check: Er variabel ordinal eller nominal? (&ldquo;teoretisk&rdquo;)</p>
+<p>Man adskiller mellem to typer af kategoriske variable.</p>
+<p><strong>Ordinale</strong></p>
+<p>Ordinalt skalerede variable er variable, som kan rangordnes; altså hvor der kan differentieres hierarkisk mellem værdierne.</p>
+<p>Af ESS2014 datasættet er <code>health</code> et eksempel på en ordinal-skaleret variabel.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>unique()
+</code></pre></div><pre><code>array(['Very good', 'Good', 'Bad', 'Fair', 'Very bad', nan], dtype=object)
+</code></pre>
+<p>Variablen indeholder personens egen vurdering af helbred.</p>
+<p>Den er kategorisk, da man kun kan vælge mellem i forvejen definerede svarmuligheder.</p>
+<p>Den er ordinal, da man kan rangere værdierne: &ldquo;Good&rdquo; er bedre end &ldquo;Bad&rdquo;, &ldquo;Very bad&rdquo; er værre end &ldquo;Fair&rdquo; osv.</p>
+<p><strong>Nominale</strong></p>
+<p>Nominalt skalerede variable er variable, som <em>ikke</em> kan rangordnes.</p>
+<p>I ESS2014 datasættet er <code>gndr</code> et eksempel på en nominal-skaleret variabel:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;gndr&#39;</span>]<span style="color:#f92672">.</span>unique()
+</code></pre></div><pre><code>&lt;StringArray&gt;
+['Female', 'Male']
+Length: 2, dtype: string
+</code></pre>
+<p><strong>Talværdier og kategoriske variable</strong></p>
+<p>Selvom en variabel indeholder talværdier, kan de stadig godt være kategoriske.</p>
+<p>Et centralt karakteristika ved ikke-kategoriske (kontinuerlige) variable er, at man kan måle den præcise afstand mellem målinger. Det kan man fx for variable som <code>height</code> og <code>weight</code>.</p>
+<p>Ved variable som <code>ppltrst</code> og <code>happy</code> kan man ikke måle den præcise afstand. Selvom man kan sige, at 8 er større end 4 og man kan regne en difference mellem to personers score på disse variable, så er det stadig ikke en præcis afstand som regnes.</p>
+<p>Herunder vises fx værdierne for <code>ppltrst</code> for rækkeindeks 27 og 90:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014<span style="color:#f92672">.</span>loc[[<span style="color:#ae81ff">27</span>, <span style="color:#ae81ff">90</span>], <span style="color:#e6db74">&#39;ppltrst&#39;</span>]
+</code></pre></div><pre><code>27    8
+90    9
+Name: ppltrst, dtype: object
+</code></pre>
+<p>Her ses, at række 90 svarer 9 og række 27 svarer 8. Man kan derfor godt udregne, at række 90 har givet en højere score en række 27.</p>
+<p>Dog kan det argumenteres, at det ikke er den præcise afstand der regnes, da der er tale om en skala for, hvor meget man stoler på andre mennesker. Talværdien er derfor svær at omsætte til noget faktisk (hvor meget tillid er fx en score på 8 frem for en score på 9?), og hvordan spørgsmålet og skalaen tolkes vil variere fra person til person (er mængden af tillid, som den ene person tildeler en score på 8 den samme mængde, som en anden person tildeler en score på 8?).</p>
+<p>Af denne grund er sådanne variable som udgangspunkt kategoriske. Det ses dog ofte, at sådanne variable behandles som numeriske alligevel, da det er nødvendigt for mange typer analyser.</p>
+<hr>
+<h2 id="videnscheck">VIDENSCHECK</h2>
+<p><em>Er variablen <code>alcfreq</code> ordinalt eller nominalt skaleret?</em></p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <p><code>alcfreq</code> er en ordinalt skaleret variabel, da værdierne kan rangordnes.</p>
+
+    </div>
+</div>
+<hr>
 
 
 <footer class="footline">
@@ -848,22 +902,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -879,6 +917,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -921,19 +975,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1599662829"></script>
-    <script src="../../js/jquery.sticky.js?1599662829"></script>
-    <script src="../../js/featherlight.min.js?1599662829"></script>
-    <script src="../../js/highlight.pack.js?1599662829"></script>
+    <script src="../../js/clipboard.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1600111788"></script>
+    <script src="../../js/jquery.sticky.js?1600111788"></script>
+    <script src="../../js/featherlight.min.js?1600111788"></script>
+    <script src="../../js/highlight.pack.js?1600111788"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1599662829"></script>
-    <script src="../../js/learn.js?1599662829"></script>
-    <script src="../../js/hugo-learn.js?1599662829"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1600111788"></script>
+    <script src="../../js/learn.js?1600111788"></script>
+    <script src="../../js/hugo-learn.js?1600111788"></script>
 
-    <link href="../../mermaid/mermaid.css?1599662829" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1599662829"></script>
+    <link href="../../mermaid/mermaid.css?1600111788" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1600111788"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

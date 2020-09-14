@@ -16,7 +16,21 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/supplerende/litteratur/</guid>
-      <description>Python for Data Analysis, kap 5 - Python for Data Analysis, kap 9 - seaborn - Python for Data Analysis, kap 12 - categorical</description>
+      <description>McKinney, W 2018: Python for Data Analysis, kapitel 5, side 125-167
+  McKinney, W 2018: Python for Data Analysis, kapitel 9, side 257-292
+  McKinney, W 2018: Python for Data Analysis, kapitel 12, side 369-378
+  </description>
+    </item>
+    
+    <item>
+      <title>Nyttige links</title>
+      <link>/supplerende/nyttige/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/supplerende/nyttige/</guid>
+      <description>DataCamp: Python for Data Science Cheat Sheet - Pandas Basics** - https://datacamp-community-prod.s3.amazonaws.com/dbed353d-2757-4617-8206-8767ab379ab3
+The Pandas Development Team: 10 Minutes to Pandas - https://pandas.pydata.org/docs/user_guide/10min.html#min
+Waskom, Michael: An introduction to seaborn - https://seaborn.pydata.org/introduction.html</description>
     </item>
     
   </channel>

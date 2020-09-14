@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Data og datasæt :: Introduktion til Python til Dataanalyse</title>
 
     
-    <link href="../../css/nucleus.css?1599662829" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/hybrid.css?1599662829" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1599662829" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1599662829" rel="stylesheet">
-    <link href="../../css/theme.css?1599662829" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1599662829" rel="stylesheet">
+    <link href="../../css/nucleus.css?1600111788" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/hybrid.css?1600111788" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1600111788" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1600111788" rel="stylesheet">
+    <link href="../../css/theme.css?1600111788" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1600111788" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1599662829"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1600111788"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1599662829"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1599662829"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1600111788"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1600111788"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1599662829"></script>
+<script type="text/javascript" src="../../js/search.js?1600111788"></script>
 
     
   </div>
@@ -405,27 +405,6 @@
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/kategoriske/rekodning/" title="Rekodning af kategoriske variable" class="dd-item ">
-        <a href="../../kategoriske/rekodning/">
-        Rekodning af kategoriske variable
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -472,6 +451,27 @@
       <li data-nav-id="/supplerende/litteratur/" title="Litteratur" class="dd-item ">
         <a href="../../supplerende/litteratur/">
         Litteratur
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/nyttige/" title="Nyttige links" class="dd-item ">
+        <a href="../../supplerende/nyttige/">
+        Nyttige links
         
         </a>
     </li>
@@ -564,14 +564,11 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#struktureret-og-ustruktureret-data">Struktureret og ustruktureret data</a></li>
-<li><a href="#fra-data-til-dataanalyse">Fra data til dataanalyse</a></li>
-<li><a href="#videnscheck">VIDENSCHECK</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#struktureret-og-ustruktureret-data">Struktureret og ustruktureret data</a></li>
+    <li><a href="#fra-data-til-dataanalyse">Fra data til dataanalyse</a></li>
+    <li><a href="#videnscheck">VIDENSCHECK</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -595,28 +592,16 @@
         
 
 
-
-
 <p>I disse Python lektioner gennemgås, hvordan Python anvendes til dataanalyse, men hvad er data overhovedet for noget?</p>
-
 <p>Som udgangspunkt arbejder vi med en meget bred forståelse af data: alle former for information om noget. Grunden til at der i dag er så meget snak om data, dataanalyse, maskinlæring osv., er fordi at stadig mere og mere information digitaliseres, hvorfor det kan gøres til genstand for analyser.</p>
-
 <p>Navn, alder, uddannelse, indkomst, yndlingsfilm, mest aflyttede sange i 2020, antal gange rejst med bus 2 i Aalborg, køb i supermarkeder, størrelse på bolig, indbo, brug af el, varme og vand osv. Alle disse informationer er data og alt sammen kan indgå i analyser til at sige noget om en person eller, mere relevant, flere personer med lignende karakteristika.</p>
-
 <p>Data som en mere eller mindre tilfældig strøm af tilfældig information er vanskelig at arbejde med. Data skal på en eller anden måde være i system for, at det kan analyseres - det gælder både maskinel/computationel analyse eller menneskelig analyse.</p>
-
 <p>Når man taler om et datasæt, mener man typisk en eller anden form for afgrænset mængde data, der måske eller måske ikke er struktureret i en eller anden form.</p>
-
 <h2 id="struktureret-og-ustruktureret-data">Struktureret og ustruktureret data</h2>
-
 <p>Man adskiller typisk mellem struktureret og ustruktureret data.</p>
-
 <p><strong>Struktureret data</strong></p>
-
 <p><em>Struktureret data</em> er data, der på en eller anden måde er sat i system. Den klassiske repræsentation af struktureret data er i et tabulært format, hvor hver række indeholder en <em>observation</em> og hver kolonne indeholder en <em>variabel</em> (eller &ldquo;feature&rdquo;, som det omtales inden for maskinlæring. En observation kan være en person, et land, et firma, et tidspunkt, en kommune osv., mens en variabel er en eller anden form for information om observationen.</p>
-
 <p>Tabellen herunder er et eksempel på struktureret data:</p>
-
 <table>
 <thead>
 <tr>
@@ -625,26 +610,22 @@
 <th>Beskæftigelse</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Lars</td>
 <td>34</td>
 <td>Slagter</td>
 </tr>
-
 <tr>
 <td>Gertrud</td>
 <td>62</td>
 <td>Rådgiver</td>
 </tr>
-
 <tr>
 <td>Henning</td>
 <td>43</td>
 <td>Revisor</td>
 </tr>
-
 <tr>
 <td>Agnes</td>
 <td>38</td>
@@ -652,15 +633,10 @@
 </tr>
 </tbody>
 </table>
-
 <p>Struktureret data er kendeteget ved at være sat i system sådan, at man umiddelbart kan analysere og spørge data om noget. I ovenstående tabel kan man fx meget hurtigt undersøge, hvor mange der er ældre end 40, hvem der har et fornavn der starter med &ldquo;H&rdquo; eller hvem der har beskæftigelse inden for byggeri.</p>
-
 <p><strong>Ustruktureret data</strong></p>
-
 <p><em>Ustruktureret data</em> er data, som - kort sagt - ikke er sat i system. Hvis data ikke er struktureret, vil man typisk kalde det ustruktureret data. Tekst, billeder og video er typiske eksempler på ustruktureret data, da disse blot er rå information uden nogen måde at adskille en type information fra en anden. Mange moderne dataanalyseteknikker fokuserer på ustruktureret data, hvor man enten udvikler teknikker til at skabe overblik over ustruktureret data eller forsøger at give data en form for struktur.</p>
-
 <p>Nedenstående er et eksempel på ustruktureret data:</p>
-
 <pre><code>[&quot;Hvorfor går man ikke i dialog med ⁦@DRC_dk⁩ i stedet for at opsige kontrakten uden varsel. Er det kun for at føre stærk mand politik? DRC yder en fremragende indsats på baggrund af den opgave de har fået #dkpol https://jyllands-posten.dk/indland/ECE12248020/tesfaye-forsoeger-sig-med-en-ny-loesning-paa-alle-udlaendingeministres-problem/ …&quot;,
 &quot;Alle tæller ❤️ https://twitter.com/cekicozlem/status/1276034922587832326 …&quot;,
 &quot;Det er så godt arbejde💚 https://twitter.com/fannybroholm/status/1275360842847080449 …&quot;,
@@ -671,26 +647,15 @@
 &quot;Hurra - stor dag for Danmark💚👏🏼👏🏼 https://twitter.com/alternativet_/status/1273555055476723713 …&quot;,
 &quot;Til klimaforhandlinger i Finansministeriet. Vi sidder og diskuterer rammerne - de næste dage bliver intensive #dkpol #dkgreen @alternativet_ @ Christiansborg Palace  https://www.instagram.com/p/CBi3d0oB9lB/?igshid=ii78cjnx2n72 …&quot;,
 &quot;Aftale om mindre affald, mindre forbrænding og mere genbrug - god dag for klimaet og miljøet. 1. skridt i en stor miljøpakke #dkpol ⁦@alternativet_⁩ https://www.dr.dk/nyheder/indland/live-regeringen-praesenterer-ny-aftale-om-affald …&quot;]
-</code></pre>
-
-<p>I ovenstående kan man stadig overføre ideen om observationer (i dette tilfælde tweets fra danske politikere), men der er ingen variable eller features givet på forhånd. Der er derfor ingen umiddelbar struktur at gøre brug af for at foretage sig analyser.</p>
-
+</code></pre><p>I ovenstående kan man stadig overføre ideen om observationer (i dette tilfælde tweets fra danske politikere), men der er ingen variable eller features givet på forhånd. Der er derfor ingen umiddelbar struktur at gøre brug af for at foretage sig analyser.</p>
 <h2 id="fra-data-til-dataanalyse">Fra data til dataanalyse</h2>
-
 <p>Uanset om data er struktureret eller ustruktureret, er de næsten aldrig klar til at analysere med det samme. Data skal næsten altid tilpasses den analyse, som man ønsker at foretage og de spørgsmål, som man ønsker at få svar på med sin analyse.</p>
-
 <p>For struktureret data indebærer dette at få identificeret de relevante dele af sine data (er det fx alle observationer, der er relevante?) samt undersøge og rekode variable sådan, at de meningsfuldt kan bruges i sin analyse.</p>
-
 <p>For ustruktureret data indebærer det på en eller anden måde at få sat system i eller skabt overblik over data.</p>
-
 <p>Ofte vil man også arbejde med data fra flere kilder, hvorfor en del forarbejde også kan gå med at få data kombineret i et samlet datasæt.</p>
-
-<hr />
-
+<hr>
 <h2 id="videnscheck">VIDENSCHECK</h2>
-
 <p><em>Hvilke af nedenstående er eksempler på datasæt?:</em></p>
-
 <ul>
 <li>Navnet på butikschefen i det lokale supermarked</li>
 <li>Alle værker af H.C. Andersen</li>
@@ -699,7 +664,6 @@
 <li>Et kontoudtog</li>
 <li>Alle film med Nicolas Cage</li>
 </ul>
-
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -713,21 +677,26 @@
     </div>
     <div class="expand-content" style="display: none;">
         <p>Distinktionen mellem data og datasæt kan være vanskelig; særligt når man også taler om datasæt af ustruktureret data.</p>
-
 <p>Her gives et bud på hver.</p>
-
 <ul>
-<li><p>Navnet på butikschefen i det lokale supermarked: <em>Ikke et datasæt, da det blot er en enkelt information (et enkelt datapunkt)</em></p></li>
-
-<li><p>Alle værker af H.C. Andersen: <em>Et ustruktureret datasæt. Literatur- og kulturstudier beskæftiger sig meget med indhold af literære værker. Med teknikker i dag kan man godt analysere samlinger af tekst.</em></p></li>
-
-<li><p>En oversigt over medlemmer af DFØJ med information om navn, fødselsår, arbejdssted og uddannelse: <em>Et &ldquo;klassisk&rdquo; struktureret datasæt. Observationerne er medlemmerne af DFØJ og variablene er de forskellige informationer for hvert medlem.</em></p></li>
-
-<li><p>Filmen &ldquo;Vampire&rsquo;s Kiss&rdquo; med Nicolas Cage fra 1988: <em>Ikke et datasæt.</em></p></li>
-
-<li><p>Et kontoudtog: <em>Diskutabelt. Ofte er en enkelt persons kontoudtog ikke af megen interesse (udover for personen selv og personens bankrådgiver). En samling af kontoudtog vil nok være mere at betragte som et egentlig datasæt (et datasæt med transaktioner som observationer og beløb, tidspunkt og beskrivelse som variable), men et enkelt datasæt kunne også betragtes som et datasæt af transaktioner for den ene person.</em></p></li>
-
-<li><p>Alle film med Nicolas Cage: <em>Et ustruktureret datasæt. Lig med værkerne af H.C. Andersen kunne et studie af dette også være af interesse. Computationel analyse af disse er noget mere kompliceret, men mulig!</em></p></li>
+<li>
+<p>Navnet på butikschefen i det lokale supermarked: <em>Ikke et datasæt, da det blot er en enkelt information (et enkelt datapunkt)</em></p>
+</li>
+<li>
+<p>Alle værker af H.C. Andersen: <em>Et ustruktureret datasæt. Literatur- og kulturstudier beskæftiger sig meget med indhold af literære værker. Med teknikker i dag kan man godt analysere samlinger af tekst.</em></p>
+</li>
+<li>
+<p>En oversigt over medlemmer af DFØJ med information om navn, fødselsår, arbejdssted og uddannelse: <em>Et &ldquo;klassisk&rdquo; struktureret datasæt. Observationerne er medlemmerne af DFØJ og variablene er de forskellige informationer for hvert medlem.</em></p>
+</li>
+<li>
+<p>Filmen &ldquo;Vampire&rsquo;s Kiss&rdquo; med Nicolas Cage fra 1988: <em>Ikke et datasæt.</em></p>
+</li>
+<li>
+<p>Et kontoudtog: <em>Diskutabelt. Ofte er en enkelt persons kontoudtog ikke af megen interesse (udover for personen selv og personens bankrådgiver). En samling af kontoudtog vil nok være mere at betragte som et egentlig datasæt (et datasæt med transaktioner som observationer og beløb, tidspunkt og beskrivelse som variable), men et enkelt datasæt kunne også betragtes som et datasæt af transaktioner for den ene person.</em></p>
+</li>
+<li>
+<p>Alle film med Nicolas Cage: <em>Et ustruktureret datasæt. Lig med værkerne af H.C. Andersen kunne et studie af dette også være af interesse. Computationel analyse af disse er noget mere kompliceret, men mulig!</em></p>
+</li>
 </ul>
 
     </div>
@@ -990,22 +959,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1021,6 +974,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1063,19 +1032,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1599662829"></script>
-    <script src="../../js/jquery.sticky.js?1599662829"></script>
-    <script src="../../js/featherlight.min.js?1599662829"></script>
-    <script src="../../js/highlight.pack.js?1599662829"></script>
+    <script src="../../js/clipboard.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1600111788"></script>
+    <script src="../../js/jquery.sticky.js?1600111788"></script>
+    <script src="../../js/featherlight.min.js?1600111788"></script>
+    <script src="../../js/highlight.pack.js?1600111788"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1599662829"></script>
-    <script src="../../js/learn.js?1599662829"></script>
-    <script src="../../js/hugo-learn.js?1599662829"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1600111788"></script>
+    <script src="../../js/learn.js?1600111788"></script>
+    <script src="../../js/hugo-learn.js?1600111788"></script>
 
-    <link href="../../mermaid/mermaid.css?1599662829" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1599662829"></script>
+    <link href="../../mermaid/mermaid.css?1600111788" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1600111788"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

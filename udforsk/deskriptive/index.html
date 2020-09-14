@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Deskriptive mål :: Introduktion til Python til Dataanalyse</title>
 
     
-    <link href="../../css/nucleus.css?1599662829" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/hybrid.css?1599662829" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1599662829" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1599662829" rel="stylesheet">
-    <link href="../../css/theme.css?1599662829" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1599662829" rel="stylesheet">
+    <link href="../../css/nucleus.css?1600111788" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/hybrid.css?1600111788" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1600111788" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1600111788" rel="stylesheet">
+    <link href="../../css/theme.css?1600111788" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1600111788" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1599662829"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1600111788"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1599662829"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1599662829"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1600111788"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1600111788"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1599662829"></script>
+<script type="text/javascript" src="../../js/search.js?1600111788"></script>
 
     
   </div>
@@ -405,27 +405,6 @@
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/kategoriske/rekodning/" title="Rekodning af kategoriske variable" class="dd-item ">
-        <a href="../../kategoriske/rekodning/">
-        Rekodning af kategoriske variable
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -472,6 +451,27 @@
       <li data-nav-id="/supplerende/litteratur/" title="Litteratur" class="dd-item ">
         <a href="../../supplerende/litteratur/">
         Litteratur
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/nyttige/" title="Nyttige links" class="dd-item ">
+        <a href="../../supplerende/nyttige/">
+        Nyttige links
         
         </a>
     </li>
@@ -564,13 +564,10 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#deskriptive-mål-og-kategoriske-variable">Deskriptive mål og kategoriske variable</a></li>
-<li><a href="#øvelse-deskriptive-mål">ØVELSE: Deskriptive mål</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#deskriptive-mål-og-kategoriske-variable">Deskriptive mål og kategoriske variable</a></li>
+    <li><a href="#øvelse-deskriptive-mål">ØVELSE: Deskriptive mål</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -594,15 +591,10 @@
         
 
 
-
-
 <p>Én måde at udforske et datasæt er ved at se nærmere på forskellige deskriptive mål for variable i datasættet.</p>
-
 <p>Metoden <code>.describe()</code> danner deskriptive mål for alle (kompatible) variable i datasættet:</p>
-
-<pre><code class="language-python">ess2014.describe()
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014<span style="color:#f92672">.</span>describe()
+</code></pre></div><p>
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -612,7 +604,7 @@
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -631,180 +623,150 @@
   <tbody>
     <tr>
       <th>count</th>
-      <td>1502.000000</td>
-      <td>330.000000</td>
-      <td>1497.000000</td>
-      <td>1473.000000</td>
-      <td>1502.000000</td>
+      <td>751.000000</td>
+      <td>166.000000</td>
+      <td>749.000000</td>
+      <td>740.000000</td>
+      <td>751.000000</td>
     </tr>
     <tr>
       <th>mean</th>
-      <td>935551.059254</td>
-      <td>12.000000</td>
-      <td>173.752171</td>
-      <td>75.855261</td>
-      <td>1965.891478</td>
+      <td>935322.402130</td>
+      <td>11.397590</td>
+      <td>174.158879</td>
+      <td>76.178108</td>
+      <td>1966.324900</td>
     </tr>
     <tr>
       <th>std</th>
-      <td>8588.682562</td>
-      <td>9.237495</td>
-      <td>9.625371</td>
-      <td>15.599516</td>
-      <td>18.946140</td>
+      <td>8431.191754</td>
+      <td>7.994604</td>
+      <td>9.656126</td>
+      <td>15.597381</td>
+      <td>18.982895</td>
     </tr>
     <tr>
       <th>min</th>
-      <td>921018.000000</td>
+      <td>921034.000000</td>
       <td>0.000000</td>
-      <td>142.000000</td>
-      <td>38.000000</td>
+      <td>148.000000</td>
+      <td>43.000000</td>
       <td>1914.000000</td>
     </tr>
     <tr>
       <th>25%</th>
-      <td>928066.500000</td>
+      <td>928073.000000</td>
       <td>5.000000</td>
       <td>167.000000</td>
       <td>65.000000</td>
-      <td>1951.000000</td>
+      <td>1952.000000</td>
     </tr>
     <tr>
       <th>50%</th>
-      <td>935772.000000</td>
+      <td>935251.000000</td>
       <td>10.000000</td>
-      <td>173.000000</td>
-      <td>74.000000</td>
+      <td>174.000000</td>
+      <td>74.500000</td>
       <td>1966.000000</td>
     </tr>
     <tr>
       <th>75%</th>
-      <td>942859.500000</td>
-      <td>20.000000</td>
-      <td>180.000000</td>
+      <td>942260.000000</td>
+      <td>17.750000</td>
+      <td>181.000000</td>
       <td>85.000000</td>
-      <td>1981.000000</td>
+      <td>1982.000000</td>
     </tr>
     <tr>
       <th>max</th>
-      <td>950516.000000</td>
-      <td>102.000000</td>
-      <td>204.000000</td>
-      <td>137.000000</td>
+      <td>950508.000000</td>
+      <td>40.000000</td>
+      <td>203.000000</td>
+      <td>135.000000</td>
       <td>1999.000000</td>
     </tr>
   </tbody>
 </table>
 </div>
-
+</p>
 <p>Metoden fungerer også på enkeltvariable:</p>
-
-<pre><code class="language-python">ess2014['weight'].describe()
-</code></pre>
-
-<pre><code>count    1473.000000
-mean       75.855261
-std        15.599516
-min        38.000000
-25%        65.000000
-50%        74.000000
-75%        85.000000
-max       137.000000
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;weight&#39;</span>]<span style="color:#f92672">.</span>describe()
+</code></pre></div><pre><code>count    740.000000
+mean      76.178108
+std       15.597381
+min       43.000000
+25%       65.000000
+50%       74.500000
+75%       85.000000
+max      135.000000
 Name: weight, dtype: float64
 </code></pre>
-
-<p><code>.describe()</code> danner følgende mål:
-- <code>count</code>: Antal svar ekskl. missing
-- <code>mean</code>: Middelværdien
-- <code>std</code>: Standardafvigelsen
-- <code>min</code>: Minimumværdien
-- <code>25%</code>: 1. kvartil
-- <code>50%</code>: 2. kvartil
-- <code>75%</code>: 3. kvartil
-- <code>max</code>: Maksimumværdien</p>
-
-<p>Pakken <code>numpy</code> indeholder funktioner til, at disse værdier kan dannes enkeltvis.</p>
-
+<p><code>.describe()</code> danner følgende mål:</p>
+<ul>
+<li><code>count</code>: Antal svar ekskl. missing</li>
+<li><code>mean</code>: Middelværdien</li>
+<li><code>std</code>: Standardafvigelsen</li>
+<li><code>min</code>: Minimumværdien</li>
+<li><code>25%</code>: 1. kvartil</li>
+<li><code>50%</code>: 2. kvartil</li>
+<li><code>75%</code>: 3. kvartil</li>
+<li><code>max</code>: Maksimumværdien</li>
+</ul>
+<p>Der knytter sig også en række metoder til at danne de enkelte deskriptive mål.</p>
 <p>Herunder printes fx middelværdien, standardafvigelsen, minimums- og maksimumsværdien for variablen <code>weight</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
 
-<pre><code class="language-python">import numpy as np
-
-print(np.mean(ess2014['weight']))
-print(np.std(ess2014['weight']))
-print(np.min(ess2014['weight']))
-print(np.max(ess2014['weight']))
+<span style="color:#66d9ef">print</span>(ess2014[<span style="color:#e6db74">&#39;weight&#39;</span>]<span style="color:#f92672">.</span>mean())
+<span style="color:#66d9ef">print</span>(ess2014[<span style="color:#e6db74">&#39;weight&#39;</span>]<span style="color:#f92672">.</span>std())
+<span style="color:#66d9ef">print</span>(ess2014[<span style="color:#e6db74">&#39;weight&#39;</span>]<span style="color:#f92672">.</span>min())
+<span style="color:#66d9ef">print</span>(ess2014[<span style="color:#e6db74">&#39;weight&#39;</span>]<span style="color:#f92672">.</span>max())
+</code></pre></div><pre><code>76.17810810810812
+15.597381262076514
+43.0
+135.0
 </code></pre>
-
-<pre><code>75.85526137135099
-15.594219726642477
-38.0
-137.0
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">type(ess2014[<span style="color:#e6db74">&#39;weight&#39;</span>]<span style="color:#f92672">.</span>std())
+</code></pre></div><pre><code>float
 </code></pre>
-
 <p>Ovenstående værdier fortæller, at <code>weight</code> indeholder værdier fra 38.0 til 137.0 med en middelværdi på 75.86 og en standardafvigelse på 15.59 (middelværdien af de afstande, som hver observation afviger fra middelværdien).</p>
-
 <h2 id="deskriptive-mål-og-kategoriske-variable">Deskriptive mål og kategoriske variable</h2>
-
 <p>Sammenlignes outputtet fra <code>.describe()</code> med indholdet af datasættet ses, at der ikke udregnes deskriptive mål for alle variable.</p>
-
 <p>Når <code>.describe()</code> bruges på et hel dataframe, udregnes kun mål for numeriske variabeltyper; altså variable, der kun består af tal.</p>
-
 <p>Metoden kan dog også bruges på en kategorisk variabel som <code>ppltrst</code>:</p>
-
-<pre><code class="language-python">ess2014['ppltrst'].describe()
-</code></pre>
-
-<pre><code>count     1500
-unique      11
-top          8
-freq       475
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst&#39;</span>]<span style="color:#f92672">.</span>describe()
+</code></pre></div><pre><code>count     749
+unique     11
+top         8
+freq      230
 Name: ppltrst, dtype: object
 </code></pre>
-
 <p><strong>Hvornår er en variabel kategorisk?</strong></p>
-
 <p>Det kan måske give anledning til undren, hvorfor der fx ikke kan beregnes en middelværdi af <code>ppltrst</code>, da variablen umiddelbart indeholder tal:</p>
-
-<pre><code class="language-python">ess2014['ppltrst'].head()
-</code></pre>
-
-<pre><code>0    6
-1    8
-2    8
-3    8
-4    5
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst&#39;</span>]<span style="color:#f92672">.</span>head()
+</code></pre></div><pre><code>0                             4
+1    Most people can be trusted
+2                             5
+3                             8
+4                             4
 Name: ppltrst, dtype: object
 </code></pre>
-
 <p>Ved et nærmere kig viser det sig dog, at variablen også indeholder tekstværdier.</p>
-
 <p><code>.unique()</code> returnerer de unikke værdier i variablen:</p>
-
-<pre><code class="language-python">ess2014['ppltrst'].unique()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;ppltrst&#39;</span>]<span style="color:#f92672">.</span>unique()
+</code></pre></div><pre><code>array(['4', 'Most people can be trusted', '5', '8', '7', '9', '2', '6',
+       '3', &quot;You can't be too careful&quot;, '1', nan], dtype=object)
 </code></pre>
-
-<pre><code>array(['6', '8', '5', '9', '7', '3', '4', 'Most people can be trusted',
-       '2', &quot;You can't be too careful&quot;, '1', nan], dtype=object)
-</code></pre>
-
 <p>Af ovenstående ses, at variablen indeholder tekstværdierne &ldquo;Most people can be trusted&rdquo; (svarende til 10 på skalaen) og &ldquo;You can&rsquo;t be too careful&rdquo; (svarende til 0 på skalaen).</p>
-
 <p>Hvis der skal udregnes middelværdi på denne variablen, skal værdierne først konverteres om til numeriske værdier (mere om dette senere).</p>
-
-<hr />
-
+<hr>
 <h2 id="øvelse-deskriptive-mål">ØVELSE: Deskriptive mål</h2>
-
 <p>Brug <code>.describe()</code> eller passende numpy kommandoer til at finde ud af følgende:</p>
-
 <ul>
 <li>Hvor gammel er den yngste person i datasættet?</li>
 <li>Hvor gammel er den ældste person i datasættet?</li>
 <li>Hvad er gennemsnitsalderen i datasættet?</li>
 </ul>
-
 <p>Husk at datasættet er fra 2014.</p>
-
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -817,32 +779,22 @@ Name: ppltrst, dtype: object
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        <pre><code class="language-python">min_age = 2014 - np.max(ess2014['yrbrn'])
-max_age = 2014 - np.min(ess2014['yrbrn'])
-mean_age = 2014 - np.mean(ess2014['yrbrn'])
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">min_age <span style="color:#f92672">=</span> <span style="color:#ae81ff">2014</span> <span style="color:#f92672">-</span> ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>]<span style="color:#f92672">.</span>max()
+max_age <span style="color:#f92672">=</span> <span style="color:#ae81ff">2014</span> <span style="color:#f92672">-</span> ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>]<span style="color:#f92672">.</span>min()
+mean_age <span style="color:#f92672">=</span> <span style="color:#ae81ff">2014</span> <span style="color:#f92672">-</span> ess2014[<span style="color:#e6db74">&#39;yrbrn&#39;</span>]<span style="color:#f92672">.</span>mean()
 
-print(min_age, max_age, mean_age)
+<span style="color:#66d9ef">print</span>(min_age, max_age, mean_age)
+</code></pre></div><pre><code>15 100 47.67509986684422
 </code></pre>
-
-<pre><code>15 100 48.108521970705624
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;Den yngste person i datasættet er {min_age} år gammel, den ældste person i datasættet er {max_age} år gammel og gennemsnitsalderen er {mean_age} år.&#34;</span>)
+</code></pre></div><pre><code>Den yngste person i datasættet er 15 år gammel, den ældste person i datasættet er 100 år gammel og gennemsnitsalderen er 47.67509986684422 år.
 </code></pre>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">mean_age_rounded <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>round(mean_age, decimals <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
 
-<div class="notices tip" >Brug &ldquo;f-strings&rdquo; til at indsætte python-objekter direkte i et stykke tekst:</div>
-
-<pre><code class="language-python">print(f&quot;Den yngste person i datasættet er {min_age} år gammel, den ældste person i datasættet er {max_age} år gammel og gennemsnitsalderen er {mean_age} år.&quot;)
-</code></pre>
-
-<pre><code>Den yngste person i datasættet er 15 år gammel, den ældste person i datasættet er 100 år gammel og gennemsnitsalderen er 48.108521970705624 år.
-</code></pre>
-
-<div class="notices tip" >Brug <code>np.round()</code> til at afrunde værdier:</div>
-
-<pre><code class="language-python">mean_age_rounded = np.round(mean_age, decimals = 0)
-
-print(f&quot;Gennemsnitsalderen i datasættet er {mean_age_rounded} år.&quot;)
-</code></pre>
-
-<pre><code>Gennemsnitsalderen i datasættet er 48.0 år.
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;Gennemsnitsalderen i datasættet er {mean_age_rounded} år.&#34;</span>)
+</code></pre></div><pre><code>Gennemsnitsalderen i datasættet er 48.0 år.
 </code></pre>
 
     </div>
@@ -1108,22 +1060,6 @@ print(f&quot;Gennemsnitsalderen i datasættet er {mean_age_rounded} år.&quot;)
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1139,6 +1075,22 @@ print(f&quot;Gennemsnitsalderen i datasættet er {mean_age_rounded} år.&quot;)
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1181,19 +1133,19 @@ print(f&quot;Gennemsnitsalderen i datasættet er {mean_age_rounded} år.&quot;)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1599662829"></script>
-    <script src="../../js/jquery.sticky.js?1599662829"></script>
-    <script src="../../js/featherlight.min.js?1599662829"></script>
-    <script src="../../js/highlight.pack.js?1599662829"></script>
+    <script src="../../js/clipboard.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1600111788"></script>
+    <script src="../../js/jquery.sticky.js?1600111788"></script>
+    <script src="../../js/featherlight.min.js?1600111788"></script>
+    <script src="../../js/highlight.pack.js?1600111788"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1599662829"></script>
-    <script src="../../js/learn.js?1599662829"></script>
-    <script src="../../js/hugo-learn.js?1599662829"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1600111788"></script>
+    <script src="../../js/learn.js?1600111788"></script>
+    <script src="../../js/hugo-learn.js?1600111788"></script>
 
-    <link href="../../mermaid/mermaid.css?1599662829" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1599662829"></script>
+    <link href="../../mermaid/mermaid.css?1600111788" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1600111788"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

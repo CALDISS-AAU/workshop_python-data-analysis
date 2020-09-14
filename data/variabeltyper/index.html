@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Variabeltyper :: Introduktion til Python til Dataanalyse</title>
 
     
-    <link href="../../css/nucleus.css?1599662829" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/hybrid.css?1599662829" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1599662829" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1599662829" rel="stylesheet">
-    <link href="../../css/theme.css?1599662829" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1599662829" rel="stylesheet">
+    <link href="../../css/nucleus.css?1600111788" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/hybrid.css?1600111788" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1600111788" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1600111788" rel="stylesheet">
+    <link href="../../css/theme.css?1600111788" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1600111788" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1599662829"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1600111788"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1599662829"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1599662829"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1600111788"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1600111788"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1599662829"></script>
+<script type="text/javascript" src="../../js/search.js?1600111788"></script>
 
     
   </div>
@@ -405,27 +405,6 @@
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/kategoriske/rekodning/" title="Rekodning af kategoriske variable" class="dd-item ">
-        <a href="../../kategoriske/rekodning/">
-        Rekodning af kategoriske variable
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -472,6 +451,27 @@
       <li data-nav-id="/supplerende/litteratur/" title="Litteratur" class="dd-item ">
         <a href="../../supplerende/litteratur/">
         Litteratur
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/nyttige/" title="Nyttige links" class="dd-item ">
+        <a href="../../supplerende/nyttige/">
+        Nyttige links
         
         </a>
     </li>
@@ -564,14 +564,11 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#kontinuerlige-variable">Kontinuerlige variable</a></li>
-<li><a href="#kategoriske-variable">Kategoriske variable</a></li>
-<li><a href="#videnscheck">VIDENSCHECK</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#kontinuerlige-variable">Kontinuerlige variable</a></li>
+    <li><a href="#kategoriske-variable">Kategoriske variable</a></li>
+    <li><a href="#videnscheck">VIDENSCHECK</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -595,72 +592,48 @@
         
 
 
-
-
 <p>Man adskiller overordnet mellem to typer af variable; særligt inden for strukuterede datasæt: kontinuerlige og kategoriske.</p>
-
 <h2 id="kontinuerlige-variable">Kontinuerlige variable</h2>
-
 <p>Kontinuerlige variable kan tage en nærmest uafgrænset mængde af forskellige numeriske værdier, hvor man ikke i forvejen kan afgrænse, hvilke værdier, som variablen kan antage. Indkomst, vægt og alder er eksempler på kontinuerlige variable. Selvfølgelig er der værdier, som disse variable ikke kan tage - fx negative værdier - men man kan med disse variable ikke vide i forvejen, hvilke værdier, man vil ende ud med.</p>
-
 <p>I datasættet ESS2014DK er <code>weight</code>, <code>height</code> og <code>yrbrn</code> eksempler på kontinuerlige variable.</p>
-
 <p>Tag fx et kig på værdierne i <code>height</code>:</p>
-
-<pre><code class="language-python">ess2014['height'].head(10)
-</code></pre>
-
-<pre><code>0    178.0
-1    172.0
-2    176.0
-3    162.0
-4    175.0
-5    160.0
-6    167.0
-7    194.0
-8    176.0
-9    157.0
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;height&#39;</span>]<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)
+</code></pre></div><pre><code>0    167.0
+1    168.0
+2    182.0
+3    188.0
+4    156.0
+5    167.0
+6    169.0
+7    184.0
+8    182.0
+9    172.0
 Name: height, dtype: float64
 </code></pre>
-
 <p>Variablen indeholder personens højde i cm og kan derfor antale et stort antal forskellige værdier. Variablen er kontinuerlig, fordi selvom variablen selvfølgelig ikke kan antage alle værdier (fx -157 eller 1.234), så kan det ikke i forvejen afgrænses præcist, hvilke værdier der vil ende i datasættet.</p>
-
 <h2 id="kategoriske-variable">Kategoriske variable</h2>
-
 <p>Kategoriske variable kan i modsætning til kontinuerlige kun antage et afgrænset og i forvejen defineret sæt af værdier.</p>
-
 <p>Fødselskommune, partitilhør eller hvorvidt man kan lide jazz, er eksempler på kategoriske variable. Spørgsmål i spørgeskemaer med forhåndsdefinerede svarmuligheder er altid kategoriske.</p>
-
 <p>I datasættet ESS2014DK er <code>happy</code>, <code>health</code> og <code>alcfreq</code> eksempler på kategoriske variable.</p>
-
 <p>Tag et kig på værdierne i <code>health</code>:</p>
-
-<pre><code class="language-python">ess2014['health'].head(10)
-</code></pre>
-
-<pre><code>0    Very good
-1    Very good
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)
+</code></pre></div><pre><code>0    Very good
+1         Good
 2         Good
-3         Good
-4    Very good
-5         Fair
+3    Very good
+4          Bad
+5         Good
 6         Good
-7         Fair
-8         Fair
-9         Good
+7         Good
+8         Good
+9    Very good
 Name: health, dtype: object
 </code></pre>
-
 <p>Variablen indeholder personens vurdering af eget helbred fra &ldquo;Very bad&rdquo; til &ldquo;Very good&rdquo;. Det er derfor i forvejen afgrænset, hvilke værdier, der kan optræde i datasættet, hvorfor den er kategorisk.</p>
-
-<hr />
-
+<hr>
 <h2 id="videnscheck">VIDENSCHECK</h2>
-
 <p>Tag et kig på variablerne <code>cgtsday</code> og <code>ppltrst</code>.</p>
-
 <p><em>Hvilken type variabel er de?</em></p>
-
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -674,13 +647,11 @@ Name: health, dtype: object
     </div>
     <div class="expand-content" style="display: none;">
         <p><code>cgtsday</code> er kontinuerlig, da den kan antage et ikke i forvejen afgrænset forskellige numeriske værdier.</p>
-
 <p><code>ppltrst</code> er kategorisk, da den kun kan antage i forvejen definerede værdier.</p>
 
     </div>
 </div>
-
-<hr />
+<hr>
 
 
 <footer class="footline">
@@ -942,22 +913,6 @@ Name: health, dtype: object
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -973,6 +928,22 @@ Name: health, dtype: object
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1015,19 +986,19 @@ Name: health, dtype: object
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1599662829"></script>
-    <script src="../../js/jquery.sticky.js?1599662829"></script>
-    <script src="../../js/featherlight.min.js?1599662829"></script>
-    <script src="../../js/highlight.pack.js?1599662829"></script>
+    <script src="../../js/clipboard.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1600111788"></script>
+    <script src="../../js/jquery.sticky.js?1600111788"></script>
+    <script src="../../js/featherlight.min.js?1600111788"></script>
+    <script src="../../js/highlight.pack.js?1600111788"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1599662829"></script>
-    <script src="../../js/learn.js?1599662829"></script>
-    <script src="../../js/hugo-learn.js?1599662829"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1600111788"></script>
+    <script src="../../js/learn.js?1600111788"></script>
+    <script src="../../js/hugo-learn.js?1600111788"></script>
 
-    <link href="../../mermaid/mermaid.css?1599662829" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1599662829"></script>
+    <link href="../../mermaid/mermaid.css?1600111788" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1600111788"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

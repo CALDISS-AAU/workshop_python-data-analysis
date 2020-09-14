@@ -16,7 +16,14 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/kategoriske/typer/</guid>
-      <description>Check: Er variabel ordinal eller nominal? (&amp;ldquo;teoretisk&amp;rdquo;)</description>
+      <description>Man adskiller mellem to typer af kategoriske variable.
+Ordinale
+Ordinalt skalerede variable er variable, som kan rangordnes; altså hvor der kan differentieres hierarkisk mellem værdierne.
+Af ESS2014 datasættet er health et eksempel på en ordinal-skaleret variabel.
+ess2014[&amp;#39;health&amp;#39;].unique() array([&#39;Very good&#39;, &#39;Good&#39;, &#39;Bad&#39;, &#39;Fair&#39;, &#39;Very bad&#39;, nan], dtype=object)
+ Variablen indeholder personens egen vurdering af helbred.
+Den er kategorisk, da man kun kan vælge mellem i forvejen definerede svarmuligheder.
+Den er ordinal, da man kan rangere værdierne: &amp;ldquo;Good&amp;rdquo; er bedre end &amp;ldquo;Bad&amp;rdquo;, &amp;ldquo;Very bad&amp;rdquo; er værre end &amp;ldquo;Fair&amp;rdquo; osv.</description>
     </item>
     
     <item>
@@ -25,16 +32,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/kategoriske/kategoriske/</guid>
-      <description>Check: Er variabel ordinal eller nominal? (kodning i python) - Øvelse: Konverter fra karakter til kategorisk - Øvelse: Konverter fra nominal til ordinal</description>
-    </item>
-    
-    <item>
-      <title>Rekodning af kategoriske variable</title>
-      <link>/kategoriske/rekodning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/kategoriske/rekodning/</guid>
-      <description>Check: hvornår ændres variable ved rekodning? - Øvelse: Rekod kategorisk med mapping</description>
+      <description>Python/Pandas kan ikke selv gætte sig til, hvad der er kategorisk, da de blot ligner tekst, set fra Pythons synspunkt.
+Når man arbejder med kategoriske variable i Python, skal man derfor selv kode dem om til at være kategorisk
+Variable kodes til kategoriske med astype(&#39;category&#39;). Herunder kodes health om til kategorisk, da det er en kategorisk variabel:
+ess2014[&amp;#39;health&amp;#39;] = ess2014[&amp;#39;health&amp;#39;].astype(&amp;#39;category&amp;#39;) Når man kigger på variablen nu ses, at den er ændret til typen category.</description>
     </item>
     
   </channel>

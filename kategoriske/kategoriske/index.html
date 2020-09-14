@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.70.0" />
     <meta name="description" content="">
 
 
@@ -12,19 +12,19 @@
     <title>Kategoriske variable i Python :: Introduktion til Python til Dataanalyse</title>
 
     
-    <link href="../../css/nucleus.css?1599662829" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/hybrid.css?1599662829" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1599662829" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1599662829" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1599662829" rel="stylesheet">
-    <link href="../../css/theme.css?1599662829" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1599662829" rel="stylesheet">
+    <link href="../../css/nucleus.css?1600111788" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/hybrid.css?1600111788" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1600111788" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1600111788" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1600111788" rel="stylesheet">
+    <link href="../../css/theme.css?1600111788" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1600111788" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1599662829"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1600111788"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -50,14 +50,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1599662829"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1599662829"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1600111788"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1600111788"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1599662829"></script>
+<script type="text/javascript" src="../../js/search.js?1600111788"></script>
 
     
   </div>
@@ -405,27 +405,6 @@
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/kategoriske/rekodning/" title="Rekodning af kategoriske variable" class="dd-item ">
-        <a href="../../kategoriske/rekodning/">
-        Rekodning af kategoriske variable
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -472,6 +451,27 @@
       <li data-nav-id="/supplerende/litteratur/" title="Litteratur" class="dd-item ">
         <a href="../../supplerende/litteratur/">
         Litteratur
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/supplerende/nyttige/" title="Nyttige links" class="dd-item ">
+        <a href="../../supplerende/nyttige/">
+        Nyttige links
         
         </a>
     </li>
@@ -563,7 +563,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#konvertering-til-ordinal">Konvertering til ordinal</a></li>
+    <li><a href="#øvelse-konverter-til-kategorisk">ØVELSE: Konverter til kategorisk</a></li>
+    <li><a href="#hvorfor-rekode-til-ordinal">Hvorfor rekode til ordinal?</a></li>
+    <li><a href="#rekodning-af-kategoriske-variable">Rekodning af kategoriske variable</a></li>
+    <li><a href="#plotting-a-kategoriske-variable">Plotting a kategoriske variable</a></li>
+    <li><a href="#øvelse-rekod-kategorisk">ØVELSE: Rekod kategorisk</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -586,9 +595,443 @@
         
 
 
-<p>Check: Er variabel ordinal eller nominal? (kodning i python)
-- Øvelse: Konverter fra karakter til kategorisk
-- Øvelse: Konverter fra nominal til ordinal</p>
+<p>Python/Pandas kan ikke selv gætte sig til, hvad der er kategorisk, da de blot ligner tekst, set fra Pythons synspunkt.</p>
+<p>Når man arbejder med kategoriske variable i Python, skal man derfor selv kode dem om til at være kategorisk</p>
+<p>Variable kodes til kategoriske med <code>astype('category')</code>. Herunder kodes <code>health</code> om til kategorisk, da det er en kategorisk variabel:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;health&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;category&#39;</span>)
+</code></pre></div><p>Når man kigger på variablen nu ses, at den er ændret til typen <code>category</code>. Derudover vises, hvilke kategorier variablen har.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>head()
+</code></pre></div><pre><code>0    Very good
+1         Good
+2         Good
+3    Very good
+4          Bad
+Name: health, dtype: category
+Categories (5, object): ['Bad', 'Fair', 'Good', 'Very bad', 'Very good']
+</code></pre>
+<p>Variable kodes som standard til nominalt skalerede variable. Dette kan ses, ved at kigge på <code>dtypes</code>, hvor <code>ordered</code> angiver, om variablen er kodet nominalt eller ordinalt (<code>ordered = False</code> for nominalt, <code>ordered = True</code> for ordinalt):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>dtypes
+</code></pre></div><pre><code>CategoricalDtype(categories=['Bad', 'Fair', 'Good', 'Very bad', 'Very good'], ordered=False)
+</code></pre>
+<h2 id="konvertering-til-ordinal">Konvertering til ordinal</h2>
+<p>For at konvertere til ordinal, skal man specificere sig egen type, som kan sættes på variablen.</p>
+<p>Indtil videre er der gennemgået forskellige &ldquo;indbyggede&rdquo; typer: <code>int</code>, <code>float</code>, <code>string</code>, <code>category</code>. Men det er også muligt at genere sin egen type.</p>
+<p>Dette er nødvendigt for at kode en variabel ordinal. Man gør følgende:</p>
+<ul>
+<li>Dan et <code>CategoricalDtype</code> objekt</li>
+<li>Specificer kategorierne som liste i argumentet <code>categories = </code> (sørg for at skrive dem i rækkefølge fra lav til høj, hvis ordinal)</li>
+<li>Specificer hvorvidt variablen er ordinal eller nominal med <code>ordered = True/False</code></li>
+</ul>
+<p>Herunder dannes kateogi-objektet, som kan bruges til <code>health</code>. <code>CategoricalDtype</code> skal importeres, før den kan bruges:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pandas.api.types <span style="color:#f92672">import</span> CategoricalDtype
+
+health_cat <span style="color:#f92672">=</span> CategoricalDtype(categories <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Very bad&#39;</span>, <span style="color:#e6db74">&#39;Bad&#39;</span>, <span style="color:#e6db74">&#39;Fair&#39;</span>, <span style="color:#e6db74">&#39;Good&#39;</span>, <span style="color:#e6db74">&#39;Very good&#39;</span>], ordered <span style="color:#f92672">=</span> True)
+</code></pre></div><p>Kategoriobjektet er nu dannet, men er ikke tilknyttet variablen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">health_cat
+</code></pre></div><pre><code>CategoricalDtype(categories=['Very bad', 'Bad', 'Fair', 'Good', 'Very good'], ordered=True)
+</code></pre>
+<p>Kategoriobjektet tilknyttes med <code>astype()</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;health&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>astype(health_cat)
+</code></pre></div><p><code>health</code> er nu kodet som ordinal - læg mærke til hvordan rækkefølge er angivet med <code>&lt;</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>unique()
+</code></pre></div><pre><code>['Very good', 'Good', 'Bad', 'Fair', 'Very bad', NaN]
+Categories (5, object): ['Very bad' &lt; 'Bad' &lt; 'Fair' &lt; 'Good' &lt; 'Very good']
+</code></pre>
+<hr>
+<h2 id="øvelse-konverter-til-kategorisk">ØVELSE: Konverter til kategorisk</h2>
+<ol>
+<li>
+<p>Tag et kig på variablen <code>alcfreq</code>. Er variablen nominal eller ordinal?</p>
+</li>
+<li>
+<p>Rekod <code>alcfreq</code> til at være kategorisk. Hvis den er ordinal, så dan et kategoriobjekt, som kan bruges til at kode variablen (tjek værdier i variablen med <code>.unique()</code></p>
+</li>
+</ol>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>]<span style="color:#f92672">.</span>unique() <span style="color:#75715e"># Tjek værdier for at se, hvordan variablen er kodet (ordinalt)</span>
+
+alc_cat <span style="color:#f92672">=</span> CategoricalDtype(categories <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Never&#39;</span>, <span style="color:#e6db74">&#39;Less than once a month&#39;</span>, <span style="color:#e6db74">&#39;Once a month&#39;</span>,   <span style="color:#75715e"># Danner kategoriobjekt</span>
+                                         <span style="color:#e6db74">&#39;2-3 times a month&#39;</span>, <span style="color:#e6db74">&#39;Once a week&#39;</span>, <span style="color:#e6db74">&#39;Several times a week&#39;</span>, 
+                                         <span style="color:#e6db74">&#39;Every day&#39;</span>], ordered <span style="color:#f92672">=</span> True)
+
+ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>]<span style="color:#f92672">.</span>astype(alc_cat) <span style="color:#75715e"># Ændrer typen</span>
+
+ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>]<span style="color:#f92672">.</span>unique() <span style="color:#75715e"># Bekræfter ændringen</span>
+</code></pre></div><pre><code>['Never', 'Several times a week', 'Once a week', 'Every day', 'Less than once a month', 'Once a month', '2-3 times a month', NaN]
+Categories (7, object): ['Never' &lt; 'Less than once a month' &lt; 'Once a month' &lt; '2-3 times a month' &lt; 'Once a week' &lt; 'Several times a week' &lt; 'Every day']
+</code></pre>
+
+    </div>
+</div>
+<hr>
+<h2 id="hvorfor-rekode-til-ordinal">Hvorfor rekode til ordinal?</h2>
+<p>Rekodning til ordinal gøres ikke kun for syns skyld. Når man fortæller Python, at en variabel skal behandles som ordinal, kan man bruge rangordnen, når man arbejder med data.</p>
+<p>Fx kan man nu filtrere ESS2014 datasættet efter, hvor mange der har et selvvurderet helbred på <code>Fair</code> eller mindre:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014<span style="color:#f92672">.</span>loc[ess2014[<span style="color:#e6db74">&#39;health&#39;</span>] <span style="color:#f92672">&lt;=</span> <span style="color:#e6db74">&#39;Fair&#39;</span>, :]<span style="color:#f92672">.</span>head()
+</code></pre></div><p>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+      <th>age</th>
+      <th>height_cat</th>
+      <th>smoker</th>
+      <th>ppltrst_num</th>
+      <th>happy_num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+      <td>45</td>
+      <td>short</td>
+      <td>not a smoker</td>
+      <td>4.0</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>926725</td>
+      <td>5</td>
+      <td>Extremely happy</td>
+      <td>Fair</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Male</td>
+      <td>1971</td>
+      <td>1.68</td>
+      <td>43</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>5.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>940149</td>
+      <td>5</td>
+      <td>5</td>
+      <td>Fair</td>
+      <td>NaN</td>
+      <td>Every day</td>
+      <td>173.0</td>
+      <td>73.0</td>
+      <td>Male</td>
+      <td>1956</td>
+      <td>1.73</td>
+      <td>58</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>922276</td>
+      <td>9</td>
+      <td>Extremely happy</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>171.0</td>
+      <td>50.0</td>
+      <td>Male</td>
+      <td>1952</td>
+      <td>1.71</td>
+      <td>62</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>9.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>945903</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Fair</td>
+      <td>NaN</td>
+      <td>Less than once a month</td>
+      <td>158.0</td>
+      <td>65.0</td>
+      <td>Female</td>
+      <td>1967</td>
+      <td>1.58</td>
+      <td>47</td>
+      <td>short</td>
+      <td>not a smoker</td>
+      <td>2.0</td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</p>
+<h2 id="rekodning-af-kategoriske-variable">Rekodning af kategoriske variable</h2>
+<p>Kategoriske variable rekodes ligesom tekstvariable med <code>.replace()</code>.</p>
+<p>Man kan med fordel specificere den dictionary, som skal rekodes efter, først, da man derved har den til rådighed, hvis fx flere variable skal rekodes på samme måde.</p>
+<p>I nedenstående dannes en ny <code>alcfreq</code> variabel, der inddeler respondenter efter, om de drikker mindst en gang om ugen, mindre end en gang om ugen eller aldrig. Læg mærke til, hvordan værdier slås sammen på denne måde:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>]<span style="color:#f92672">.</span>unique()
+</code></pre></div><pre><code>['Never', 'Several times a week', 'Once a week', 'Every day', 'Less than once a month', 'Once a month', '2-3 times a month', NaN]
+Categories (7, object): ['Never' &lt; 'Less than once a month' &lt; 'Once a month' &lt; '2-3 times a month' &lt; 'Once a week' &lt; 'Several times a week' &lt; 'Every day']
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">alc_recodedict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Several times a week&#39;</span>: <span style="color:#e6db74">&#39;Once a week or more&#39;</span>, <span style="color:#e6db74">&#39;Once a week&#39;</span>: <span style="color:#e6db74">&#39;Once a week or more&#39;</span>, 
+                  <span style="color:#e6db74">&#39;Every day&#39;</span>: <span style="color:#e6db74">&#39;Once a week or more&#39;</span>, <span style="color:#e6db74">&#39;Less than once a month&#39;</span>: <span style="color:#e6db74">&#39;Less than once a week&#39;</span>, 
+                 <span style="color:#e6db74">&#39;Once a month&#39;</span>: <span style="color:#e6db74">&#39;Less than once a week&#39;</span>, <span style="color:#e6db74">&#39;2-3 times a month&#39;</span>: <span style="color:#e6db74">&#39;Less than once a week&#39;</span>}
+
+ess2014[<span style="color:#e6db74">&#39;alcfreq_3cat&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;alcfreq&#39;</span>]<span style="color:#f92672">.</span>replace(alc_recodedict)
+</code></pre></div><p>Værdierne er nu ændret i den nye variabel. Bemærk, at typen konverteres tilbage til <code>object</code>. Det er derfor en fordel at rekode værdier <em>inden</em> man konverterer variablen til en kategorisk type.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;alcfreq_3cat&#39;</span>]<span style="color:#f92672">.</span>unique()
+</code></pre></div><pre><code>array(['Never', 'Once a week or more', 'Less than once a week', nan],
+      dtype=object)
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014<span style="color:#f92672">.</span>head()
+</code></pre></div><p>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+      <th>age</th>
+      <th>height_cat</th>
+      <th>smoker</th>
+      <th>ppltrst_num</th>
+      <th>happy_num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>921490</td>
+      <td>4</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Never</td>
+      <td>167.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.67</td>
+      <td>49</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>4.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>938348</td>
+      <td>Most people can be trusted</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1973</td>
+      <td>1.68</td>
+      <td>41</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>10.0</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+      <td>1.82</td>
+      <td>34</td>
+      <td>medium</td>
+      <td>smoker</td>
+      <td>5.0</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+      <td>1.88</td>
+      <td>68</td>
+      <td>tall</td>
+      <td>not a smoker</td>
+      <td>8.0</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+      <td>45</td>
+      <td>short</td>
+      <td>not a smoker</td>
+      <td>4.0</td>
+      <td>8.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</p>
+<h2 id="plotting-a-kategoriske-variable">Plotting a kategoriske variable</h2>
+<p>Forskellige plots kan dannes pba. kategoriske. Få plots kan laves direkte på kategoriske, men skal i stedet laves på optællinger.</p>
+<p><code>.value_counts()</code> tæller værdier op i en variabel:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>value_counts()
+</code></pre></div><pre><code>Very good    298
+Good         266
+Fair         146
+Bad           29
+Very bad      11
+Name: health, dtype: int64
+</code></pre>
+<p><code>value_counts()</code> kan plottes direkte med fx <code>.plot.bar()</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>value_counts()<span style="color:#f92672">.</span>plot<span style="color:#f92672">.</span>bar()
+</code></pre></div><pre><code>&lt;AxesSubplot:&gt;
+</code></pre>
+<p><img src="../../output_209_1.png" alt="png"></p>
+<hr>
+<h2 id="øvelse-rekod-kategorisk">ØVELSE: Rekod kategorisk</h2>
+<ol>
+<li>
+<p>Dan en varibel, der består af variablen <code>health</code> rekodet til at indeholde kategorierne &ldquo;Good&rdquo;, &ldquo;Fair&rdquo; og &ldquo;Bad&rdquo;.</p>
+<ul>
+<li>&ldquo;Very good&rdquo; rekodes til &ldquo;Good&rdquo;</li>
+<li>&ldquo;Very bad&rdquo; rekodes til &ldquo;Bad&rdquo;</li>
+</ul>
+</li>
+<li>
+<p>(valgfri) Rekod variablen til at være ordinal</p>
+</li>
+<li>
+<p>Dan et cirkelplot af den rekodede variabel med <code>.plot.pie()</code> (husk at brug <code>value_counts()</code>)</p>
+</li>
+</ol>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Løsning
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">health_recodedict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Very good&#39;</span>: <span style="color:#e6db74">&#39;Good&#39;</span>, <span style="color:#e6db74">&#39;Very bad&#39;</span>: <span style="color:#e6db74">&#39;Bad&#39;</span>}
+
+health_cat3 <span style="color:#f92672">=</span> CategoricalDtype(categories <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Bad&#39;</span>, <span style="color:#e6db74">&#39;Fair&#39;</span>, <span style="color:#e6db74">&#39;Good&#39;</span>], ordered <span style="color:#f92672">=</span> True)
+
+ess2014[<span style="color:#e6db74">&#39;health_3cats&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;health&#39;</span>]<span style="color:#f92672">.</span>replace(health_recodedict)
+ess2014[<span style="color:#e6db74">&#39;health_3cats&#39;</span>] <span style="color:#f92672">=</span> ess2014[<span style="color:#e6db74">&#39;health_3cats&#39;</span>]<span style="color:#f92672">.</span>astype(health_cat3)
+
+ess2014[<span style="color:#e6db74">&#39;health_3cats&#39;</span>]<span style="color:#f92672">.</span>value_counts()<span style="color:#f92672">.</span>plot<span style="color:#f92672">.</span>pie()
+</code></pre></div><pre><code>&lt;AxesSubplot:ylabel='health_3cats'&gt;
+</code></pre>
+<p><img src="../../output_211_1.png" alt="png"></p>
+
+    </div>
+</div>
+<hr>
 
 
 <footer class="footline">
@@ -850,6 +1293,9 @@
             
         
                     
+            
+        
+                    
                         
             
             
@@ -857,6 +1303,19 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -868,22 +1327,6 @@
                     
             
         
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -916,7 +1359,7 @@
 			<a class="nav nav-prev" href="../../kategoriske/typer/" title="Typer af kategoriske variable (nominal, ordinal)"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../kategoriske/rekodning/" title="Rekodning af kategoriske variable" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../supplerende/" title="Supplerende materiale" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -926,19 +1369,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1599662829"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1599662829"></script>
-    <script src="../../js/jquery.sticky.js?1599662829"></script>
-    <script src="../../js/featherlight.min.js?1599662829"></script>
-    <script src="../../js/highlight.pack.js?1599662829"></script>
+    <script src="../../js/clipboard.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1600111788"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1600111788"></script>
+    <script src="../../js/jquery.sticky.js?1600111788"></script>
+    <script src="../../js/featherlight.min.js?1600111788"></script>
+    <script src="../../js/highlight.pack.js?1600111788"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1599662829"></script>
-    <script src="../../js/learn.js?1599662829"></script>
-    <script src="../../js/hugo-learn.js?1599662829"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1600111788"></script>
+    <script src="../../js/learn.js?1600111788"></script>
+    <script src="../../js/hugo-learn.js?1600111788"></script>
 
-    <link href="../../mermaid/mermaid.css?1599662829" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1599662829"></script>
+    <link href="../../mermaid/mermaid.css?1600111788" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1600111788"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
