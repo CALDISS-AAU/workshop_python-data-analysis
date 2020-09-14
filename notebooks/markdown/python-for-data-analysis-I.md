@@ -120,7 +120,7 @@ I det nedenstående indlæses pandas biblioteket, hvorefter datasættet "ESS2014
 import numpy as np
 import pandas as pd
 
-ess2014 = pd.read_csv('https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_subset.csv')
+ess2014 = pd.read_csv('https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_sub1.csv')
 ```
 
 {{% notice note %}}
@@ -143,7 +143,105 @@ ess2014.head()
 
 
 
-[TABLE 1]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>921490</td>
+      <td>4</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Never</td>
+      <td>167.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1965</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>938348</td>
+      <td>Most people can be trusted</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1973</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -201,12 +299,12 @@ print(ess2014.health.head())
 ```
 
     0    Very good
-    1    Very good
+    1         Good
     2         Good
-    3         Good
-    4    Very good
+    3    Very good
+    4          Bad
     Name: health, dtype: object
-
+    
 
 Dog vil man typisk refere til enkeltkolonner på denne måde:
 
@@ -216,12 +314,12 @@ print(ess2014['health'].head())
 ```
 
     0    Very good
-    1    Very good
+    1         Good
     2         Good
-    3         Good
-    4    Very good
+    3    Very good
+    4          Bad
     Name: health, dtype: object
-
+    
 
 Der er ikke forskel mellem de to måder at gøre det på, men sidstviste måde er mere gængs og gør kode mere overskuelig.
 
@@ -235,7 +333,7 @@ print(type(ess2014['health']))
 
     <class 'pandas.core.frame.DataFrame'>
     <class 'pandas.core.series.Series'>
-
+    
 
 ### Pandas series og lister
 
@@ -249,7 +347,7 @@ print(ess2014['health'][122]) #Printer indeks 122
 ```
 
     Very good
-
+    
 
 Lister kan konverteres direkte til pandas series med `pd.Series()`:
 
@@ -269,7 +367,7 @@ print(a_series)
     3    12
     4    18
     dtype: int64
-
+    
 
 Læg i ovenstående mærke til, at når en series printes, printes elementernes indeks ud også. Dette er fordi, at man selv kan specificere indeksværdier i en pandas series:
 
@@ -287,7 +385,7 @@ print(a_series)
     value4    12
     value5    18
     dtype: int64
-
+    
 
 Gives en serie indeksværdier, kan enkeltelementer referes til både med deres indeksnummer og indeksværdi:
 
@@ -299,7 +397,7 @@ print(a_series['value3']) # Printer den 3. værdi ud fra indeksværdi ("value3")
 
     9
     9
-
+    
 
 **Operationer på serier**
 
@@ -359,9 +457,9 @@ np.mean(a_series)
 ---
 ## ØVELSE: Indlæs datasæt
 
-1. Indlæs datasættet ESS2014DK med `pd.read_csv()`. Funktionen kan indlæse data direkte fra et link (husk at importere pandas biblioteket).
+1. Indlæs datasættet ESS2014DK_sub1 med `pd.read_csv()`. Funktionen kan indlæse data direkte fra et link (husk at importere pandas biblioteket).
 
-    - Link til data: https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_subset.csv
+    - Link til data: https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_sub1.csv
     
 2. Brug `np.mean()` (`numpy.mean()`) til at udregne middelværdien af `height` variablen i datasættet. Hvad er middelværdien?
 
@@ -374,13 +472,13 @@ np.mean(a_series)
 import pandas as pd
 import numpy as np
 
-ess2014 = pd.read_csv('https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_subset.csv')
+ess2014 = pd.read_csv('https://github.com/CALDISS-AAU/workshop_python-data-analysis/raw/master/datasets/ESS2014DK_sub1.csv')
 
 print(np.mean(ess2014['height']))
 ```
 
-    173.75217100868403
-
+    174.15887850467288
+    
 
 {{% /expand%}}
 
@@ -407,16 +505,16 @@ ess2014['height'].head(10)
 
 
 
-    0    178.0
-    1    172.0
-    2    176.0
-    3    162.0
-    4    175.0
-    5    160.0
-    6    167.0
-    7    194.0
-    8    176.0
-    9    157.0
+    0    167.0
+    1    168.0
+    2    182.0
+    3    188.0
+    4    156.0
+    5    167.0
+    6    169.0
+    7    184.0
+    8    182.0
+    9    172.0
     Name: height, dtype: float64
 
 
@@ -442,15 +540,15 @@ ess2014['health'].head(10)
 
 
     0    Very good
-    1    Very good
+    1         Good
     2         Good
-    3         Good
-    4    Very good
-    5         Fair
+    3    Very good
+    4          Bad
+    5         Good
     6         Good
-    7         Fair
-    8         Fair
-    9         Good
+    7         Good
+    8         Good
+    9    Very good
     Name: health, dtype: object
 
 
@@ -490,7 +588,99 @@ ess2014.describe()
 
 
 
-[TABLE 2]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>cgtsday</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>yrbrn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>751.000000</td>
+      <td>166.000000</td>
+      <td>749.000000</td>
+      <td>740.000000</td>
+      <td>751.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>935322.402130</td>
+      <td>11.397590</td>
+      <td>174.158879</td>
+      <td>76.178108</td>
+      <td>1966.324900</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8431.191754</td>
+      <td>7.994604</td>
+      <td>9.656126</td>
+      <td>15.597381</td>
+      <td>18.982895</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>921034.000000</td>
+      <td>0.000000</td>
+      <td>148.000000</td>
+      <td>43.000000</td>
+      <td>1914.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>928073.000000</td>
+      <td>5.000000</td>
+      <td>167.000000</td>
+      <td>65.000000</td>
+      <td>1952.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>935251.000000</td>
+      <td>10.000000</td>
+      <td>174.000000</td>
+      <td>74.500000</td>
+      <td>1966.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>942260.000000</td>
+      <td>17.750000</td>
+      <td>181.000000</td>
+      <td>85.000000</td>
+      <td>1982.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>950508.000000</td>
+      <td>40.000000</td>
+      <td>203.000000</td>
+      <td>135.000000</td>
+      <td>1999.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -504,14 +694,14 @@ ess2014['weight'].describe()
 
 
 
-    count    1473.000000
-    mean       75.855261
-    std        15.599516
-    min        38.000000
-    25%        65.000000
-    50%        74.000000
-    75%        85.000000
-    max       137.000000
+    count    740.000000
+    mean      76.178108
+    std       15.597381
+    min       43.000000
+    25%       65.000000
+    50%       74.500000
+    75%       85.000000
+    max      135.000000
     Name: weight, dtype: float64
 
 
@@ -526,7 +716,7 @@ ess2014['weight'].describe()
 - `75%`: 3. kvartil
 - `max`: Maksimumværdien
 
-Pakken `numpy` indeholder funktioner til, at disse værdier kan dannes enkeltvis.
+Der knytter sig også en række metoder til at danne de enkelte deskriptive mål.
 
 Herunder printes fx middelværdien, standardafvigelsen, minimums- og maksimumsværdien for variablen `weight`:
 
@@ -534,16 +724,28 @@ Herunder printes fx middelværdien, standardafvigelsen, minimums- og maksimumsv�
 ```python
 import numpy as np
 
-print(np.mean(ess2014['weight']))
-print(np.std(ess2014['weight']))
-print(np.min(ess2014['weight']))
-print(np.max(ess2014['weight']))
+print(ess2014['weight'].mean())
+print(ess2014['weight'].std())
+print(ess2014['weight'].min())
+print(ess2014['weight'].max())
 ```
 
-    75.85526137135099
-    15.594219726642477
-    38.0
-    137.0
+    76.17810810810812
+    15.597381262076514
+    43.0
+    135.0
+    
+
+
+```python
+type(ess2014['weight'].std())
+```
+
+
+
+
+    float
+
 
 
 Ovenstående værdier fortæller, at `weight` indeholder værdier fra 38.0 til 137.0 med en middelværdi på 75.86 og en standardafvigelse på 15.59 (middelværdien af de afstande, som hver observation afviger fra middelværdien).
@@ -564,10 +766,10 @@ ess2014['ppltrst'].describe()
 
 
 
-    count     1500
-    unique      11
-    top          8
-    freq       475
+    count     749
+    unique     11
+    top         8
+    freq      230
     Name: ppltrst, dtype: object
 
 
@@ -584,11 +786,11 @@ ess2014['ppltrst'].head()
 
 
 
-    0    6
-    1    8
-    2    8
-    3    8
-    4    5
+    0                             4
+    1    Most people can be trusted
+    2                             5
+    3                             8
+    4                             4
     Name: ppltrst, dtype: object
 
 
@@ -605,8 +807,8 @@ ess2014['ppltrst'].unique()
 
 
 
-    array(['6', '8', '5', '9', '7', '3', '4', 'Most people can be trusted',
-           '2', "You can't be too careful", '1', nan], dtype=object)
+    array(['4', 'Most people can be trusted', '5', '8', '7', '9', '2', '6',
+           '3', "You can't be too careful", '1', nan], dtype=object)
 
 
 
@@ -630,15 +832,15 @@ Husk at datasættet er fra 2014.
 
 
 ```python
-min_age = 2014 - np.max(ess2014['yrbrn'])
-max_age = 2014 - np.min(ess2014['yrbrn'])
-mean_age = 2014 - np.mean(ess2014['yrbrn'])
+min_age = 2014 - ess2014['yrbrn'].max()
+max_age = 2014 - ess2014['yrbrn'].min()
+mean_age = 2014 - ess2014['yrbrn'].mean()
 
 print(min_age, max_age, mean_age)
 ```
 
-    15 100 48.108521970705624
-
+    15 100 47.67509986684422
+    
 
 {{% notice tip %}} Brug "f-strings" til at indsætte python-objekter direkte i et stykke tekst: {{%/ notice%}}
 
@@ -647,10 +849,10 @@ print(min_age, max_age, mean_age)
 print(f"Den yngste person i datasættet er {min_age} år gammel, den ældste person i datasættet er {max_age} år gammel og gennemsnitsalderen er {mean_age} år.")
 ```
 
-    Den yngste person i datasættet er 15 år gammel, den ældste person i datasættet er 100 år gammel og gennemsnitsalderen er 48.108521970705624 år.
+    Den yngste person i datasættet er 15 år gammel, den ældste person i datasættet er 100 år gammel og gennemsnitsalderen er 47.67509986684422 år.
+    
 
-
-{{% notice tip %}} Brug `np.round()` til at afrunde værdier: {{% /notice%}}
+{{% notice tip %}} Brug `np.round()` (fra `numpy`) til at afrunde værdier: {{% /notice%}}
 
 
 ```python
@@ -660,7 +862,7 @@ print(f"Gennemsnitsalderen i datasættet er {mean_age_rounded} år.")
 ```
 
     Gennemsnitsalderen i datasættet er 48.0 år.
-
+    
 
 {{% /expand%}}
 
@@ -704,17 +906,35 @@ ess2014['height'].plot.hist()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d23ba2e8>
+    <AxesSubplot:ylabel='Frequency'>
+
+
+
+
+![png](output_76_1.png)
+
+
+Et histogram viser observationer som bjælker i intervaller sorteret efter værdi (lav til højest). På den måde kan man hurtigt danne sig et overblik over, hvordan data fordeler sig.
+
+Af ovenstående ses fx at omkring 340 personer har en højde på omkring 168-173 cm. Desuden ses at meget få har en højde omkring 200 cm.
+
+Størrelsen på bjælkerne kan ændres med argumentet `bins = `:
+
+
+```python
+ess2014['height'].plot.hist(bins = 30)
+```
+
+
+
+
+    <AxesSubplot:ylabel='Frequency'>
 
 
 
 
 ![png](output_78_1.png)
 
-
-Et histogram viser observationer som bjælker i intervaller sorteret efter værdi (lav til højest). På den måde kan man hurtigt danne sig et overblik over, hvordan data fordeler sig.
-
-Af ovenstående ses fx at omkring 340 personer har en højde på omkring 168-173 cm. Desuden ses at meget få har en højde omkring 200 cm.
 
 ### Boxplot
 
@@ -728,12 +948,12 @@ ess2014['height'].plot.box()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d20d30b8>
+    <AxesSubplot:>
 
 
 
 
-![png](output_81_1.png)
+![png](output_80_1.png)
 
 
 Et boxplot er en anden måde at se på fordelingen af en variabel. Den vandrette linje i midten er middelværdien. De øvrige linjer angiver (fra top til bund): minimum, 1. kvartil, 3. kvartil, maksimum.
@@ -748,12 +968,12 @@ ess2014.plot.box()
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d210c668>
+    <AxesSubplot:>
 
 
 
 
-![png](output_83_1.png)
+![png](output_82_1.png)
 
 
 Ovenstående plot giver ikke meget mening, da variable ikke har sammenlignelige værdier, hvorfor y-aksen bliver helt tosset.
@@ -786,12 +1006,12 @@ sns.scatterplot(data = ess2014, x = 'height', y = 'weight')
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d23741d0>
+    <AxesSubplot:xlabel='height', ylabel='weight'>
 
 
 
 
-![png](output_87_1.png)
+![png](output_86_1.png)
 
 
 Et scatterplot danner en prik for hver observations placering på to variable. Plottet egner sig derfor særdeles godt til at udforske umiddelbare sammenhænge (om en variabel er beslægtet med en anden).
@@ -807,21 +1027,23 @@ Dan et histogram over varialben `yrbrn` i ESS2014DK datasættet.
 
 
 ```python
-ess2014['yrbrn'].hist()
+ess2014['yrbrn'].hist(bins = 30)
 ```
 
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x296d21d05f8>
+    <AxesSubplot:>
 
 
 
 
-![png](output_90_1.png)
+![png](output_89_1.png)
 
 
 {{%/expand%}}
+
+---
 
 # {#Kapitel}Datahåndtering med pandas
 
@@ -852,7 +1074,157 @@ ess2014.loc[2:10, :]
 
 
 
-[TABLE 3]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>928947</td>
+      <td>5</td>
+      <td>Extremely happy</td>
+      <td>Good</td>
+      <td>20.0</td>
+      <td>Every day</td>
+      <td>167.0</td>
+      <td>75.0</td>
+      <td>Male</td>
+      <td>1950</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>947921</td>
+      <td>7</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Less than once a month</td>
+      <td>169.0</td>
+      <td>63.0</td>
+      <td>Female</td>
+      <td>1980</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>926953</td>
+      <td>Most people can be trusted</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a month</td>
+      <td>184.0</td>
+      <td>73.0</td>
+      <td>Male</td>
+      <td>1940</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>943553</td>
+      <td>8</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>86.0</td>
+      <td>Male</td>
+      <td>1971</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>936299</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>8.0</td>
+      <td>Several times a week</td>
+      <td>172.0</td>
+      <td>73.0</td>
+      <td>Female</td>
+      <td>1965</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>943317</td>
+      <td>9</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a month</td>
+      <td>178.0</td>
+      <td>72.0</td>
+      <td>Male</td>
+      <td>1989</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -866,7 +1238,57 @@ ess2014.loc[:, ['gndr', 'alcfreq']].head()
 
 
 
-[TABLE 4]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gndr</th>
+      <th>alcfreq</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Female</td>
+      <td>Never</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Female</td>
+      <td>Several times a week</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Female</td>
+      <td>Several times a week</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -880,7 +1302,77 @@ ess2014.loc[2:10, ['gndr', 'alcfreq']]
 
 
 
-[TABLE 5]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gndr</th>
+      <th>alcfreq</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Female</td>
+      <td>Several times a week</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Male</td>
+      <td>Every day</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Female</td>
+      <td>Less than once a month</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Male</td>
+      <td>Once a month</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Female</td>
+      <td>Several times a week</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Male</td>
+      <td>Once a month</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -888,13 +1380,78 @@ Selekter ud fra kolonneindeks:
 
 
 ```python
-ess2014.iloc[2:10, [8, 6]]
+ess2014.iloc[2:10, [8, 5]]
 ```
 
 
 
 
-[TABLE 6]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gndr</th>
+      <th>alcfreq</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Female</td>
+      <td>Several times a week</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Male</td>
+      <td>Every day</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Female</td>
+      <td>Less than once a month</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Male</td>
+      <td>Once a month</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Female</td>
+      <td>Several times a week</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -910,7 +1467,57 @@ ess2014_subset.head()
 
 
 
-[TABLE 7]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gndr</th>
+      <th>alcfreq</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Male</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Female</td>
+      <td>Several times a week</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Male</td>
+      <td>Every day</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Female</td>
+      <td>Less than once a month</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -926,7 +1533,105 @@ ess2014.loc[ess2014['height'] > 180, :].head()
 
 
 
-[TABLE 8]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>926953</td>
+      <td>Most people can be trusted</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a month</td>
+      <td>184.0</td>
+      <td>73.0</td>
+      <td>Male</td>
+      <td>1940</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>943553</td>
+      <td>8</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>86.0</td>
+      <td>Male</td>
+      <td>1971</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>947086</td>
+      <td>8</td>
+      <td>7</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>186.0</td>
+      <td>84.0</td>
+      <td>Male</td>
+      <td>1964</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -938,7 +1643,105 @@ ess2014.loc[(ess2014['height'] > 180) & (ess2014['gndr'] == 'Female'), :].head()
 
 
 
-[TABLE 9]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>219</th>
+      <td>931833</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>184.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1993</td>
+    </tr>
+    <tr>
+      <th>263</th>
+      <td>948529</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>2-3 times a month</td>
+      <td>181.0</td>
+      <td>78.0</td>
+      <td>Female</td>
+      <td>1972</td>
+    </tr>
+    <tr>
+      <th>581</th>
+      <td>941739</td>
+      <td>9</td>
+      <td>9</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>184.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1984</td>
+    </tr>
+    <tr>
+      <th>616</th>
+      <td>927771</td>
+      <td>8</td>
+      <td>Extremely happy</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a month</td>
+      <td>181.0</td>
+      <td>63.0</td>
+      <td>Female</td>
+      <td>1984</td>
+    </tr>
+    <tr>
+      <th>651</th>
+      <td>948294</td>
+      <td>Most people can be trusted</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Less than once a month</td>
+      <td>182.0</td>
+      <td>117.0</td>
+      <td>Female</td>
+      <td>1968</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -977,7 +1780,105 @@ ess2014_subset.head()
 
 
 
-[TABLE 10]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10</th>
+      <td>943317</td>
+      <td>9</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a month</td>
+      <td>178.0</td>
+      <td>72.0</td>
+      <td>Male</td>
+      <td>1989</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>923426</td>
+      <td>8</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>20.0</td>
+      <td>Once a week</td>
+      <td>184.0</td>
+      <td>84.0</td>
+      <td>Male</td>
+      <td>1991</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>931443</td>
+      <td>5</td>
+      <td>Extremely happy</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>185.0</td>
+      <td>66.0</td>
+      <td>Male</td>
+      <td>1990</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>935934</td>
+      <td>7</td>
+      <td>5</td>
+      <td>Fair</td>
+      <td>2.0</td>
+      <td>Several times a week</td>
+      <td>188.0</td>
+      <td>74.0</td>
+      <td>Male</td>
+      <td>1994</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>935251</td>
+      <td>6</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>190.0</td>
+      <td>93.0</td>
+      <td>Male</td>
+      <td>1991</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -1003,7 +1904,111 @@ ess2014.head()
 
 
 
-[TABLE 11]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>921490</td>
+      <td>4</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Never</td>
+      <td>167.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.67</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>938348</td>
+      <td>Most people can be trusted</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1973</td>
+      <td>1.68</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+      <td>1.82</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+      <td>1.88</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -1025,11 +2030,123 @@ ess2014.head()
 
 
 
-[TABLE 12]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+      <th>age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>921490</td>
+      <td>4</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Never</td>
+      <td>167.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.67</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>938348</td>
+      <td>Most people can be trusted</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1973</td>
+      <td>1.68</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+      <td>1.82</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+      <td>1.88</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+      <td>45</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
 {{%/expand%}}
+
+---
 
 ## Rekodning
 
@@ -1060,7 +2177,203 @@ ess2014.head(10)
 
 
 
-[TABLE 13]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+      <th>age</th>
+      <th>height_cat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>921490</td>
+      <td>4</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Never</td>
+      <td>167.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.67</td>
+      <td>49</td>
+      <td>short</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>938348</td>
+      <td>Most people can be trusted</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1973</td>
+      <td>1.68</td>
+      <td>41</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+      <td>1.82</td>
+      <td>34</td>
+      <td>tall</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+      <td>1.88</td>
+      <td>68</td>
+      <td>tall</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+      <td>45</td>
+      <td>short</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>928947</td>
+      <td>5</td>
+      <td>Extremely happy</td>
+      <td>Good</td>
+      <td>20.0</td>
+      <td>Every day</td>
+      <td>167.0</td>
+      <td>75.0</td>
+      <td>Male</td>
+      <td>1950</td>
+      <td>1.67</td>
+      <td>64</td>
+      <td>short</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>947921</td>
+      <td>7</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Less than once a month</td>
+      <td>169.0</td>
+      <td>63.0</td>
+      <td>Female</td>
+      <td>1980</td>
+      <td>1.69</td>
+      <td>34</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>926953</td>
+      <td>Most people can be trusted</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a month</td>
+      <td>184.0</td>
+      <td>73.0</td>
+      <td>Male</td>
+      <td>1940</td>
+      <td>1.84</td>
+      <td>74</td>
+      <td>tall</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>943553</td>
+      <td>8</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>86.0</td>
+      <td>Male</td>
+      <td>1971</td>
+      <td>1.82</td>
+      <td>43</td>
+      <td>tall</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>936299</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>8.0</td>
+      <td>Several times a week</td>
+      <td>172.0</td>
+      <td>73.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.72</td>
+      <td>49</td>
+      <td>medium</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -1076,7 +2389,203 @@ ess2014.head(10)
 
 
 
-[TABLE 14]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+      <th>age</th>
+      <th>height_cat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>921490</td>
+      <td>4</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Never</td>
+      <td>167.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.67</td>
+      <td>49</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>938348</td>
+      <td>Most people can be trusted</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1973</td>
+      <td>1.68</td>
+      <td>41</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+      <td>1.82</td>
+      <td>34</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+      <td>1.88</td>
+      <td>68</td>
+      <td>tall</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+      <td>45</td>
+      <td>short</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>928947</td>
+      <td>5</td>
+      <td>Extremely happy</td>
+      <td>Good</td>
+      <td>20.0</td>
+      <td>Every day</td>
+      <td>167.0</td>
+      <td>75.0</td>
+      <td>Male</td>
+      <td>1950</td>
+      <td>1.67</td>
+      <td>64</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>947921</td>
+      <td>7</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Less than once a month</td>
+      <td>169.0</td>
+      <td>63.0</td>
+      <td>Female</td>
+      <td>1980</td>
+      <td>1.69</td>
+      <td>34</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>926953</td>
+      <td>Most people can be trusted</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a month</td>
+      <td>184.0</td>
+      <td>73.0</td>
+      <td>Male</td>
+      <td>1940</td>
+      <td>1.84</td>
+      <td>74</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>943553</td>
+      <td>8</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>86.0</td>
+      <td>Male</td>
+      <td>1971</td>
+      <td>1.82</td>
+      <td>43</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>936299</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>8.0</td>
+      <td>Several times a week</td>
+      <td>172.0</td>
+      <td>73.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.72</td>
+      <td>49</td>
+      <td>medium</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -1092,9 +2601,9 @@ ess2014['cgtsday'].isnull().head()
 
 
 
-    0    False
+    0     True
     1     True
-    2     True
+    2    False
     3     True
     4     True
     Name: cgtsday, dtype: bool
@@ -1111,7 +2620,123 @@ ess2014.loc[ess2014['cgtsday'].isnull(), :].head()
 
 
 
-[TABLE 15]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+      <th>age</th>
+      <th>height_cat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>921490</td>
+      <td>4</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Never</td>
+      <td>167.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.67</td>
+      <td>49</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>938348</td>
+      <td>Most people can be trusted</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1973</td>
+      <td>1.68</td>
+      <td>41</td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+      <td>1.88</td>
+      <td>68</td>
+      <td>tall</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+      <td>45</td>
+      <td>short</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>947921</td>
+      <td>7</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Less than once a month</td>
+      <td>169.0</td>
+      <td>63.0</td>
+      <td>Female</td>
+      <td>1980</td>
+      <td>1.69</td>
+      <td>34</td>
+      <td>medium</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -1139,7 +2764,214 @@ ess2014.head(10)
 
 
 
-[TABLE 16]
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+      <th>age</th>
+      <th>height_cat</th>
+      <th>smoker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>921490</td>
+      <td>4</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Never</td>
+      <td>167.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.67</td>
+      <td>49</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>938348</td>
+      <td>Most people can be trusted</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1973</td>
+      <td>1.68</td>
+      <td>41</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+      <td>1.82</td>
+      <td>34</td>
+      <td>medium</td>
+      <td>smoker</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+      <td>1.88</td>
+      <td>68</td>
+      <td>tall</td>
+      <td>not a smoker</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+      <td>45</td>
+      <td>short</td>
+      <td>not a smoker</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>928947</td>
+      <td>5</td>
+      <td>Extremely happy</td>
+      <td>Good</td>
+      <td>20.0</td>
+      <td>Every day</td>
+      <td>167.0</td>
+      <td>75.0</td>
+      <td>Male</td>
+      <td>1950</td>
+      <td>1.67</td>
+      <td>64</td>
+      <td>medium</td>
+      <td>smoker</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>947921</td>
+      <td>7</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Less than once a month</td>
+      <td>169.0</td>
+      <td>63.0</td>
+      <td>Female</td>
+      <td>1980</td>
+      <td>1.69</td>
+      <td>34</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>926953</td>
+      <td>Most people can be trusted</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a month</td>
+      <td>184.0</td>
+      <td>73.0</td>
+      <td>Male</td>
+      <td>1940</td>
+      <td>1.84</td>
+      <td>74</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>943553</td>
+      <td>8</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>86.0</td>
+      <td>Male</td>
+      <td>1971</td>
+      <td>1.82</td>
+      <td>43</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>936299</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>8.0</td>
+      <td>Several times a week</td>
+      <td>172.0</td>
+      <td>73.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.72</td>
+      <td>49</td>
+      <td>medium</td>
+      <td>smoker</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -1147,32 +2979,1065 @@ ess2014.head(10)
 
 # {#Afsnit}Variabeltyper (numerisk og tekst)
 
-- Check: Hvilken variabeltype?
-- Øvelse: Ændr variabeltype
+Ligesom Python generelt adskiller mellem typer af objekter, har hver kolonne (series) i en data frame også en type.
+
+Typen kan tjekkes med `.dtypes`; enten for hele datasættet eller en enkelt kolonne.
+
+
+```python
+ess2014['height'].dtypes
+```
+
+
+
+
+    dtype('float64')
+
+
+
+
+```python
+ess2014.dtypes
+```
+
+
+
+
+    idno             int64
+    ppltrst         object
+    happy           object
+    health          object
+    cgtsday        float64
+    alcfreq         object
+    height         float64
+    weight         float64
+    gndr            object
+    yrbrn            int64
+    height_m       float64
+    age              int64
+    height_cat    category
+    smoker          object
+    dtype: object
+
+
+
+Af ovenstående ses at datasættet indeholder typerne `int64` (integer/heltal), `float64` ("float point"/decimaltal) og `object`. 
+
+`object` typen bruges, når kolonnen både indeholder tekst og tal. På den måde mistes ikke noget information ved indlæsning Typen kan give problemer, da mange funktioner og metoder forventer enten en ren numerisk kolonne eller ren tekst/kategorisk kolonne. Det hænder også, at variable kun med tekst indlæses som `object`.
+
+Man bør altid undersøge variable af typen `object` nærmere og se, om en anden type er mere passende (numerisk, tekst/karakter eller kategorisk). Dette fordi at `object`-typen fortæller meget lidt om, hvad data indeholder, hvor de andre typer med det samme fortæller, hvilken type data, som kolonnen indeholder.
+
+## Ændring af variabeltype
+
+Kolonnetypen ændres med metoden `.astype()`:
+
+- `astype('string')`: Konverter til string (tekstværdier)
+- `astype('categorical')`: Konverter til kategorisk
+- `astype('int')`: Til heltal
+- `astype('float')`: Til decimaltal
+
+**Konvertering til tekst**
+
+Tjek hvilke værdier kolonnen indeholder:
+
+
+```python
+ess2014['gndr'].unique()
+```
+
+
+
+
+    array(['Female', 'Male'], dtype=object)
+
+
+
+Kolonnen indeholder værdierne "Male" og "Female"; en kategorisk variabel bestående kun af tekst-værdier. Den kan derfor lige så godt konverteres til teksttype.
+
+Konvertering af kolonne til tekst gøres med `.astype('string')`:
+
+
+```python
+ess2014['gndr'] = ess2014['gndr'].astype('string')
+```
+
+Typen er nu string/tekst (`StringDtype`):
+
+
+```python
+ess2014['gndr'].dtypes
+```
+
+
+
+
+    StringDtype
+
+
+
+{{%notice note%}} Variable med afgrænsede tekstværdier er kategoriske variable, og det giver ofte mere mening at konvertere disse til kategorisk frem for tekst. Dette gennemgås senere i dette materiale.
+{{%/notice%}}
+
+**Konvertering til numerisk**
+
+`yrbrn` konverteres til tekst for at have en variabel at konvertere til tal.
+
+Tjek først typen:
+
+
+```python
+ess2014['yrbrn'].dtypes
+```
+
+
+
+
+    dtype('int64')
+
+
+
+Typen er `int64` (decimaltal). Konverter til tekst:
+
+
+```python
+ess2014['yrbrn'] = ess2014['yrbrn'].astype('string')
+```
+
+Tjek at typen er string:
+
+
+```python
+ess2014['yrbrn'].dtypes
+```
+
+
+
+
+    StringDtype
+
+
+
+Konvertering til heltal igen - Gøres med `.astype('int')`:
+
+
+```python
+ess2014['yrbrn'] = ess2014['yrbrn'].astype('int')
+```
+
+Tjek at typen er ændret tilbage:
+
+
+```python
+ess2014['yrbrn'].dtypes
+```
+
+
+
+
+    dtype('int32')
+
+
+
+**Konverter kolonne med blanding af typer**
+
+Ofte kan man rende ind i, at en kolonne indeholder en blanding af typer.
+
+Det gælder fx for `ppltrst` og `happy`.
+
+Tjek hvilke værdier kolonnen indeholder:
+
+
+```python
+ess2014['ppltrst'].unique()
+```
+
+
+
+
+    array(['4', 'Most people can be trusted', '5', '8', '7', '9', '2', '6',
+           '3', "You can't be too careful", '1', nan], dtype=object)
+
+
+
+Variablen indeholder både tal og tekst. Hvis der konverteres til tal, gives der fejl:
+
+
+```python
+ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
+```
+
+
+    ---------------------------------------------------------------------------
+
+    ValueError                                Traceback (most recent call last)
+
+    <ipython-input-67-8b2ee5027ea0> in <module>
+    ----> 1 ess2014['ppltrst'] = ess2014['ppltrst'].astype('int')
+    
+
+    C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\generic.py in astype(self, dtype, copy, errors)
+       5535         else:
+       5536             # else, only a single dtype is given
+    -> 5537             new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors,)
+       5538             return self._constructor(new_data).__finalize__(self, method="astype")
+       5539 
+    
+
+    C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\managers.py in astype(self, dtype, copy, errors)
+        593         self, dtype, copy: bool = False, errors: str = "raise"
+        594     ) -> "BlockManager":
+    --> 595         return self.apply("astype", dtype=dtype, copy=copy, errors=errors)
+        596 
+        597     def convert(
+    
+
+    C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\managers.py in apply(self, f, align_keys, **kwargs)
+        404                 applied = b.apply(f, **kwargs)
+        405             else:
+    --> 406                 applied = getattr(b, f)(**kwargs)
+        407             result_blocks = _extend_blocks(applied, result_blocks)
+        408 
+    
+
+    C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\internals\blocks.py in astype(self, dtype, copy, errors)
+        587             vals1d = values.ravel()
+        588             try:
+    --> 589                 values = astype_nansafe(vals1d, dtype, copy=True)
+        590             except (ValueError, TypeError):
+        591                 # e.g. astype_nansafe can fail on object-dtype of strings
+    
+
+    C:\programs\Continuum\anaconda3\lib\site-packages\pandas\core\dtypes\cast.py in astype_nansafe(arr, dtype, copy, skipna)
+        964         # work around NumPy brokenness, #1987
+        965         if np.issubdtype(dtype.type, np.integer):
+    --> 966             return lib.astype_intsafe(arr.ravel(), dtype).reshape(arr.shape)
+        967 
+        968         # if we have a datetime/timedelta array of objects
+    
+
+    pandas\_libs\lib.pyx in pandas._libs.lib.astype_intsafe()
+    
+
+    ValueError: invalid literal for int() with base 10: 'Most people can be trusted'
+
+
+Variablen er en skala fra 0-10, så den kan i princippet behandles som numerisk. Det kræver bare, at værdierne ændres sådan, at variablen kan tvinges om.
+
+- "Most people can be trusted" skal være "10"
+- "You can't be too careful" skal være "0"
+
+Værdier kan erstattes med metoden `.replace()`. Her ændres oplysninger i datasættet, hvorfor man altid bør lave en ny variabel:
+
+
+```python
+ess2014['ppltrst_num'] = ess2014['ppltrst']
+```
+
+Nu kan værdierne erstattes i den nye variabel med `replace()`. Metoden skal bruge en dictionary, hvor nøglerne består af værdierne, som skal ændres, og værdierne skal være de værdier, som skal ændres.
+
+
+```python
+ess2014['ppltrst_num'] = ess2014['ppltrst_num'].replace({"Most people can be trusted": "10", "You can't be too careful": "0"})
+```
+
+Variabel indeholder nu værdierne "0" og "10".
+
+
+```python
+ess2014['ppltrst_num'].unique()
+```
+
+
+
+
+    array(['4', '10', '5', '8', '7', '9', '2', '6', '3', '0', '1', nan],
+          dtype=object)
+
+
+
+Variablen kan nu konverteres til tal (der konverteres til float/decimaltal, da missingværdier (`NaN`) ikke kan være heltal):
+
+
+```python
+ess2014['ppltrst_num'] = ess2014['ppltrst_num'].astype('float')
+```
+
+Variablen er nu numerisk, så man fx kan foretage beregninger:
+
+
+```python
+ess2014['ppltrst_num'].mean()
+```
+
+
+
+
+    6.998664886515354
+
+
+
+### Lad pandas gætte typen
+
+Metoden `convert_dtypes()` bruges til at lade pandas gætte den mest passende type
+
+
+```python
+ess2014['alcfreq'].dtypes
+```
+
+
+
+
+    dtype('O')
+
+
+
+Variabeltypen er 'O' (for `object`).
+
+
+```python
+ess2014['alcfreq'] = ess2014['alcfreq'].convert_dtypes()
+```
+
+Tjek hvilken type pandas har konverteret til ved at gætte:
+
+
+```python
+ess2014['alcfreq'].dtypes
+```
+
+
+
+
+    StringDtype
+
+
+
+Pandas gætter typen til at være string.
+
+---
+
+# ØVELSE: Ændr variabeltypen
+
+1. Check hvilken type variabel `happy` er med `.dtypes`.
+
+2. Variablen kan laves til numerisk. Lav en kopi af variablen (evt. kald den `happy_num`).
+
+3. Rekod tekstværdierne til tal med `.replace()` - Husk at rekodninger skal specificeres som en dictionary ( `{"gammel værdi": "ny værdi", "gammel værdi": "ny værdi"}` ).
+    - "Extremely happy" skal kodes til "10"
+    - "Extremely unhappy" skal kodes til "0"
+    
+4. Konverter variablen til numerisk med `.astype('float')`.
+
+5. Udregn gennemsnit for variablen med `.mean()`.
+
+{{%expand "Løsning"%}}
+
+
+```python
+print(ess2014['happy'].dtypes)
+
+ess2014['happy_num'] = ess2014['happy']
+ess2014['happy_num'] = ess2014['happy_num'].replace({"Extremely happy": "10", "Extremely unhappy": "0"})
+ess2014['happy_num'] = ess2014['happy_num'].astype('float')
+
+print(ess2014['happy_num'].dtypes)
+
+ess2014['happy_num'].mean()
+```
+
+    object
+    float64
+    
+
+
+
+
+    8.278666666666666
+
+
+
+{{%/expand %}}
+
+---
 
 # {#Kapitel}Kategoriske variable
 
+Variable, der har en afgrænset mængde svarmuligheder, kaldes for kategoriske.
+
 # {#Afsnit}Typer af kategoriske variable (nominal, ordinal)
 
-- Check: Er variabel ordinal eller nominal? ("teoretisk")
+Man adskiller mellem to typer af kategoriske variable.
+
+**Ordinale**
+
+Ordinalt skalerede variable er variable, som kan rangordnes; altså hvor der kan differentieres hierarkisk mellem værdierne.
+
+Af ESS2014 datasættet er `health` et eksempel på en ordinal-skaleret variabel.
+
+
+```python
+ess2014['health'].unique()
+```
+
+
+
+
+    array(['Very good', 'Good', 'Bad', 'Fair', 'Very bad', nan], dtype=object)
+
+
+
+Variablen indeholder personens egen vurdering af helbred. 
+
+Den er kategorisk, da man kun kan vælge mellem i forvejen definerede svarmuligheder. 
+
+Den er ordinal, da man kan rangere værdierne: "Good" er bedre end "Bad", "Very bad" er værre end "Fair" osv.
+
+**Nominale**
+
+Nominalt skalerede variable er variable, som *ikke* kan rangordnes.
+
+I ESS2014 datasættet er `gndr` et eksempel på en nominal-skaleret variabel:
+
+
+```python
+ess2014['gndr'].unique()
+```
+
+
+
+
+    <StringArray>
+    ['Female', 'Male']
+    Length: 2, dtype: string
+
+
+
+**Talværdier og kategoriske variable**
+
+Selvom en variabel indeholder talværdier, kan de stadig godt være kategoriske.
+
+Et centralt karakteristika ved ikke-kategoriske (kontinuerlige) variable er, at man kan måle den præcise afstand mellem målinger. Det kan man fx for variable som `height` og `weight`.
+
+Ved variable som `ppltrst` og `happy` kan man ikke måle den præcise afstand. Selvom man kan sige, at 8 er større end 4 og man kan regne en difference mellem to personers score på disse variable, så er det stadig ikke en præcis afstand som regnes.
+
+Herunder vises fx værdierne for `ppltrst` for rækkeindeks 27 og 90:
+
+
+```python
+ess2014.loc[[27, 90], 'ppltrst']
+```
+
+
+
+
+    27    8
+    90    9
+    Name: ppltrst, dtype: object
+
+
+
+Her ses, at række 90 svarer 9 og række 27 svarer 8. Man kan derfor godt udregne, at række 90 har givet en højere score en række 27.
+
+Dog kan det argumenteres, at det ikke er den præcise afstand der regnes, da der er tale om en skala for, hvor meget man stoler på andre mennesker. Talværdien er derfor svær at omsætte til noget faktisk (hvor meget tillid er fx en score på 8 frem for en score på 9?), og hvordan spørgsmålet og skalaen tolkes vil variere fra person til person (er mængden af tillid, som den ene person tildeler en score på 8 den samme mængde, som en anden person tildeler en score på 8?).
+
+Af denne grund er sådanne variable som udgangspunkt kategoriske. Det ses dog ofte, at sådanne variable behandles som numeriske alligevel, da det er nødvendigt for mange typer analyser.
+
+---
+
+## VIDENSCHECK
+
+*Er variablen `alcfreq` ordinalt eller nominalt skaleret?*
+
+{{%expand "Løsning"%}}
+`alcfreq` er en ordinalt skaleret variabel, da værdierne kan rangordnes.
+{{%/expand%}}
+
+---
+
 
 # {#Afsnit}Kategoriske variable i Python
 
-- Check: Er variabel ordinal eller nominal? (kodning i python)
-- Øvelse: Konverter fra karakter til kategorisk
-- Øvelse: Konverter fra nominal til ordinal
+Python/Pandas kan ikke selv gætte sig til, hvad der er kategorisk, da de blot ligner tekst, set fra Pythons synspunkt.
 
-# {#Afsnit}Rekodning af kategoriske variable
+Når man arbejder med kategoriske variable i Python, skal man derfor selv kode dem om til at være kategorisk
 
-- Check: hvornår ændres variable ved rekodning?
-- Øvelse: Rekod kategorisk med mapping
+Variable kodes til kategoriske med `astype('category')`. Herunder kodes `health` om til kategorisk, da det er en kategorisk variabel:
+
+
+```python
+ess2014['health'] = ess2014['health'].astype('category')
+```
+
+Når man kigger på variablen nu ses, at den er ændret til typen `category`. Derudover vises, hvilke kategorier variablen har.
+
+
+```python
+ess2014['health'].head()
+```
+
+
+
+
+    0    Very good
+    1         Good
+    2         Good
+    3    Very good
+    4          Bad
+    Name: health, dtype: category
+    Categories (5, object): ['Bad', 'Fair', 'Good', 'Very bad', 'Very good']
+
+
+
+Variable kodes som standard til nominalt skalerede variable. Dette kan ses, ved at kigge på `dtypes`, hvor `ordered` angiver, om variablen er kodet nominalt eller ordinalt (`ordered = False` for nominalt, `ordered = True` for ordinalt):
+
+
+```python
+ess2014['health'].dtypes
+```
+
+
+
+
+    CategoricalDtype(categories=['Bad', 'Fair', 'Good', 'Very bad', 'Very good'], ordered=False)
+
+
+
+## Konvertering til ordinal
+
+For at konvertere til ordinal, skal man specificere sig egen type, som kan sættes på variablen.
+
+Indtil videre er der gennemgået forskellige "indbyggede" typer: `int`, `float`, `string`, `category`. Men det er også muligt at genere sin egen type.
+
+Dette er nødvendigt for at kode en variabel ordinal. Man gør følgende:
+
+- Dan et `CategoricalDtype` objekt
+- Specificer kategorierne som liste i argumentet `categories = ` (sørg for at skrive dem i rækkefølge fra lav til høj, hvis ordinal)
+- Specificer hvorvidt variablen er ordinal eller nominal med `ordered = True/False`
+
+Herunder dannes kateogi-objektet, som kan bruges til `health`. `CategoricalDtype` skal importeres, før den kan bruges:
+
+
+```python
+from pandas.api.types import CategoricalDtype
+
+health_cat = CategoricalDtype(categories = ['Very bad', 'Bad', 'Fair', 'Good', 'Very good'], ordered = True)
+```
+
+Kategoriobjektet er nu dannet, men er ikke tilknyttet variablen:
+
+
+```python
+health_cat
+```
+
+
+
+
+    CategoricalDtype(categories=['Very bad', 'Bad', 'Fair', 'Good', 'Very good'], ordered=True)
+
+
+
+Kategoriobjektet tilknyttes med `astype()`:
+
+
+```python
+ess2014['health'] = ess2014['health'].astype(health_cat)
+```
+
+`health` er nu kodet som ordinal - læg mærke til hvordan rækkefølge er angivet med `<`:
+
+
+```python
+ess2014['health'].unique()
+```
+
+
+
+
+    ['Very good', 'Good', 'Bad', 'Fair', 'Very bad', NaN]
+    Categories (5, object): ['Very bad' < 'Bad' < 'Fair' < 'Good' < 'Very good']
+
+
+
+---
+
+## ØVELSE: Konverter til kategorisk
+
+1. Tag et kig på variablen `alcfreq`. Er variablen nominal eller ordinal?
+
+2. Rekod `alcfreq` til at være kategorisk. Hvis den er ordinal, så dan et kategoriobjekt, som kan bruges til at kode variablen (tjek værdier i variablen med `.unique()`
+
+{{%expand "Løsning"%}}
+
+
+```python
+ess2014['alcfreq'].unique() # Tjek værdier for at se, hvordan variablen er kodet (ordinalt)
+
+alc_cat = CategoricalDtype(categories = ['Never', 'Less than once a month', 'Once a month',   # Danner kategoriobjekt
+                                         '2-3 times a month', 'Once a week', 'Several times a week', 
+                                         'Every day'], ordered = True)
+
+ess2014['alcfreq'] = ess2014['alcfreq'].astype(alc_cat) # Ændrer typen
+
+ess2014['alcfreq'].unique() # Bekræfter ændringen
+```
+
+
+
+
+    ['Never', 'Several times a week', 'Once a week', 'Every day', 'Less than once a month', 'Once a month', '2-3 times a month', NaN]
+    Categories (7, object): ['Never' < 'Less than once a month' < 'Once a month' < '2-3 times a month' < 'Once a week' < 'Several times a week' < 'Every day']
+
+
+
+{{%/expand%}}
+
+---
+
+
+## Hvorfor rekode til ordinal?
+
+Rekodning til ordinal gøres ikke kun for syns skyld. Når man fortæller Python, at en variabel skal behandles som ordinal, kan man bruge rangordnen, når man arbejder med data.
+
+Fx kan man nu filtrere ESS2014 datasættet efter, hvor mange der har et selvvurderet helbred på `Fair` eller mindre:
+
+
+```python
+ess2014.loc[ess2014['health'] <= 'Fair', :].head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+      <th>age</th>
+      <th>height_cat</th>
+      <th>smoker</th>
+      <th>ppltrst_num</th>
+      <th>happy_num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+      <td>45</td>
+      <td>short</td>
+      <td>not a smoker</td>
+      <td>4.0</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>926725</td>
+      <td>5</td>
+      <td>Extremely happy</td>
+      <td>Fair</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Male</td>
+      <td>1971</td>
+      <td>1.68</td>
+      <td>43</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>5.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>940149</td>
+      <td>5</td>
+      <td>5</td>
+      <td>Fair</td>
+      <td>NaN</td>
+      <td>Every day</td>
+      <td>173.0</td>
+      <td>73.0</td>
+      <td>Male</td>
+      <td>1956</td>
+      <td>1.73</td>
+      <td>58</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>5.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>922276</td>
+      <td>9</td>
+      <td>Extremely happy</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>171.0</td>
+      <td>50.0</td>
+      <td>Male</td>
+      <td>1952</td>
+      <td>1.71</td>
+      <td>62</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>9.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>945903</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Fair</td>
+      <td>NaN</td>
+      <td>Less than once a month</td>
+      <td>158.0</td>
+      <td>65.0</td>
+      <td>Female</td>
+      <td>1967</td>
+      <td>1.58</td>
+      <td>47</td>
+      <td>short</td>
+      <td>not a smoker</td>
+      <td>2.0</td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+## Rekodning af kategoriske variable
+
+Kategoriske variable rekodes ligesom tekstvariable med `.replace()`.
+
+Man kan med fordel specificere den dictionary, som skal rekodes efter, først, da man derved har den til rådighed, hvis fx flere variable skal rekodes på samme måde.
+
+I nedenstående dannes en ny `alcfreq` variabel, der inddeler respondenter efter, om de drikker mindst en gang om ugen, mindre end en gang om ugen eller aldrig. Læg mærke til, hvordan værdier slås sammen på denne måde:
+
+
+```python
+ess2014['alcfreq'].unique()
+```
+
+
+
+
+    ['Never', 'Several times a week', 'Once a week', 'Every day', 'Less than once a month', 'Once a month', '2-3 times a month', NaN]
+    Categories (7, object): ['Never' < 'Less than once a month' < 'Once a month' < '2-3 times a month' < 'Once a week' < 'Several times a week' < 'Every day']
+
+
+
+
+```python
+alc_recodedict = {'Several times a week': 'Once a week or more', 'Once a week': 'Once a week or more', 
+                  'Every day': 'Once a week or more', 'Less than once a month': 'Less than once a week', 
+                 'Once a month': 'Less than once a week', '2-3 times a month': 'Less than once a week'}
+
+ess2014['alcfreq_3cat'] = ess2014['alcfreq'].replace(alc_recodedict)
+```
+
+Værdierne er nu ændret i den nye variabel. Bemærk, at typen konverteres tilbage til `object`. Det er derfor en fordel at rekode værdier *inden* man konverterer variablen til en kategorisk type.
+
+
+```python
+ess2014['alcfreq_3cat'].unique()
+```
+
+
+
+
+    array(['Never', 'Once a week or more', 'Less than once a week', nan],
+          dtype=object)
+
+
+
+
+```python
+ess2014.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>idno</th>
+      <th>ppltrst</th>
+      <th>happy</th>
+      <th>health</th>
+      <th>cgtsday</th>
+      <th>alcfreq</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>gndr</th>
+      <th>yrbrn</th>
+      <th>height_m</th>
+      <th>age</th>
+      <th>height_cat</th>
+      <th>smoker</th>
+      <th>ppltrst_num</th>
+      <th>happy_num</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>921490</td>
+      <td>4</td>
+      <td>Extremely happy</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Never</td>
+      <td>167.0</td>
+      <td>62.0</td>
+      <td>Female</td>
+      <td>1965</td>
+      <td>1.67</td>
+      <td>49</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>4.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>938348</td>
+      <td>Most people can be trusted</td>
+      <td>7</td>
+      <td>Good</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>168.0</td>
+      <td>70.0</td>
+      <td>Female</td>
+      <td>1973</td>
+      <td>1.68</td>
+      <td>41</td>
+      <td>medium</td>
+      <td>not a smoker</td>
+      <td>10.0</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>939019</td>
+      <td>5</td>
+      <td>8</td>
+      <td>Good</td>
+      <td>3.0</td>
+      <td>Once a week</td>
+      <td>182.0</td>
+      <td>90.0</td>
+      <td>Male</td>
+      <td>1980</td>
+      <td>1.82</td>
+      <td>34</td>
+      <td>medium</td>
+      <td>smoker</td>
+      <td>5.0</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>924985</td>
+      <td>8</td>
+      <td>9</td>
+      <td>Very good</td>
+      <td>NaN</td>
+      <td>Once a week</td>
+      <td>188.0</td>
+      <td>85.0</td>
+      <td>Male</td>
+      <td>1946</td>
+      <td>1.88</td>
+      <td>68</td>
+      <td>tall</td>
+      <td>not a smoker</td>
+      <td>8.0</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>925410</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Bad</td>
+      <td>NaN</td>
+      <td>Several times a week</td>
+      <td>156.0</td>
+      <td>60.0</td>
+      <td>Female</td>
+      <td>1969</td>
+      <td>1.56</td>
+      <td>45</td>
+      <td>short</td>
+      <td>not a smoker</td>
+      <td>4.0</td>
+      <td>8.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+## Plotting a kategoriske variable
+
+Forskellige plots kan dannes pba. kategoriske. Få plots kan laves direkte på kategoriske, men skal i stedet laves på optællinger.
+
+`.value_counts()` tæller værdier op i en variabel:
+
+
+```python
+ess2014['health'].value_counts()
+```
+
+
+
+
+    Very good    298
+    Good         266
+    Fair         146
+    Bad           29
+    Very bad      11
+    Name: health, dtype: int64
+
+
+
+`value_counts()` kan plottes direkte med fx `.plot.bar()`:
+
+
+```python
+ess2014['health'].value_counts().plot.bar()
+```
+
+
+
+
+    <AxesSubplot:>
+
+
+
+
+![png](output_209_1.png)
+
+
+---
+
+## ØVELSE: Rekod kategorisk
+
+1. Dan en varibel, der består af variablen `health` rekodet til at indeholde kategorierne "Good", "Fair" og "Bad".
+    - "Very good" rekodes til "Good"
+    - "Very bad" rekodes til "Bad"
+
+2. (valgfri) Rekod variablen til at være ordinal
+
+3. Dan et cirkelplot af den rekodede variabel med `.plot.pie()` (husk at brug `value_counts()`)
+
+{{%expand "Løsning"%}}
+
+
+
+```python
+health_recodedict = {'Very good': 'Good', 'Very bad': 'Bad'}
+
+health_cat3 = CategoricalDtype(categories = ['Bad', 'Fair', 'Good'], ordered = True)
+
+ess2014['health_3cats'] = ess2014['health'].replace(health_recodedict)
+ess2014['health_3cats'] = ess2014['health_3cats'].astype(health_cat3)
+
+ess2014['health_3cats'].value_counts().plot.pie()
+```
+
+
+
+
+    <AxesSubplot:ylabel='health_3cats'>
+
+
+
+
+![png](output_211_1.png)
+
+
+{{%/expand%}}
+
+---
 
 # {#Kapitel}Supplerende materiale
 
 # {#Afsnit}Litteratur
 
-- Python for Data Analysis, kap 5
-- Python for Data Analysis, kap 9 - seaborn
-- Python for Data Analysis, kap 12 - categorical
+- McKinney, W 2018: *Python for Data Analysis*, kapitel 5, side 125-167
+
+- McKinney, W 2018: *Python for Data Analysis*, kapitel 9, side 257-292
+
+- McKinney, W 2018: *Python for Data Analysis*, kapitel 12, side 369-378
+
+# {#Afsnit}Nyttige links
+
+**DataCamp: *Python for Data Science Cheat Sheet - Pandas Basics*** - https://datacamp-community-prod.s3.amazonaws.com/dbed353d-2757-4617-8206-8767ab379ab3
+
+**The Pandas Development Team: *10 Minutes to Pandas*** - https://pandas.pydata.org/docs/user_guide/10min.html#min
+
+**Waskom, Michael: *An introduction to seaborn*** - https://seaborn.pydata.org/introduction.html
 
 # {#END}

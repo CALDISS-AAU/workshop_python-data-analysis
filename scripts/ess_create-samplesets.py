@@ -34,5 +34,5 @@ ess1 = ess.loc[rows1, :]
 ess2 = ess.loc[rows2, :]
 
 # Save subsets
-ess1.to_csv('../datasets/ESS2014DK_sub1.csv')
-ess2.to_csv('../datasets/ESS2014DK_sub2.csv')
+ess1.to_csv('../datasets/ESS2014DK_sub1.csv', index = False)
+ess2.to_csv('../datasets/ESS2014DK_sub2.csv', index = False)
