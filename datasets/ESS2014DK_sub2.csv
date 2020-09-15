@@ -1,752 +1,752 @@
 idno,ppltrst,happy,health,cgtsday,alcfreq,height,weight,gndr,yrbrn
-921018,6,9,Very good,10.0,2-3 times a month,178.0,64.0,Male,1990
-921026,8,8,Very good,,Several times a week,172.0,64.0,Female,1948
-921084,5,8,Very good,,Every day,175.0,80.0,Male,1936
-921165,8,Extremely happy,Good,,Once a week,167.0,78.0,Female,1965
-921220,8,8,Fair,,Every day,178.0,80.0,Male,1949
-921262,8,8,Very good,,2-3 times a month,180.0,93.0,Male,1987
-921296,5,9,Good,,Once a week,202.0,108.0,Male,1988
-921377,7,9,Good,,2-3 times a month,169.0,68.0,Male,1948
-921393,7,8,Very good,,Less than once a month,184.0,67.0,Male,1985
-921416,8,Extremely happy,Very good,40.0,Several times a week,186.0,83.0,Male,1953
-921505,8,8,Good,,2-3 times a month,185.0,83.0,Male,1968
-921547,5,8,Good,,Once a month,164.0,68.0,Female,1999
-921571,8,9,Fair,5.0,Less than once a month,163.0,92.0,Female,1978
-921589,8,9,Very bad,,Never,142.0,50.0,Female,1931
-921610,6,9,Good,,Less than once a month,170.0,60.0,Female,1978
-921628,7,8,Fair,,2-3 times a month,162.0,78.0,Female,1941
-921636,9,8,Very good,,2-3 times a month,185.0,68.0,Male,1996
-921652,7,7,Very good,,Once a week,172.0,65.0,Female,1987
-921660,8,6,Very good,,2-3 times a month,173.0,76.0,Male,1941
-921733,5,3,Fair,,Several times a week,182.0,95.0,Male,1960
-921864,8,7,Bad,20.0,Several times a week,169.0,66.0,Male,1994
-921872,4,5,Very bad,15.0,Never,165.0,69.0,Female,1983
-921903,8,Extremely happy,Very good,3.0,2-3 times a month,170.0,76.0,Male,1967
-921911,5,1,Bad,20.0,Every day,175.0,98.0,Male,1969
-921937,4,4,Very good,10.0,Several times a week,180.0,64.0,Male,1994
-921945,6,7,Very good,,Once a week,183.0,106.0,Male,1976
-921953,8,9,Fair,,Every day,172.0,82.0,Female,1935
-921987,7,7,Very good,,Once a week,179.0,74.0,Male,1964
-922056,6,8,Good,,Every day,153.0,58.0,Female,1973
-922072,7,9,Very good,,Once a month,162.0,69.0,Female,1988
-922080,5,6,Fair,20.0,Several times a week,184.0,87.0,Male,1975
-922129,4,8,Good,,Several times a week,185.0,70.0,Male,1998
-922200,8,8,Good,,Once a month,188.0,105.0,Male,1975
-922226,5,8,Good,,Several times a week,173.0,80.0,Male,1941
-922250,8,8,Fair,,Several times a week,178.0,72.0,Female,1937
-922399,8,9,Good,,Less than once a month,176.0,73.0,Male,1959
-922412,8,9,Good,,2-3 times a month,172.0,67.0,Female,1962
-922454,8,8,Good,,Less than once a month,170.0,68.0,Female,1991
-922470,9,8,Fair,,Once a week,153.0,62.0,Female,1936
-922501,9,8,Very good,,Several times a week,165.0,64.0,Female,1970
-922519,8,8,Good,,Several times a week,178.0,78.0,Male,1953
-922569,3,3,Fair,,Once a month,165.0,58.0,Female,1980
-922577,6,9,Fair,,2-3 times a month,168.0,79.0,Male,1943
-922593,Most people can be trusted,8,Fair,15.0,Every day,163.0,50.0,Female,1968
-922658,5,Extremely happy,Good,,2-3 times a month,183.0,91.0,Male,1985
-922690,4,9,Good,5.0,Less than once a month,170.0,47.0,Female,1993
-922713,7,8,Good,,Several times a week,166.0,68.0,Female,1947
-922721,7,9,Good,,2-3 times a month,182.0,87.0,Male,1965
-922739,8,9,Very good,15.0,Several times a week,192.0,88.0,Male,1968
-922763,5,7,Good,,Once a week,187.0,110.0,Male,1967
-922789,7,8,Very good,,Once a month,178.0,102.0,Male,1949
-922852,2,8,Fair,,2-3 times a month,188.0,92.0,Male,1986
-922860,8,8,Very good,,2-3 times a month,159.0,64.0,Female,1993
-922886,6,5,Very good,,Never,160.0,74.0,Female,1932
-922894,8,Extremely happy,Very good,,Several times a week,168.0,60.0,Female,1964
-922941,7,2,Bad,,Less than once a month,185.0,99.0,Male,1991
-922975,8,8,Very good,,Every day,178.0,63.0,Male,1967
-922983,6,7,Good,15.0,Once a week,160.0,54.0,Female,1947
-922991,8,9,Good,,2-3 times a month,166.0,60.0,Female,1934
-923052,8,Extremely happy,Good,,2-3 times a month,157.0,62.0,Female,1931
-923109,8,9,Good,,Less than once a month,158.0,101.0,Female,1946
-923133,9,8,Fair,3.0,Once a week,172.0,65.0,Female,1958
-923141,7,9,Very good,,Several times a week,186.0,75.0,Female,1970
-923159,8,2,Fair,15.0,Several times a week,164.0,51.4,Female,1946
-923264,6,Extremely happy,Good,,Several times a week,173.0,89.0,Male,1943
-923272,8,8,Very good,20.0,Once a week,190.0,81.0,Male,1992
-923280,9,9,Good,20.0,Once a week,182.0,105.0,Male,1983
-923361,7,9,Good,,Never,176.0,95.0,Male,1984
-923379,8,8,Good,,2-3 times a month,166.0,60.0,Female,1967
-923400,8,Extremely happy,Very good,,Several times a week,180.0,70.0,Male,1946
-923492,5,9,Good,,Once a week,166.0,60.0,Female,1953
-923523,5,9,Good,,Every day,172.0,59.0,Female,1945
-923531,9,Extremely happy,Very good,,Several times a week,167.0,67.0,Female,1956
-923557,9,9,Very good,,Once a week,182.0,76.0,Male,1984
-923573,7,9,Very good,,2-3 times a month,155.0,61.0,Female,1987
-923604,5,8,Good,5.0,Less than once a month,189.0,78.0,Male,1989
-923620,8,Extremely happy,Good,,Several times a week,180.0,93.0,Male,1984
-923646,You can't be too careful,Extremely happy,Very good,8.0,Less than once a month,,,Female,1948
-923662,6,8,Very good,,2-3 times a month,163.0,62.0,Female,1976
-923670,6,9,Good,,Once a month,176.0,72.0,Male,1979
-923688,5,7,Fair,10.0,2-3 times a month,164.0,63.0,Female,1990
-923701,5,9,Bad,,Once a week,173.0,59.0,Female,1980
-923808,9,5,Very good,20.0,Every day,172.0,76.0,Male,1955
-923858,9,9,Good,,2-3 times a month,180.0,70.0,Male,1977
-923882,8,9,Very good,4.0,Every day,179.0,87.0,Male,1935
-923905,6,8,Good,12.0,Once a week,196.0,135.0,Male,1995
-923913,7,9,Very good,,Every day,170.0,70.0,Male,1943
-923939,9,Extremely happy,Good,,Several times a week,177.0,107.0,Male,1951
-923989,9,7,Good,,2-3 times a month,180.0,70.0,Female,1959
-924024,7,8,Good,,Less than once a month,169.0,66.0,Female,1986
-924032,7,Extremely happy,Fair,,Every day,174.0,72.0,Male,1926
-924040,8,9,Fair,,Every day,172.0,92.0,Male,1942
-924058,9,,Good,10.0,Once a month,164.0,68.0,Female,1949
-924066,5,6,Fair,,Every day,175.0,68.0,Male,1927
-924113,8,8,Very good,,Several times a week,197.0,82.0,Male,1997
-924121,5,7,Very good,10.0,Never,188.0,85.0,Male,1990
-924163,5,5,Good,,Once a week,169.0,63.0,Male,1971
-924202,9,,Very bad,,Several times a week,170.0,74.0,Female,1970
-924359,8,Extremely happy,Good,,Once a week,165.0,72.0,Male,1937
-924375,7,Extremely happy,Very good,,Once a month,178.0,76.0,Female,1976
-924383,3,8,Bad,,Never,175.0,94.0,Male,1946
-924406,8,8,Good,,Never,168.0,65.0,Female,1934
-924464,7,9,Good,,Once a month,174.0,74.0,Female,1991
-924472,8,8,Very good,,Less than once a month,168.0,72.0,Female,1989
-924480,8,Extremely happy,Very good,,Less than once a month,166.0,65.0,Female,1957
-924503,7,8,Good,,Every day,181.0,81.5,Male,1932
-924511,8,9,Fair,20.0,Less than once a month,157.0,59.0,Male,1957
-924529,8,9,Good,,Several times a week,163.0,75.0,Female,1957
-924545,5,Extremely happy,Good,4.0,Never,172.0,75.0,Male,1979
-924626,8,8,Very good,25.0,Once a month,168.0,85.0,Male,1942
-924676,3,8,Very good,,Once a week,180.0,83.0,Male,1955
-924692,7,5,Good,,Once a week,163.0,58.0,Female,1980
-924715,9,9,Good,3.0,Once a week,167.0,95.0,Female,1985
-924731,5,8,Bad,,Never,178.0,86.0,Male,1951
-924781,9,Extremely happy,Very good,,Several times a week,178.0,75.0,Male,1973
-924812,You can't be too careful,9,Very good,,Once a week,173.0,65.0,Female,1984
-924862,7,8,Very good,,Once a month,178.0,82.0,Male,1980
-924901,Most people can be trusted,Extremely happy,Very good,,Several times a week,164.0,70.0,Female,1957
-924951,7,8,Very good,,Once a week,162.0,59.0,Female,1980
-925054,8,7,Very good,4.0,Once a month,170.0,66.0,Female,1975
-925088,4,Extremely happy,Very good,,Once a week,178.0,86.0,Female,1944
-925096,6,9,Fair,,Less than once a month,179.0,78.6,Male,1996
-925101,6,5,Very good,9.0,Once a week,176.0,83.0,Male,1990
-925119,8,8,Very good,,Several times a week,168.0,57.0,Female,1971
-925127,5,9,Good,,Never,163.0,62.0,Female,1989
-925177,5,Extremely happy,Good,13.0,Every day,164.0,74.0,Female,1957
-925216,6,9,Good,,Several times a week,168.0,102.0,Female,1958
-925258,7,7,Good,,Once a week,179.0,99.0,Male,1967
-925282,6,7,Good,,Several times a week,163.0,59.0,Female,1938
-925290,7,9,Very good,,Several times a week,177.0,90.0,Male,1951
-925402,Most people can be trusted,8,Very good,,2-3 times a month,166.0,56.0,Female,1976
-925525,8,Extremely happy,Fair,,Every day,156.0,50.0,Female,1939
-925533,5,Extremely happy,Very good,,Several times a week,190.0,95.0,Male,1984
-925559,7,Extremely happy,Good,,Once a week,186.0,105.0,Male,1996
-925575,9,9,Very good,,Several times a week,158.0,57.0,Female,1939
-925583,4,9,Good,,Less than once a month,169.0,65.0,Female,1994
-925591,7,9,Very good,,2-3 times a month,164.0,53.0,Female,1958
-925606,8,9,Very good,14.0,Once a week,176.0,104.0,Male,1955
-925622,8,8,Fair,,Every day,157.0,70.0,Female,1946
-925656,6,9,Very good,,Several times a week,168.0,67.0,Male,1966
-925680,8,Extremely happy,Good,,Several times a week,164.0,69.0,Female,1944
-925703,8,5,Fair,,2-3 times a month,165.0,60.0,Female,1975
-925745,7,8,Very good,20.0,Once a month,168.0,65.0,Female,1957
-925753,7,7,Very good,0.0,Less than once a month,168.0,67.0,Female,1988
-925787,7,9,Very good,20.0,Less than once a month,175.0,80.0,Female,1949
-925876,8,6,Very good,10.0,Several times a week,189.0,80.0,Male,1970
-925884,5,9,Bad,,Never,173.0,81.0,Male,1990
-925923,6,8,Bad,,Several times a week,177.0,79.0,Female,1964
-926026,9,9,Very good,,Once a week,167.0,63.0,Female,1976
-926092,7,9,Fair,15.0,2-3 times a month,173.0,115.0,Female,1975
-926107,5,8,Very good,,Less than once a month,187.0,84.0,Male,1999
-926131,8,9,Very good,,Less than once a month,176.0,79.0,Female,1982
-926288,Most people can be trusted,9,Very good,,2-3 times a month,160.0,59.0,Female,1951
-926458,8,7,Very good,15.0,Once a week,172.0,77.0,Male,1986
-926539,7,8,Very good,0.0,Once a week,165.0,59.0,Female,1994
-926555,6,8,Very good,,Less than once a month,183.0,75.0,Male,1995
-926563,7,8,Fair,,Never,195.0,66.0,Male,1997
-926589,9,Extremely happy,Good,,Several times a week,172.0,68.0,Male,1965
-926597,6,7,Good,,Less than once a month,173.0,68.0,Female,1978
-926652,3,7,Good,,2-3 times a month,172.0,62.0,Female,1990
-926660,3,5,Good,,Once a week,186.0,66.0,Male,1965
-926694,8,Extremely happy,Good,,Every day,177.0,78.0,Male,1939
-926733,7,8,Fair,,Less than once a month,163.0,85.0,Female,1968
-926806,6,Extremely happy,Very good,,Several times a week,172.0,64.0,Female,1979
-926898,5,6,Good,,Once a week,182.0,112.0,Male,1968
-926903,9,9,Very good,,Every day,162.0,62.0,Female,1940
-926911,8,8,Good,,2-3 times a month,184.0,79.0,Male,1960
-926987,8,9,Very good,,Several times a week,162.0,64.0,Female,1950
-927006,7,6,Bad,,Less than once a month,167.0,72.0,Female,1967
-927072,8,7,Good,,Several times a week,192.0,83.0,Male,1964
-927187,3,9,Good,,Every day,162.0,65.0,Male,1927
-927226,8,Extremely happy,Very good,,Less than once a month,182.0,87.0,Male,1974
-927276,8,Extremely happy,Fair,,Several times a week,184.0,90.0,Male,1953
-927323,8,Extremely happy,Fair,,Once a week,172.0,87.0,Female,1967
-927331,5,Extremely happy,Very good,,Never,181.0,,Female,1981
-927349,5,8,Very good,10.0,Once a week,188.0,79.0,Male,1974
-927381,7,8,Fair,,Every day,173.0,82.0,Male,1995
-927488,4,9,Fair,15.0,Less than once a month,168.0,74.0,Male,1981
-927585,7,9,Good,,Once a month,175.0,84.0,Female,1986
-927624,8,8,Good,,Once a week,160.0,69.0,Female,1961
-927632,5,9,Good,,Never,158.0,64.0,Female,1976
-927640,8,8,Very good,,Once a week,180.0,87.0,Female,1988
-927763,5,7,Good,,Less than once a month,185.0,97.0,Male,1938
-927933,6,8,Fair,,Once a week,159.0,51.0,Female,1990
-927967,8,8,Very good,0.0,Several times a week,175.0,82.0,Male,1967
-927983,3,8,Fair,20.0,Once a month,164.0,54.0,Female,1989
-928002,8,8,Fair,,Several times a week,146.0,48.0,Female,1935
-928028,8,6,Very good,10.0,Several times a week,181.0,75.0,Male,1986
-928109,8,7,Good,,Once a week,168.0,67.0,Female,1964
-928125,3,8,Good,,2-3 times a month,183.0,87.0,Male,1968
-928303,5,9,Very good,,Several times a week,178.0,73.0,Male,1969
-928361,9,8,Good,,Once a week,166.0,59.0,Female,1955
-928400,8,8,Good,,Once a week,167.0,61.0,Female,1969
-928418,7,6,Fair,,Several times a week,187.0,80.0,Male,1997
-928434,8,6,Fair,,2-3 times a month,164.0,64.0,Female,1960
-928492,5,6,Good,20.0,Once a week,162.0,80.0,Female,1968
-928515,7,8,Very good,,Several times a week,178.0,89.0,Male,1939
-928573,8,8,Very good,,Never,168.0,68.0,Female,1936
-928777,8,8,Good,20.0,2-3 times a month,189.0,71.0,Male,1972
-928785,8,9,Fair,20.0,Once a week,183.0,125.0,Male,1967
-928816,7,9,Good,,2-3 times a month,196.0,105.0,Male,1973
-928840,3,5,Very good,,Less than once a month,187.0,98.0,Male,1998
-928874,7,7,Very good,,Less than once a month,187.0,64.0,Male,1999
-928905,6,8,Bad,20.0,Once a week,173.0,68.0,Male,1952
-928913,8,Extremely happy,Good,,Every day,163.0,71.0,Female,1936
-928971,8,Extremely happy,Good,,Once a week,168.0,54.0,Female,1946
-928997,5,8,Very good,25.0,Several times a week,175.0,67.0,Female,1988
-929090,8,9,Fair,,Once a month,184.0,89.0,Male,1965
-929139,7,9,Fair,,Once a month,186.0,107.0,Male,1955
-929163,5,7,Fair,10.0,Once a week,167.0,56.0,Female,1941
-929171,You can't be too careful,Extremely happy,Fair,,2-3 times a month,173.0,88.0,Male,1937
-929202,Most people can be trusted,Extremely happy,Good,,Once a week,167.0,52.0,Female,1994
-929210,7,Extremely happy,Fair,,Several times a week,180.0,110.0,Male,1949
-929228,9,9,Good,,Several times a week,182.0,102.0,Male,1938
-929325,8,Extremely happy,Good,,Less than once a month,162.0,76.0,Female,1970
-929359,3,8,Fair,,Several times a week,182.0,88.0,Male,1945
-929414,7,8,Very good,20.0,Several times a week,171.0,60.0,Female,1997
-929448,Most people can be trusted,1,Good,,Less than once a month,172.0,,Male,1926
-929456,8,8,Fair,,Less than once a month,170.0,70.0,Female,1998
-929464,7,7,Good,,2-3 times a month,165.0,86.0,Female,1982
-929529,9,8,Good,15.0,Several times a week,164.0,77.0,Female,1969
-929587,8,7,Bad,,Once a week,163.0,78.0,Female,1958
-929642,8,8,Good,,2-3 times a month,184.0,71.0,Female,1998
-929692,5,7,Very good,15.0,2-3 times a month,193.0,83.0,Male,1986
-929757,4,8,Good,20.0,Less than once a month,168.0,80.0,Male,1969
-929854,7,8,Very good,10.0,Once a week,176.0,71.0,Male,1992
-929862,9,9,Good,,Several times a week,175.0,82.0,Male,1952
-929870,9,Extremely happy,Very good,,Less than once a month,163.0,69.0,Female,1947
-929977,4,8,Very good,15.0,2-3 times a month,175.0,75.0,Male,1985
-929985,7,8,Good,0.0,Several times a week,172.0,76.0,Female,1969
-930023,5,5,Fair,,Every day,185.0,67.0,Male,1946
-930293,You can't be too careful,4,Bad,10.0,Every day,160.0,42.0,Female,1945
-930316,4,1,Bad,10.0,Every day,174.0,75.0,Male,1947
-930324,5,7,Very good,,Every day,168.0,85.0,Male,1941
-930332,8,9,Good,,Once a week,178.0,89.0,Male,1985
-930374,9,9,Very good,,Several times a week,158.0,61.0,Female,1964
-930497,7,8,Good,,2-3 times a month,175.0,76.0,Female,1987
-930659,8,7,Good,4.0,Less than once a month,176.0,80.0,Female,1969
-930667,5,Extremely happy,Good,,Once a week,170.0,70.0,Male,1932
-930714,8,9,Good,,Less than once a month,169.0,66.0,Female,1977
-930730,Most people can be trusted,9,Good,,Several times a week,160.0,84.0,Female,1974
-930772,6,7,Very bad,3.0,2-3 times a month,168.0,40.0,Female,1957
-930780,7,9,Very good,,Once a week,204.0,112.0,Male,1983
-930811,8,Extremely happy,Very good,,Several times a week,175.0,95.0,Male,1937
-930829,7,9,Bad,,Once a week,185.0,116.0,Male,1958
-930853,5,8,Fair,,2-3 times a month,168.0,69.0,Female,1947
-930887,8,8,Good,,2-3 times a month,192.0,84.0,Male,1979
-930926,8,Extremely happy,Good,,Several times a week,174.0,83.0,Male,1948
-930968,8,8,Good,,Once a week,168.0,60.0,Female,1964
-930984,6,Extremely happy,Very good,,Once a week,163.0,69.0,Female,1973
-930992,9,9,Very good,,Several times a week,177.0,84.0,Male,1975
-931003,8,7,Good,,Once a week,168.0,74.0,Male,1980
-931037,9,5,Good,10.0,2-3 times a month,180.0,86.0,Male,1961
-931087,9,9,Good,,Once a week,165.0,71.0,Female,1989
-931095,2,6,Bad,,2-3 times a month,167.0,86.0,Female,1949
-931126,8,Extremely happy,Very good,,Less than once a month,162.0,81.0,Female,1961
-931142,8,9,Fair,,Once a month,168.0,65.0,Female,1939
-931150,8,9,Very good,,Once a week,187.0,86.0,Male,1985
-931207,6,7,Fair,,Once a month,180.0,79.0,Male,1989
-931249,3,8,Very good,,Several times a week,176.0,66.0,Male,1975
-931281,5,7,Good,,2-3 times a month,186.0,83.0,Male,1988
-931320,7,8,Very good,20.0,Once a week,185.0,81.0,Male,1974
-931338,8,8,Good,,Several times a week,175.0,53.0,Female,1965
-931354,6,8,Good,0.0,Once a week,165.0,54.0,Male,1998
-931469,Most people can be trusted,9,Good,,Less than once a month,168.0,75.0,Female,1953
-931540,8,9,Good,,2-3 times a month,164.0,56.0,Female,1971
-931566,Most people can be trusted,9,Fair,9.0,Every day,160.0,47.0,Female,1946
-931574,7,Extremely happy,Fair,,Once a week,166.0,67.0,Male,1938
-931689,9,9,Good,15.0,Once a month,186.0,85.0,Male,1972
-931697,8,9,Very good,,2-3 times a month,150.0,52.0,Female,1946
-931728,5,3,Very good,1.0,Never,179.0,56.0,Male,1983
-931736,9,Extremely happy,Very good,,Once a week,175.0,80.0,Female,1965
-931794,5,Extremely happy,Very good,,,,,Male,1990
-931817,5,Extremely happy,Good,,Several times a week,167.0,65.0,Female,1945
-931825,7,9,Very good,,Once a month,173.0,74.0,Male,1994
-931867,5,9,Very good,5.0,Once a month,168.0,58.0,Female,1994
-932025,1,8,Good,,Several times a week,170.0,80.0,Female,1944
-932041,7,9,Very good,,2-3 times a month,179.0,84.0,Male,1954
-932067,5,6,Fair,,Never,188.0,137.0,Male,1966
-932083,7,Extremely happy,Good,,Every day,160.0,44.0,Female,1934
-932091,6,9,Very good,,Several times a week,178.0,82.0,Male,1985
-932106,8,9,Good,,Less than once a month,170.0,,Female,1975
-932229,8,Extremely happy,Very good,20.0,Less than once a month,187.0,75.0,Male,1993
-932237,8,8,Good,,Several times a week,176.0,82.0,Male,1946
-932253,8,7,Very good,,Several times a week,170.0,57.0,Female,1971
-932261,7,Extremely happy,Very good,,2-3 times a month,180.0,85.0,Male,1996
-932287,9,9,Good,,Less than once a month,167.0,48.0,Female,1993
-932318,You can't be too careful,9,Good,,2-3 times a month,180.0,77.0,Male,1965
-932368,9,9,Good,,Several times a week,160.0,75.0,Female,1972
-932407,3,9,Very good,,2-3 times a month,184.0,66.0,Male,1998
-932499,5,Extremely happy,Fair,,2-3 times a month,166.0,108.0,Female,1953
-932504,8,8,Good,0.0,2-3 times a month,172.0,67.0,Male,1976
-932562,8,Extremely happy,Very good,,Several times a week,167.0,78.0,Female,1955
-932596,9,Extremely happy,Very good,,Every day,158.0,48.0,Female,1960
-932601,7,8,Good,20.0,Once a week,183.0,86.0,Male,1948
-932669,8,9,Good,,Several times a week,182.0,85.0,Female,1986
-932685,3,3,Bad,,,165.0,55.0,Female,1925
-932708,9,9,Good,,Several times a week,178.0,92.0,Male,1951
-932716,3,8,Good,,Several times a week,166.0,71.0,Female,1940
-932724,5,9,Good,,Once a week,167.0,66.0,Female,1951
-932758,9,8,Good,,Once a week,165.0,51.0,Female,1926
-932871,2,5,Fair,2.0,Several times a week,175.0,68.0,Male,1942
-932889,9,8,Good,,2-3 times a month,175.0,,Female,1968
-932897,You can't be too careful,7,Fair,10.0,Several times a week,187.0,110.0,Male,1993
-932978,5,7,Fair,,Less than once a month,163.0,62.0,Female,1971
-933005,7,Extremely happy,Very good,,Once a week,167.0,75.0,Female,1956
-933128,8,8,Fair,20.0,Once a week,174.0,71.0,Male,1949
-933144,8,9,Good,,2-3 times a month,190.0,72.0,Male,1993
-933259,9,8,Good,,Once a week,172.0,75.0,Male,1955
-933275,8,8,Fair,,2-3 times a month,171.0,72.0,Female,1938
-933348,7,9,Good,,Once a week,173.0,80.0,Male,1995
-933372,7,9,Good,,Once a week,178.0,88.0,Male,1971
-933398,7,8,Fair,15.0,Never,169.0,70.0,Male,1985
-933403,8,Extremely happy,Very good,10.0,2-3 times a month,158.0,52.0,Female,1967
-933429,8,9,Fair,,2-3 times a month,166.0,65.0,Female,1953
-933461,8,8,Good,,Never,161.0,58.0,Female,1944
-933487,5,8,Very good,,Several times a week,167.0,80.0,Female,1929
-933518,5,7,Good,20.0,Once a month,169.0,80.0,Female,1985
-933542,You can't be too careful,,,,,,,Female,1978
-933607,3,9,Very good,,Never,174.0,72.0,Female,1958
-933623,4,Extremely happy,Very good,,2-3 times a month,183.0,77.0,Female,1958
-933673,1,Extremely happy,Very good,12.0,Once a week,162.0,48.0,Female,1922
-933704,9,9,Very good,,Several times a week,167.0,62.0,Female,1959
-933738,8,9,Very good,,Several times a week,165.0,66.0,Female,1963
-933869,7,8,Fair,10.0,Once a month,176.0,65.0,Male,1990
-933893,9,8,Very good,,Once a week,182.0,70.0,Male,1990
-933916,8,8,Good,20.0,Every day,165.0,57.0,Male,1965
-933924,Most people can be trusted,9,Very good,10.0,Less than once a month,174.0,80.0,Female,1974
-933940,8,9,Very good,,2-3 times a month,185.0,75.0,Male,1945
-934001,8,Extremely happy,Fair,,2-3 times a month,184.0,82.0,Male,1979
-934035,8,9,Fair,,Every day,180.0,89.0,Male,1941
-934077,3,8,Bad,,Less than once a month,173.0,72.0,Female,1962
-934108,6,6,Fair,,Once a week,180.0,81.0,Male,1971
-934190,7,8,Good,,Less than once a month,169.0,75.0,Female,1990
-934255,8,7,Good,,Once a week,170.0,80.0,Male,1931
-934263,8,9,Good,,Every day,181.0,96.0,Male,1967
-934386,6,9,Very good,7.0,Every day,165.0,59.0,Female,1964
-934433,8,8,Very good,4.0,Several times a week,170.0,76.0,Male,1953
-934475,8,8,Very good,,Several times a week,178.0,84.0,Male,1985
-934645,8,6,Fair,8.0,Once a month,169.0,65.0,Female,1948
-934653,8,7,Very good,,Once a month,163.0,57.0,Female,1977
-934726,4,Extremely happy,Very good,,Never,160.0,77.0,Female,1947
-934750,5,9,Very good,,Less than once a month,170.0,69.0,Male,1942
-934784,5,8,Very good,5.0,Every day,174.0,90.0,Male,1985
-934831,7,Extremely happy,Good,,Several times a week,177.0,85.0,Male,1951
-934873,8,7,Good,,Never,170.0,75.0,Male,1973
-934912,5,8,Fair,0.0,2-3 times a month,180.0,88.0,Male,1963
-934954,Most people can be trusted,7,Good,,Several times a week,170.0,68.0,Female,1965
-934962,6,7,Good,,2-3 times a month,169.0,58.0,Female,1976
-934970,8,9,Good,15.0,Several times a week,176.0,77.0,Female,1954
-935099,8,8,Very good,,Every day,164.0,68.0,Female,1926
-935170,3,Extremely happy,Bad,30.0,Never,189.0,87.0,Male,1976
-935269,3,6,Fair,8.0,Every day,164.0,52.0,Female,1936
-935285,8,Extremely happy,Very good,,Every day,180.0,70.0,Male,1923
-935332,8,8,Very good,,Once a month,175.0,61.0,Female,1992
-935340,7,9,Very good,,Once a week,193.0,72.0,Male,1997
-935382,5,8,Very good,15.0,Never,160.0,63.0,Female,1955
-935439,8,9,Fair,,Once a month,159.0,80.0,Female,1923
-935463,4,9,Fair,,Less than once a month,165.0,,Female,1985
-935489,9,6,Good,,Several times a week,173.0,70.0,Male,1988
-935502,9,8,Very good,20.0,Several times a week,179.0,82.0,Male,1971
-935536,7,9,Very good,,Once a month,182.0,92.0,Male,1976
-935560,5,8,Very good,,Never,173.0,90.0,Female,1981
-935586,4,4,Fair,10.0,2-3 times a month,175.0,63.0,Male,1961
-935594,4,8,Very good,,2-3 times a month,187.0,79.0,Male,1997
-935633,8,9,Very good,,Several times a week,163.0,63.0,Female,1962
-935641,8,9,Very good,,Several times a week,186.0,88.0,Male,1958
-935706,8,9,Very good,,Once a week,170.0,82.5,Male,1965
-935764,5,8,Very good,,Less than once a month,156.0,54.0,Female,1980
-935780,5,9,Very good,,Once a week,169.0,70.0,Female,1975
-935829,8,9,Good,,2-3 times a month,175.0,60.0,Female,1980
-935845,7,Extremely happy,Very good,,Less than once a month,167.0,92.0,Female,1980
-935853,8,8,Good,,2-3 times a month,173.0,95.0,Male,1945
-935879,7,8,Very good,,Several times a week,173.0,69.0,Male,1984
-935887,7,9,Very good,1.0,Less than once a month,173.0,68.0,Female,1969
-935984,8,7,Good,20.0,Several times a week,183.0,81.0,Male,1972
-936053,8,9,Good,3.0,Several times a week,183.0,94.0,Male,1979
-936079,5,7,Fair,,2-3 times a month,172.0,85.0,Female,1962
-936087,8,7,Good,,Several times a week,177.0,61.0,Female,1973
-936100,8,Extremely happy,Very good,,Less than once a month,160.0,62.0,Female,1983
-936118,Most people can be trusted,9,Very good,,Several times a week,170.0,82.0,Female,1971
-936150,8,9,Very good,,Several times a week,182.0,73.0,Male,1955
-936184,9,9,Good,,Several times a week,183.0,83.0,Male,1968
-936207,8,8,Good,,Once a month,168.0,63.0,Female,1984
-936273,7,7,Very good,,Several times a week,176.0,70.0,Female,1966
-936312,3,Extremely happy,Fair,,Several times a week,162.0,64.0,Female,1951
-936320,6,Extremely happy,Very good,20.0,Less than once a month,175.0,74.0,Male,1983
-936346,6,9,Very good,,Once a month,186.0,80.0,Male,1993
-936362,8,9,Good,,Every day,174.0,72.0,Male,1945
-936370,8,Extremely happy,Fair,,Several times a week,167.0,72.0,Female,1950
-936435,8,Extremely happy,Good,,Never,163.0,75.0,Female,1945
-936516,8,9,Good,,Several times a week,172.0,66.0,Female,1961
-936540,6,Extremely happy,Very good,,Several times a week,182.0,88.0,Male,1959
-936697,8,8,Fair,,Several times a week,172.0,80.0,Male,1950
-936728,8,9,Very good,,Once a week,183.0,91.0,Male,1969
-936736,8,8,Fair,,Every day,172.0,63.0,Female,1941
-936744,5,Extremely happy,Good,12.0,Several times a week,163.0,58.0,Male,1988
-936752,5,9,Good,20.0,Never,168.0,65.0,Female,1960
-936778,7,6,Good,15.0,Several times a week,174.0,82.0,Male,1960
-936794,5,8,Good,,2-3 times a month,185.0,83.0,Male,1947
-936859,5,8,Very good,,Every day,183.0,106.0,Male,1946
-936883,5,8,Good,,2-3 times a month,163.0,64.0,Female,1945
-937009,7,9,Good,,Once a week,173.0,96.0,Male,1964
-937017,8,9,Very good,,Every day,164.0,78.0,Female,1950
-937041,2,9,Fair,2.0,Once a week,160.0,71.0,Female,1981
-937059,4,8,Very good,19.0,Never,184.0,64.0,Male,1990
-937083,4,9,Very good,,Several times a week,185.0,80.0,Male,1972
-937114,8,8,Very good,,Once a month,172.0,61.0,Female,1981
-937148,5,8,Fair,,Once a week,169.0,120.0,Female,1959
-937172,8,9,Very good,2.0,Several times a week,168.0,60.0,Female,1982
-937198,4,Extremely happy,Very good,10.0,Less than once a month,164.0,60.0,Female,1993
-937245,8,9,Good,,2-3 times a month,165.0,65.0,Female,1963
-937318,8,9,Good,,Never,164.0,59.0,Female,1959
-937342,5,5,Very good,4.0,Several times a week,175.0,83.0,Male,1943
-937368,4,Extremely happy,Fair,,Every day,162.0,104.0,Male,1948
-937384,8,8,Good,,2-3 times a month,183.0,89.0,Male,1975
-937392,7,9,Very good,,Several times a week,170.0,80.0,Male,1955
-937465,4,8,Very good,20.0,Every day,168.0,64.0,Male,1968
-937499,8,9,Fair,,Once a week,162.0,,Female,1968
-937504,Most people can be trusted,Extremely happy,Very good,,Less than once a month,157.0,,Female,1937
-937562,7,7,Very good,,Once a week,167.0,82.0,Female,1946
-937596,7,7,Good,,Once a month,168.0,58.0,Female,1980
-937643,9,8,Fair,,Once a month,164.0,70.0,Female,1960
-937716,8,9,Good,8.0,Once a week,170.0,78.0,Female,1943
-937774,7,9,Good,,Once a week,163.0,58.0,Female,1976
-937782,8,9,Good,,Several times a week,186.0,96.0,Male,1959
-937813,5,8,Very good,,Several times a week,183.0,92.0,Male,1975
-937821,3,5,Fair,,2-3 times a month,178.0,110.0,Male,1953
-937863,8,8,Very good,,Several times a week,187.0,66.0,Male,1967
-937910,4,7,Good,20.0,Once a week,180.0,80.0,Male,1963
-938005,9,9,Very good,,Once a week,177.0,73.0,Female,1988
-938039,9,7,Very good,1.0,Several times a week,187.0,84.0,Male,1973
-938047,8,9,Fair,,Never,178.0,66.0,Male,1956
-938055,8,Extremely happy,Very good,,Less than once a month,172.0,72.0,Female,1979
-938102,5,Extremely happy,Very good,,Once a week,178.0,93.0,Male,1963
-938178,5,8,Good,12.0,Less than once a month,161.0,106.0,Female,1991
-938194,6,Extremely happy,Fair,,2-3 times a month,172.0,60.0,Male,1926
-938241,6,5,Fair,20.0,Once a week,168.0,68.0,Female,1961
-938283,7,8,Good,,Once a month,171.0,62.0,Female,1992
-938356,6,Extremely happy,Very good,,Less than once a month,192.0,90.0,Male,1975
-938364,7,Extremely happy,Very good,,2-3 times a month,185.0,90.0,Male,1985
-938398,7,9,Very good,,Several times a week,190.0,94.0,Male,1968
-938437,6,8,Good,,Once a month,168.0,50.0,Male,1998
-938461,8,8,Fair,,Less than once a month,189.0,80.0,Male,1973
-938623,9,9,Good,,Once a week,176.0,70.0,Male,1991
-938631,7,8,Very good,,2-3 times a month,167.0,62.0,Female,1959
-938665,4,8,Very good,,2-3 times a month,173.0,65.0,Female,1996
-938681,8,7,Good,,Once a month,162.0,51.0,Female,1991
-938704,Most people can be trusted,8,Fair,,Once a month,164.0,92.0,Female,1965
-938843,8,7,Very good,,Once a month,170.0,64.0,Female,1978
-938885,8,7,Fair,20.0,Several times a week,172.0,72.0,Male,1953
-938940,7,8,Good,,2-3 times a month,184.0,68.0,Female,1997
-938966,8,Extremely happy,Very good,,Every day,169.0,70.0,Male,1943
-938974,7,7,Good,,Less than once a month,165.0,68.0,Female,1975
-939001,8,8,Very good,,Once a week,184.0,80.0,Male,1974
-939124,3,Extremely happy,Good,,Less than once a month,172.0,51.0,Female,1943
-939140,8,7,Good,,2-3 times a month,186.0,110.0,Male,1989
-939182,8,9,Good,,Less than once a month,191.0,89.0,Male,1965
-939271,7,7,Good,,Less than once a month,163.0,75.0,Female,1946
-939344,8,8,Fair,,Several times a week,176.0,73.0,Male,1944
-939386,9,Extremely happy,Very good,,2-3 times a month,184.0,62.0,Male,1992
-939467,5,2,Fair,,Less than once a month,184.0,88.0,Male,1945
-939483,7,9,Fair,,Less than once a month,156.0,63.0,Female,1979
-939530,7,8,Bad,,Several times a week,149.0,56.0,Female,1983
-939556,6,8,Good,,Once a week,188.0,126.0,Male,1985
-939700,9,9,Very good,,Once a week,179.0,78.0,Male,1973
-939718,6,Extremely happy,Fair,,Once a month,158.0,67.0,Female,1936
-939742,6,7,Bad,,Every day,176.0,71.0,Male,1947
-939792,You can't be too careful,9,Fair,10.0,2-3 times a month,155.0,38.0,Female,1955
-939807,7,8,Very good,,Once a month,163.0,62.0,Female,1954
-939865,7,6,Fair,,2-3 times a month,179.0,53.0,Male,1997
-939873,5,7,Very good,18.0,Less than once a month,172.0,95.0,Male,1989
-939881,8,Extremely happy,Very good,,2-3 times a month,176.0,69.0,Female,1970
-939938,8,9,Very good,,Less than once a month,169.0,62.0,Female,1978
-939970,7,9,Very good,,Several times a week,204.0,113.0,Male,1961
-940026,8,7,Good,,Never,165.0,55.0,Female,1999
-940050,7,Extremely happy,Very good,,Less than once a month,170.0,52.0,Female,1999
-940084,9,Extremely happy,Good,,Never,171.0,72.0,Female,1980
-940107,7,8,Good,4.0,2-3 times a month,180.0,74.0,Male,1995
-940165,7,8,Good,,Once a week,164.0,68.0,Female,1938
-940173,8,Extremely happy,Good,,Once a month,168.0,90.0,Male,1932
-940246,7,9,Very good,,2-3 times a month,176.0,95.0,Female,1960
-940254,6,8,Very good,,Once a week,176.0,75.0,Male,1987
-940296,7,8,Very good,,Once a week,175.0,68.0,Male,1980
-940319,5,9,Good,,Once a week,165.0,70.0,Female,1976
-940335,2,3,Good,,2-3 times a month,153.0,42.0,Female,1999
-940351,5,4,Bad,5.0,Never,163.0,,Female,1979
-940385,4,9,Good,,Once a month,176.0,69.0,Female,1993
-940458,3,7,Fair,,Once a week,150.0,70.0,Female,1936
-940466,6,8,Very good,,Once a week,185.0,78.0,Male,1987
-940490,8,9,Very good,,2-3 times a month,185.0,90.0,Male,1992
-940547,9,Extremely happy,Good,0.0,Several times a week,174.0,84.0,Male,1943
-940678,6,8,Bad,,Less than once a month,151.0,53.0,Female,1950
-940717,Most people can be trusted,8,Very good,,Several times a week,165.0,67.0,Female,1972
-940725,8,Extremely happy,Very good,,Several times a week,158.0,70.0,Female,1954
-940759,5,6,Fair,,2-3 times a month,165.0,51.0,Female,1998
-940783,8,7,Good,,Several times a week,196.0,135.0,Male,1954
-940848,7,9,Good,,Several times a week,168.0,72.0,Female,1947
-940864,4,9,Good,,Once a month,164.0,65.0,Female,1971
-940880,8,6,Fair,12.0,Once a week,185.0,92.0,Male,1957
-940979,8,9,Fair,0.0,Several times a week,188.0,123.0,Male,1965
-940987,Most people can be trusted,8,Very good,,Once a week,172.0,65.0,Female,1955
-941153,4,6,Good,,Once a week,197.0,62.0,Male,1951
-941195,8,9,Good,,2-3 times a month,161.0,65.0,Male,1992
-941226,8,8,Good,,Several times a week,182.0,88.0,Male,1957
-941242,8,8,Very good,,Several times a week,182.0,89.0,Male,1948
-941268,6,9,Good,,Once a week,160.0,72.0,Female,1970
-941284,7,4,Fair,,Several times a week,175.0,65.0,Female,1952
-941365,7,9,Fair,,Never,157.0,121.0,Female,1960
-941373,5,Extremely happy,Good,8.0,2-3 times a month,190.0,70.0,Male,1992
-941412,5,7,Fair,,Less than once a month,176.0,66.0,Female,1990
-941438,6,7,Very good,,Several times a week,177.0,70.0,Male,1958
-941535,3,9,Very good,,Once a week,169.0,52.0,Female,1988
-941543,8,9,Good,,Once a week,178.0,75.0,Male,1975
-941551,4,3,Bad,,Less than once a month,172.0,110.0,Male,1956
-941569,9,Extremely happy,Fair,,Less than once a month,168.0,60.0,Female,1986
-941721,9,Extremely happy,Good,,Once a week,156.0,58.0,Female,1926
-941747,4,5,Fair,20.0,Less than once a month,160.0,60.0,Female,1955
-941771,8,7,Very good,,Several times a week,162.0,65.0,Female,1956
-941828,7,8,Very good,,Every day,175.0,90.0,Male,1945
-941844,9,6,Bad,,Never,182.0,61.0,Male,1926
-941860,7,Extremely happy,Very good,,Less than once a month,164.0,57.0,Female,1979
-941886,9,7,Good,,2-3 times a month,168.0,,Female,1968
-941909,8,9,Very good,,Once a week,171.0,77.0,Female,1950
-941975,8,7,Very good,,Once a week,178.0,69.0,Female,1961
-941991,9,9,Good,,Less than once a month,165.0,83.0,Female,1970
-942036,7,9,Bad,,Several times a week,167.0,82.0,Female,1967
-942078,7,8,Good,1.0,Several times a week,182.0,90.0,Male,1975
-942094,8,8,Very good,,Less than once a month,173.0,83.0,Male,1929
-942117,7,7,Good,,Several times a week,175.0,70.0,Female,1975
-942141,7,8,Very good,15.0,Several times a week,169.0,,Female,1963
-942175,2,Extremely unhappy,Very bad,30.0,Less than once a month,162.0,55.0,Female,1992
-942183,5,6,Good,,Once a week,167.0,90.0,Female,1969
-942298,Most people can be trusted,Extremely happy,Very good,,Several times a week,192.0,91.0,Male,1980
-942442,9,9,Good,,Several times a week,176.0,71.0,Male,1961
-942468,8,8,Good,,Once a week,186.0,83.0,Male,1961
-942476,4,7,Fair,,Once a week,158.0,60.0,Female,1981
-942492,3,Extremely happy,Fair,,2-3 times a month,164.0,73.0,Female,1970
-942515,8,6,Fair,12.0,Once a week,180.0,84.0,Male,1958
-942531,9,8,Good,,Once a week,178.0,120.0,Male,1959
-942557,9,8,Fair,6.0,Once a week,178.0,80.0,Female,1958
-942565,9,9,Good,,Once a month,173.0,115.0,Female,1984
-942599,7,7,Very good,,2-3 times a month,174.0,62.0,Female,1957
-942662,8,7,Good,15.0,2-3 times a month,173.0,73.0,Female,1963
-942743,3,8,Fair,,2-3 times a month,179.0,98.0,Male,1958
-942785,8,9,Very good,,Every day,184.0,75.0,Male,1951
-942808,5,8,Very good,,Once a week,168.0,77.5,Female,1956
-942816,4,4,Good,,2-3 times a month,195.0,117.0,Male,1974
-942824,8,5,Good,,Every day,182.0,75.0,Male,1925
-942840,8,8,Very good,13.0,2-3 times a month,170.0,80.0,Female,1965
-942874,5,7,Very bad,,Less than once a month,155.0,45.3,Female,1931
-942913,7,9,Good,,Once a week,165.0,65.0,Male,1979
-942939,8,Extremely happy,Good,,2-3 times a month,185.0,117.0,Male,1962
-942947,9,8,Fair,,Several times a week,187.0,91.0,Male,1947
-942955,8,9,Very good,,2-3 times a month,190.0,86.0,Male,1990
-942963,1,Extremely happy,Very good,,2-3 times a month,179.0,88.0,Male,1952
-943008,7,9,Fair,,2-3 times a month,164.0,69.0,Female,1940
-943040,8,Extremely happy,Very good,,Several times a week,184.0,85.0,Male,1977
-943066,9,9,Very good,,Less than once a month,179.0,70.0,Male,1975
-943082,9,8,Good,20.0,Every day,183.0,90.0,Male,1965
-943105,8,8,Very good,,Once a week,187.0,87.0,Male,1957
-943147,8,9,Very good,,Less than once a month,189.0,62.0,Male,1996
-943155,9,9,Fair,,Several times a week,164.0,82.0,Female,1950
-943171,8,8,Very good,,2-3 times a month,172.0,70.0,Male,1985
-943236,1,Extremely happy,Good,,Once a month,160.0,57.0,Female,1946
-943260,5,8,Bad,,Never,186.0,112.0,Male,1945
-943278,8,8,Fair,4.0,Once a month,171.0,58.0,Female,1974
-943294,5,8,Fair,,Several times a week,180.0,82.0,Male,1958
-943325,4,8,Good,,2-3 times a month,172.0,64.0,Female,1978
-943341,4,7,Fair,7.0,Less than once a month,187.0,84.0,Male,1988
-943430,Most people can be trusted,5,Very good,,2-3 times a month,168.0,65.0,Female,1973
-943545,4,5,Bad,,Several times a week,173.0,90.0,Male,1953
-943634,7,9,Good,,Several times a week,194.0,88.0,Male,1977
-943642,5,7,Fair,,Once a week,162.0,70.0,Female,1957
-943668,9,9,Very good,,Once a week,184.0,92.0,Male,1946
-943749,5,9,Very good,,Never,148.0,54.0,Female,1964
-943773,8,2,Bad,,Several times a week,163.0,69.0,Female,1946
-943846,2,,Good,,Several times a week,178.0,76.0,Male,1945
-943896,8,9,Very good,,Every day,171.0,76.0,Male,1941
-943951,8,8,Very good,,2-3 times a month,173.0,63.0,Female,1970
-943985,8,7,Good,,Once a week,173.0,70.0,Male,1975
-943993,7,8,Good,,Every day,175.0,66.0,Male,1928
-944004,9,9,Good,5.0,Once a week,183.0,105.0,Male,1960
-944012,8,9,Very good,,Never,160.0,64.0,Female,1974
-944046,9,7,Very good,,Several times a week,193.0,90.0,Male,1963
-944070,6,8,Good,10.0,Several times a week,168.0,110.0,Female,1993
-944088,7,9,Good,14.0,Several times a week,178.0,72.0,Male,1976
-944119,3,5,Fair,20.0,2-3 times a month,156.0,50.0,Female,1990
-944193,7,9,Good,0.0,Once a week,182.0,92.0,Female,1979
-944216,5,Extremely happy,Fair,,Once a week,188.0,115.0,Male,1942
-944266,7,8,Good,,2-3 times a month,170.0,85.0,Female,1976
-944313,2,9,Good,,Never,152.0,48.0,Female,1929
-944363,8,8,Fair,12.0,Once a month,172.0,66.0,Female,1968
-944436,9,Extremely happy,Very good,,Several times a week,180.0,69.0,Male,1947
-944517,7,9,Fair,,Never,180.0,88.0,Male,1978
-944525,3,Extremely happy,Bad,,Once a month,182.0,66.0,Male,1944
-944541,6,9,Very good,,Less than once a month,183.0,88.0,Male,1969
-944575,7,Extremely happy,Very good,20.0,Once a week,181.0,93.0,Male,1966
-944622,8,8,Fair,,Once a week,170.0,89.0,Female,1968
-944630,8,8,Very good,,Never,181.0,78.0,Male,1944
-944664,7,7,Very good,6.0,Every day,177.0,82.0,Female,1947
-944711,8,8,Very good,,Once a week,188.0,88.0,Male,1977
-944779,5,8,Fair,,Several times a week,187.0,103.0,Male,1945
-944818,8,6,Fair,20.0,2-3 times a month,175.0,85.0,Male,1968
-944923,9,Extremely happy,Good,,Less than once a month,170.0,69.0,Female,1992
-944949,8,9,Good,,Once a week,186.0,80.0,Male,1976
-944999,7,7,Fair,,Every day,160.0,56.0,Female,1954
-945018,8,8,Good,,Several times a week,186.0,104.0,Male,1957
-945034,9,8,Good,,Less than once a month,173.0,60.0,Female,1942
-945042,6,8,Very good,,Once a week,180.0,82.0,Male,1962
-945068,5,4,Bad,102.0,Several times a week,187.0,80.0,Male,1962
-945076,7,8,Fair,20.0,Never,164.0,75.0,Female,1949
-945092,8,8,Good,,2-3 times a month,190.0,87.0,Male,1996
-945107,7,Extremely happy,Very bad,,2-3 times a month,172.0,114.0,Female,1954
-945149,8,9,Very good,,Once a month,168.0,68.0,Female,1983
-945262,7,Extremely happy,Very good,20.0,Every day,162.0,68.0,Female,1952
-945296,7,9,Good,,Less than once a month,176.0,92.0,Male,1966
-945301,7,8,Good,,Once a week,178.0,66.0,Male,1972
-945555,9,8,Fair,,Less than once a month,169.0,68.0,Female,1996
-945563,Most people can be trusted,9,Good,,Every day,162.0,72.0,Female,1950
-945571,8,8,Fair,,Less than once a month,181.0,117.0,Male,1981
-945652,4,8,Very good,10.0,Once a week,191.0,80.0,Male,1998
-945660,6,9,Good,,Several times a week,177.0,89.0,Male,1949
-945733,9,8,Fair,,Several times a week,173.0,80.0,Female,1951
-945759,7,9,Very good,,2-3 times a month,181.0,82.0,Male,1987
-945791,3,Extremely happy,Very good,,Once a week,172.0,80.0,Male,1935
-945856,9,Extremely happy,Good,,Once a week,170.0,66.0,Male,1988
-945937,8,8,Very good,,Several times a week,184.0,93.0,Male,1959
-945961,5,7,Fair,30.0,Several times a week,186.0,83.0,Male,1990
-946030,7,8,Very good,,Several times a week,182.0,76.0,Male,1983
-946153,6,7,Bad,,Never,159.0,50.0,Female,1933
-946161,7,5,Very good,,Once a month,174.0,65.0,Male,1993
-946218,8,8,Good,20.0,Several times a week,185.0,83.0,Male,1972
-946250,6,8,Good,7.0,2-3 times a month,187.0,66.0,Male,1997
-946268,5,9,Very good,10.0,2-3 times a month,180.0,74.0,Male,1966
-946292,8,9,Very good,,Once a month,163.0,66.0,Female,1998
-946349,4,7,Fair,,Several times a week,170.0,74.0,Female,1977
-946519,5,Extremely happy,Fair,,Less than once a month,173.0,70.0,Female,1998
-946527,8,,Bad,,Every day,177.0,66.0,Female,1932
-946535,8,8,Good,,2-3 times a month,164.0,63.0,Female,1971
-946585,8,Extremely happy,Good,,Several times a week,168.0,58.0,Female,1963
-946616,8,8,Very good,,Less than once a month,167.0,114.0,Female,1964
-946624,8,8,Fair,,Several times a week,178.0,76.0,Male,1970
-946682,8,8,Good,,Once a month,188.0,95.0,Male,1974
-946690,5,8,Very good,20.0,Several times a week,179.0,82.0,Male,1963
-946747,3,8,Good,,Several times a week,168.0,76.0,Male,1938
-946810,5,8,Very good,,Once a week,180.0,78.0,Male,1989
-946828,5,9,Very good,,Once a week,165.0,68.0,Male,1933
-946836,8,8,Very good,,Several times a week,171.0,95.0,Female,1952
-946852,8,Extremely happy,Very good,,Several times a week,175.0,85.0,Female,1967
-946967,You can't be too careful,8,Fair,,Every day,160.0,45.0,Female,1941
-946975,8,9,Fair,,Once a week,178.0,76.0,Male,1963
-947010,8,7,Fair,,Several times a week,174.0,80.0,Male,1955
-947117,7,9,Very good,,2-3 times a month,170.0,71.0,Female,1963
-947141,8,9,Good,,Once a month,165.0,74.0,Female,1973
-947167,8,Extremely happy,Good,,Never,173.0,78.0,Female,1957
-947230,7,8,Very good,,2-3 times a month,162.0,59.0,Female,1968
-947248,Most people can be trusted,Extremely happy,Very good,,2-3 times a month,169.0,61.0,Female,1977
-947256,9,6,Very good,,Several times a week,170.0,73.0,Female,1948
-947272,5,4,Fair,,Several times a week,182.0,54.0,Male,1990
-947337,Most people can be trusted,8,Good,,2-3 times a month,160.0,59.0,Female,1945
-947345,8,9,Good,10.0,Once a week,174.0,104.0,Male,1984
-947379,8,9,Good,,Once a week,176.0,70.0,Male,1979
-947395,5,8,Fair,,Once a week,183.0,87.0,Male,1949
-947484,3,Extremely happy,Fair,,Once a month,160.0,78.0,Female,1964
-947492,8,9,Good,,Once a week,165.0,61.0,Female,1954
-947507,3,Extremely happy,Very good,,Every day,172.0,80.0,Male,1935
-947515,Most people can be trusted,9,Good,5.0,Several times a week,172.0,62.0,Female,1958
-947565,9,8,Good,,Several times a week,175.0,75.0,Male,1955
-947612,7,8,Very good,3.0,Once a week,165.0,58.0,Female,1940
-947638,Most people can be trusted,9,Good,,Several times a week,168.0,63.0,Female,1936
-947735,7,8,Very good,,2-3 times a month,175.0,77.0,Male,1972
-947751,6,8,Bad,,Every day,176.0,66.0,Male,1954
-947769,8,9,Fair,,Several times a week,176.0,110.0,Female,1959
-947808,9,7,Very good,20.0,Once a week,169.0,57.0,Female,1957
-947840,9,9,Very good,,Once a week,185.0,86.0,Male,1995
-947858,8,9,Very good,,Several times a week,181.0,71.0,Male,1992
-947874,9,9,Good,,Once a week,184.0,89.0,Male,1985
-947882,7,7,Very good,,2-3 times a month,164.0,68.0,Female,1973
-948016,7,7,Fair,8.0,Less than once a month,165.0,53.0,Female,1965
-948074,5,8,Good,,Once a week,165.0,68.0,Female,1995
-948082,5,8,Fair,3.0,Once a week,180.0,89.0,Male,1947
-948113,Most people can be trusted,Extremely happy,Fair,3.0,Once a week,167.0,79.0,Female,1983
-948121,8,9,Good,,Several times a week,178.0,93.0,Male,1941
-948197,9,8,Good,,Several times a week,182.0,86.0,Male,1961
-948202,9,Extremely happy,Fair,,Once a week,168.0,62.0,Female,1955
-948391,7,7,Good,,Less than once a month,176.0,63.0,Female,1995
-948406,7,8,Fair,,2-3 times a month,176.0,58.0,Male,1949
-948414,7,8,Good,,Less than once a month,168.0,,Female,1974
-948448,8,7,Fair,,Several times a week,185.0,95.0,Male,1957
-948472,8,8,Good,,Once a month,171.0,56.0,Female,1977
-948480,8,Extremely happy,Very good,,2-3 times a month,168.0,80.0,Male,1966
-948545,7,7,Good,,2-3 times a month,168.0,64.0,Female,1953
-948595,8,Extremely happy,Good,,Several times a week,178.0,92.0,Male,1947
-948600,3,7,Good,,2-3 times a month,185.0,90.0,Male,1965
-948618,4,8,Good,,Never,166.0,73.0,Female,1997
-948676,7,8,Fair,,Once a month,174.0,82.0,Female,1965
-948715,9,6,Very good,,Once a week,198.0,84.0,Male,1993
-948731,8,8,Good,,2-3 times a month,175.0,60.0,Female,1974
-948765,5,8,Very good,,Less than once a month,153.0,57.0,Female,1950
-948838,8,7,Good,,Several times a week,185.0,83.0,Male,1972
-948846,5,7,Good,,2-3 times a month,159.0,60.0,Female,1997
-948854,2,6,Very good,15.0,2-3 times a month,175.0,64.0,Male,1964
-948919,8,9,Good,,Never,160.0,72.0,Female,1965
-948927,8,8,Very good,,Once a week,180.0,74.0,Male,1960
-948943,4,8,Good,,Several times a week,172.0,71.0,Female,1938
-948993,8,7,Good,,Once a week,164.0,58.0,Female,1956
-949004,6,9,Very good,10.0,Several times a week,180.0,65.0,Male,1963
-949020,8,6,Good,,Once a week,178.0,66.0,Male,1962
-949054,9,Extremely happy,Very good,,2-3 times a month,166.0,71.0,Female,1939
-949070,5,9,Very good,,2-3 times a month,167.0,95.0,Female,1983
-949096,4,5,Very good,,Less than once a month,186.0,73.0,Male,1979
-949119,9,9,Very good,,Once a week,165.0,65.0,Female,1954
-949143,8,8,Good,,2-3 times a month,172.0,62.0,Female,1972
-949224,7,Extremely happy,Fair,,2-3 times a month,161.0,86.0,Female,1941
-949313,Most people can be trusted,Extremely happy,Good,,Several times a week,178.0,74.0,Male,1988
-949321,8,Extremely happy,Very good,1.0,2-3 times a month,176.0,77.0,Female,1972
-949339,7,Extremely happy,Good,,Every day,181.0,77.0,Male,1930
-949389,8,Extremely happy,Good,,2-3 times a month,164.0,60.0,Female,1927
-949397,7,8,Very good,,2-3 times a month,176.0,67.0,Male,1942
-949486,8,8,Good,,Once a week,164.0,75.0,Female,1962
-949541,8,8,Fair,,Less than once a month,172.0,110.0,Female,1958
-949583,7,4,Fair,,Once a week,165.0,,Female,1958
-949614,8,8,Very good,,Several times a week,186.0,90.0,Male,1934
-949630,7,8,Very good,10.0,Several times a week,168.0,55.0,Female,1995
-949745,6,8,Very good,,Several times a week,190.0,83.0,Male,1957
-949779,7,Extremely happy,Good,,Several times a week,178.0,84.2,Male,1933
-949787,9,8,Very good,20.0,Once a week,176.0,58.0,Female,1967
-949800,8,9,Good,5.0,Once a week,173.0,78.0,Female,1958
-949826,Most people can be trusted,9,Very good,,2-3 times a month,184.0,82.0,Male,1962
-949868,8,9,Fair,15.0,2-3 times a month,174.0,,Female,1971
-949876,7,Extremely happy,Very good,,2-3 times a month,194.0,,Male,1995
-949892,6,3,Fair,20.0,Every day,174.0,92.0,Male,1964
-949907,7,8,Very good,,Several times a week,180.0,80.0,Male,1942
-949931,7,Extremely happy,Fair,,Once a week,160.0,72.0,Female,1924
-949981,7,Extremely happy,Very good,,Several times a week,170.0,80.0,Male,1946
-950037,5,9,Good,,Once a week,172.0,110.0,Male,1944
-950053,7,Extremely happy,Good,,Several times a week,175.0,70.0,Female,1959
-950079,6,9,Very good,,Never,172.0,76.0,Male,1973
-950118,8,8,Good,,Several times a week,165.0,,Female,1965
-950134,9,9,Very good,,Less than once a month,170.0,52.0,Female,1960
-950150,6,8,Good,,Several times a week,186.0,80.0,Male,1956
-950273,2,7,Fair,,Less than once a month,174.0,60.0,Female,1980
-950304,Most people can be trusted,Extremely happy,Very good,,Several times a week,172.0,50.0,Female,1940
-950346,7,9,Good,,Several times a week,156.0,60.0,Female,1955
-950354,8,9,Very good,,Every day,170.0,66.0,Male,1945
-950362,4,9,Good,,Once a month,176.0,68.0,Male,1979
-950443,5,9,Very good,,Once a week,195.0,87.0,Male,1995
-950477,8,8,Good,,2-3 times a month,180.0,90.0,Male,1942
-950493,5,9,Good,,Once a week,183.0,86.0,Male,1955
-950516,3,Extremely happy,Very good,,2-3 times a month,168.0,75.0,Female,1942
+921018,6,9,Very good,10.0,2-3 times a month,178.0,64.0,Male,1990.0
+921026,8,8,Very good,,Several times a week,172.0,64.0,Female,1948.0
+921084,5,8,Very good,,Every day,175.0,80.0,Male,
+921165,8,Extremely happy,Good,,Once a week,167.0,78.0,Female,1965.0
+921220,8,8,Fair,,Every day,178.0,80.0,,1949.0
+921262,8,8,Very good,,2-3 times a month,,93.0,Male,1987.0
+921296,5,9,,,Once a week,202.0,108.0,Male,1988.0
+921377,7,9,Good,,2-3 times a month,169.0,68.0,Male,1948.0
+921393,7,8,Very good,,Less than once a month,184.0,67.0,Male,1985.0
+921416,8,Extremely happy,Very good,40.0,Several times a week,186.0,83.0,,1953.0
+921505,,8,Good,,2-3 times a month,185.0,83.0,Male,1968.0
+921547,5,8,Good,,Once a month,164.0,68.0,,1999.0
+921571,8,9,Fair,,Less than once a month,163.0,92.0,Female,1978.0
+921589,,9,Very bad,,Never,142.0,50.0,Female,1931.0
+921610,6,9,Good,,Less than once a month,170.0,60.0,Female,1978.0
+921628,7,8,Fair,,2-3 times a month,162.0,78.0,Female,1941.0
+921636,9,8,Very good,,2-3 times a month,185.0,68.0,Male,1996.0
+921652,7,7,Very good,,Once a week,172.0,65.0,Female,1987.0
+921660,8,6,Very good,,2-3 times a month,173.0,76.0,Male,1941.0
+921733,5,3,,,Several times a week,182.0,95.0,Male,1960.0
+921864,8,7,Bad,20.0,Several times a week,169.0,66.0,Male,1994.0
+921872,4,5,Very bad,15.0,Never,165.0,69.0,Female,1983.0
+921903,8,Extremely happy,Very good,3.0,2-3 times a month,170.0,76.0,Male,1967.0
+921911,5,1,Bad,20.0,Every day,175.0,98.0,Male,1969.0
+921937,4,4,Very good,10.0,Several times a week,180.0,64.0,Male,1994.0
+921945,6,7,Very good,,Once a week,183.0,106.0,Male,1976.0
+921953,8,9,Fair,,Every day,172.0,82.0,Female,1935.0
+921987,7,7,Very good,,Once a week,,74.0,Male,1964.0
+922056,6,8,Good,,Every day,153.0,58.0,Female,1973.0
+922072,7,9,Very good,,Once a month,162.0,69.0,Female,1988.0
+922080,5,6,Fair,20.0,Several times a week,184.0,87.0,Male,1975.0
+922129,4,8,Good,,Several times a week,185.0,70.0,Male,1998.0
+922200,8,8,Good,,Once a month,188.0,105.0,Male,1975.0
+922226,5,8,Good,,Several times a week,173.0,80.0,Male,1941.0
+922250,8,8,Fair,,Several times a week,,72.0,Female,1937.0
+922399,8,9,Good,,Less than once a month,176.0,73.0,Male,1959.0
+922412,8,9,Good,,2-3 times a month,172.0,67.0,Female,1962.0
+922454,8,8,Good,,Less than once a month,170.0,68.0,Female,1991.0
+922470,9,8,Fair,,Once a week,153.0,62.0,Female,1936.0
+922501,9,8,Very good,,Several times a week,165.0,64.0,Female,1970.0
+922519,8,8,Good,,Several times a week,178.0,78.0,Male,1953.0
+922569,3,3,Fair,,Once a month,165.0,58.0,Female,1980.0
+922577,6,9,Fair,,2-3 times a month,168.0,79.0,Male,1943.0
+922593,Most people can be trusted,8,Fair,15.0,Every day,163.0,50.0,Female,1968.0
+922658,5,Extremely happy,Good,,2-3 times a month,183.0,91.0,Male,1985.0
+922690,4,9,Good,5.0,Less than once a month,,47.0,Female,1993.0
+922713,7,8,Good,,Several times a week,166.0,68.0,Female,1947.0
+922721,7,9,Good,,2-3 times a month,182.0,87.0,Male,1965.0
+922739,8,9,,15.0,Several times a week,192.0,88.0,,1968.0
+922763,5,7,Good,,Once a week,187.0,110.0,Male,1967.0
+922789,7,8,Very good,,Once a month,178.0,102.0,Male,1949.0
+922852,2,8,Fair,,2-3 times a month,188.0,92.0,Male,1986.0
+922860,8,8,Very good,,2-3 times a month,159.0,64.0,Female,1993.0
+922886,,5,Very good,,Never,160.0,74.0,Female,1932.0
+922894,8,Extremely happy,Very good,,Several times a week,168.0,60.0,Female,1964.0
+922941,7,2,Bad,,Less than once a month,185.0,99.0,Male,1991.0
+922975,8,8,Very good,,Every day,178.0,63.0,,1967.0
+922983,6,7,Good,15.0,Once a week,160.0,54.0,Female,1947.0
+922991,8,9,Good,,2-3 times a month,166.0,60.0,Female,1934.0
+923052,8,Extremely happy,Good,,2-3 times a month,157.0,62.0,Female,1931.0
+923109,8,9,Good,,Less than once a month,,101.0,Female,1946.0
+923133,9,8,Fair,3.0,Once a week,172.0,65.0,Female,1958.0
+923141,7,9,Very good,,Several times a week,186.0,75.0,Female,1970.0
+923159,8,2,Fair,15.0,Several times a week,164.0,51.4,Female,1946.0
+923264,6,Extremely happy,Good,,Several times a week,173.0,89.0,Male,1943.0
+923272,8,8,Very good,20.0,Once a week,190.0,81.0,Male,1992.0
+923280,9,9,Good,20.0,Once a week,182.0,,Male,1983.0
+923361,7,9,Good,,Never,176.0,95.0,Male,1984.0
+923379,,8,Good,,2-3 times a month,166.0,60.0,Female,1967.0
+923400,8,Extremely happy,Very good,,Several times a week,180.0,70.0,Male,1946.0
+923492,5,9,Good,,Once a week,166.0,60.0,Female,
+923523,,9,Good,,Every day,172.0,59.0,Female,1945.0
+923531,9,Extremely happy,Very good,,Several times a week,167.0,67.0,Female,1956.0
+923557,9,9,Very good,,Once a week,182.0,76.0,Male,1984.0
+923573,7,9,Very good,,2-3 times a month,155.0,61.0,Female,1987.0
+923604,5,8,Good,5.0,Less than once a month,189.0,78.0,Male,1989.0
+923620,8,Extremely happy,Good,,Several times a week,180.0,93.0,,1984.0
+923646,You can't be too careful,Extremely happy,Very good,8.0,Less than once a month,,,Female,1948.0
+923662,6,8,Very good,,2-3 times a month,163.0,62.0,Female,1976.0
+923670,6,9,Good,,Once a month,176.0,72.0,Male,1979.0
+923688,5,7,Fair,10.0,2-3 times a month,164.0,63.0,Female,1990.0
+923701,5,9,Bad,,Once a week,173.0,59.0,Female,
+923808,9,5,Very good,20.0,Every day,172.0,76.0,Male,1955.0
+923858,9,9,Good,,,180.0,70.0,,1977.0
+923882,,9,Very good,4.0,Every day,,87.0,Male,1935.0
+923905,6,,Good,12.0,,196.0,135.0,Male,1995.0
+923913,7,9,Very good,,Every day,170.0,70.0,Male,1943.0
+923939,9,Extremely happy,Good,,Several times a week,177.0,107.0,Male,1951.0
+923989,9,7,Good,,2-3 times a month,180.0,70.0,Female,1959.0
+924024,7,8,Good,,Less than once a month,169.0,66.0,Female,1986.0
+924032,7,Extremely happy,Fair,,Every day,174.0,72.0,Male,1926.0
+924040,8,9,Fair,,Every day,172.0,92.0,Male,1942.0
+924058,9,,Good,10.0,Once a month,,68.0,Female,1949.0
+924066,5,6,,,Every day,175.0,68.0,Male,1927.0
+924113,8,8,Very good,,Several times a week,197.0,82.0,Male,1997.0
+924121,5,7,Very good,10.0,Never,188.0,85.0,Male,1990.0
+924163,5,5,Good,,Once a week,169.0,63.0,Male,1971.0
+924202,9,,Very bad,,Several times a week,170.0,74.0,Female,1970.0
+924359,,Extremely happy,Good,,Once a week,165.0,72.0,Male,1937.0
+924375,7,Extremely happy,Very good,,Once a month,178.0,76.0,Female,1976.0
+924383,3,8,Bad,,Never,175.0,94.0,Male,1946.0
+924406,8,8,Good,,Never,168.0,65.0,Female,1934.0
+924464,,9,Good,,,174.0,74.0,Female,1991.0
+924472,8,8,Very good,,Less than once a month,168.0,72.0,Female,
+924480,8,Extremely happy,Very good,,Less than once a month,166.0,65.0,Female,1957.0
+924503,7,8,Good,,Every day,181.0,81.5,,1932.0
+924511,8,9,Fair,20.0,Less than once a month,,59.0,Male,
+924529,8,9,Good,,Several times a week,163.0,75.0,Female,1957.0
+924545,5,Extremely happy,Good,4.0,Never,172.0,75.0,,1979.0
+924626,8,8,Very good,25.0,Once a month,168.0,85.0,Male,1942.0
+924676,3,8,Very good,,Once a week,180.0,83.0,Male,1955.0
+924692,7,5,Good,,Once a week,163.0,58.0,Female,1980.0
+924715,9,9,Good,3.0,Once a week,,95.0,Female,
+924731,5,8,Bad,,Never,178.0,86.0,Male,1951.0
+924781,9,Extremely happy,Very good,,Several times a week,178.0,75.0,Male,1973.0
+924812,You can't be too careful,9,Very good,,Once a week,173.0,65.0,Female,1984.0
+924862,7,8,Very good,,Once a month,178.0,82.0,Male,1980.0
+924901,Most people can be trusted,Extremely happy,Very good,,Several times a week,164.0,70.0,Female,
+924951,7,8,,,Once a week,162.0,59.0,Female,1980.0
+925054,8,7,Very good,4.0,Once a month,170.0,66.0,Female,1975.0
+925088,4,Extremely happy,Very good,,Once a week,178.0,86.0,Female,1944.0
+925096,6,9,Fair,,,179.0,78.6,Male,1996.0
+925101,6,5,Very good,9.0,Once a week,176.0,83.0,Male,1990.0
+925119,,8,Very good,,Several times a week,168.0,57.0,Female,1971.0
+925127,5,9,Good,,Never,163.0,62.0,Female,1989.0
+925177,5,Extremely happy,Good,13.0,Every day,164.0,74.0,Female,1957.0
+925216,6,9,Good,,Several times a week,168.0,102.0,Female,1958.0
+925258,7,7,Good,,Once a week,179.0,99.0,Male,1967.0
+925282,6,7,,,Several times a week,,59.0,Female,1938.0
+925290,7,9,Very good,,Several times a week,177.0,90.0,Male,1951.0
+925402,Most people can be trusted,8,Very good,,2-3 times a month,166.0,56.0,Female,
+925525,8,Extremely happy,Fair,,Every day,156.0,50.0,Female,1939.0
+925533,5,Extremely happy,Very good,,Several times a week,190.0,95.0,Male,1984.0
+925559,7,,Good,,Once a week,186.0,105.0,Male,1996.0
+925575,9,9,Very good,,Several times a week,158.0,57.0,Female,1939.0
+925583,4,9,Good,,Less than once a month,169.0,65.0,Female,1994.0
+925591,7,9,Very good,,2-3 times a month,164.0,53.0,Female,1958.0
+925606,8,9,Very good,,Once a week,176.0,,,1955.0
+925622,8,8,Fair,,Every day,157.0,70.0,Female,1946.0
+925656,6,9,Very good,,Several times a week,168.0,67.0,Male,1966.0
+925680,8,Extremely happy,Good,,Several times a week,164.0,69.0,Female,1944.0
+925703,8,5,Fair,,2-3 times a month,165.0,60.0,Female,1975.0
+925745,7,8,Very good,20.0,Once a month,168.0,65.0,Female,1957.0
+925753,7,7,Very good,0.0,Less than once a month,,67.0,Female,1988.0
+925787,7,9,Very good,,Less than once a month,175.0,80.0,Female,1949.0
+925876,8,6,Very good,10.0,Several times a week,189.0,80.0,Male,1970.0
+925884,5,9,Bad,,Never,173.0,81.0,Male,1990.0
+925923,6,8,Bad,,Several times a week,177.0,79.0,Female,1964.0
+926026,9,9,Very good,,Once a week,167.0,63.0,Female,1976.0
+926092,7,9,Fair,15.0,2-3 times a month,173.0,115.0,Female,1975.0
+926107,5,8,Very good,,Less than once a month,187.0,84.0,Male,1999.0
+926131,8,9,Very good,,Less than once a month,176.0,79.0,Female,1982.0
+926288,Most people can be trusted,9,Very good,,2-3 times a month,160.0,59.0,Female,1951.0
+926458,8,7,Very good,15.0,Once a week,172.0,77.0,Male,1986.0
+926539,7,8,Very good,0.0,Once a week,165.0,59.0,Female,1994.0
+926555,6,8,Very good,,Less than once a month,183.0,75.0,Male,1995.0
+926563,7,8,Fair,,Never,195.0,66.0,Male,1997.0
+926589,,Extremely happy,,,Several times a week,172.0,68.0,Male,1965.0
+926597,6,7,Good,,Less than once a month,173.0,68.0,Female,1978.0
+926652,3,7,Good,,2-3 times a month,172.0,62.0,,1990.0
+926660,3,5,Good,,Once a week,186.0,66.0,Male,1965.0
+926694,8,Extremely happy,Good,,Every day,177.0,78.0,Male,1939.0
+926733,7,8,Fair,,Less than once a month,163.0,85.0,Female,1968.0
+926806,6,Extremely happy,Very good,,Several times a week,,64.0,Female,1979.0
+926898,5,6,Good,,Once a week,182.0,112.0,Male,1968.0
+926903,9,9,Very good,,Every day,162.0,62.0,Female,1940.0
+926911,8,8,Good,,2-3 times a month,184.0,79.0,Male,1960.0
+926987,8,,Very good,,Several times a week,162.0,64.0,,1950.0
+927006,7,6,Bad,,Less than once a month,,72.0,Female,1967.0
+927072,8,7,Good,,Several times a week,192.0,83.0,Male,1964.0
+927187,3,9,Good,,Every day,162.0,65.0,Male,1927.0
+927226,8,Extremely happy,Very good,,Less than once a month,182.0,87.0,Male,1974.0
+927276,8,Extremely happy,Fair,,Several times a week,184.0,90.0,Male,1953.0
+927323,8,Extremely happy,Fair,,Once a week,172.0,87.0,Female,1967.0
+927331,,Extremely happy,Very good,,,181.0,,Female,1981.0
+927349,5,8,Very good,10.0,Once a week,188.0,79.0,Male,1974.0
+927381,7,8,Fair,,Every day,173.0,82.0,Male,1995.0
+927488,4,9,Fair,15.0,Less than once a month,168.0,74.0,Male,1981.0
+927585,7,9,Good,,Once a month,175.0,84.0,Female,1986.0
+927624,8,8,Good,,Once a week,160.0,69.0,Female,1961.0
+927632,5,9,Good,,Never,158.0,64.0,Female,1976.0
+927640,8,8,Very good,,Once a week,180.0,87.0,Female,1988.0
+927763,5,,Good,,Less than once a month,185.0,97.0,,1938.0
+927933,6,8,Fair,,Once a week,159.0,51.0,Female,
+927967,8,8,Very good,0.0,Several times a week,,82.0,Male,1967.0
+927983,3,8,,20.0,Once a month,164.0,54.0,Female,1989.0
+928002,8,8,Fair,,Several times a week,146.0,48.0,Female,1935.0
+928028,8,6,Very good,10.0,Several times a week,181.0,75.0,Male,1986.0
+928109,8,7,Good,,Once a week,168.0,67.0,Female,1964.0
+928125,3,8,Good,,2-3 times a month,183.0,87.0,Male,1968.0
+928303,5,9,Very good,,Several times a week,178.0,73.0,Male,1969.0
+928361,9,8,Good,,Once a week,166.0,59.0,Female,1955.0
+928400,8,8,Good,,Once a week,167.0,61.0,Female,1969.0
+928418,7,6,Fair,,,187.0,80.0,Male,1997.0
+928434,8,6,Fair,,2-3 times a month,164.0,64.0,Female,1960.0
+928492,5,6,Good,20.0,,,80.0,Female,1968.0
+928515,7,8,Very good,,Several times a week,178.0,89.0,Male,1939.0
+928573,8,8,Very good,,Never,168.0,68.0,Female,1936.0
+928777,8,8,Good,20.0,,189.0,71.0,Male,1972.0
+928785,,9,Fair,20.0,Once a week,183.0,125.0,Male,1967.0
+928816,7,9,Good,,2-3 times a month,196.0,,Male,1973.0
+928840,3,5,Very good,,Less than once a month,187.0,98.0,Male,1998.0
+928874,7,7,Very good,,Less than once a month,187.0,64.0,Male,1999.0
+928905,6,,Bad,20.0,Once a week,173.0,68.0,Male,1952.0
+928913,8,Extremely happy,Good,,Every day,163.0,71.0,Female,1936.0
+928971,8,Extremely happy,Good,,Once a week,168.0,54.0,Female,1946.0
+928997,5,8,Very good,25.0,Several times a week,175.0,67.0,Female,1988.0
+929090,8,9,Fair,,Once a month,184.0,89.0,Male,1965.0
+929139,7,9,Fair,,Once a month,186.0,107.0,Male,1955.0
+929163,5,7,Fair,10.0,Once a week,167.0,56.0,Female,1941.0
+929171,You can't be too careful,Extremely happy,Fair,,2-3 times a month,173.0,88.0,,1937.0
+929202,Most people can be trusted,Extremely happy,Good,,Once a week,167.0,52.0,Female,1994.0
+929210,7,Extremely happy,Fair,,Several times a week,180.0,110.0,Male,1949.0
+929228,9,9,Good,,Several times a week,182.0,102.0,Male,1938.0
+929325,8,Extremely happy,Good,,Less than once a month,162.0,76.0,Female,1970.0
+929359,3,,Fair,,Several times a week,182.0,88.0,Male,1945.0
+929414,7,8,Very good,20.0,Several times a week,171.0,60.0,Female,1997.0
+929448,Most people can be trusted,1,Good,,Less than once a month,172.0,,Male,1926.0
+929456,8,8,Fair,,Less than once a month,170.0,70.0,Female,1998.0
+929464,7,7,Good,,2-3 times a month,165.0,86.0,Female,1982.0
+929529,9,8,Good,15.0,Several times a week,164.0,77.0,Female,1969.0
+929587,8,7,Bad,,Once a week,163.0,78.0,Female,1958.0
+929642,8,8,Good,,2-3 times a month,184.0,71.0,Female,1998.0
+929692,,7,Very good,15.0,2-3 times a month,193.0,83.0,Male,1986.0
+929757,4,8,Good,20.0,Less than once a month,,80.0,Male,1969.0
+929854,7,8,Very good,10.0,Once a week,176.0,71.0,,1992.0
+929862,9,9,Good,,Several times a week,175.0,82.0,Male,1952.0
+929870,9,Extremely happy,Very good,,Less than once a month,163.0,69.0,Female,1947.0
+929977,4,8,Very good,15.0,2-3 times a month,175.0,75.0,Male,1985.0
+929985,7,8,Good,0.0,Several times a week,172.0,76.0,Female,1969.0
+930023,5,5,Fair,,Every day,185.0,67.0,Male,1946.0
+930293,You can't be too careful,4,Bad,10.0,Every day,160.0,42.0,Female,1945.0
+930316,4,1,Bad,10.0,,174.0,75.0,Male,1947.0
+930324,5,7,Very good,,Every day,168.0,85.0,Male,1941.0
+930332,8,9,Good,,Once a week,178.0,89.0,,1985.0
+930374,9,9,Very good,,Several times a week,158.0,,Female,1964.0
+930497,7,8,Good,,2-3 times a month,175.0,76.0,Female,1987.0
+930659,8,7,Good,4.0,Less than once a month,176.0,80.0,Female,1969.0
+930667,5,Extremely happy,Good,,Once a week,170.0,70.0,Male,1932.0
+930714,8,9,Good,,Less than once a month,169.0,66.0,Female,1977.0
+930730,Most people can be trusted,9,Good,,Several times a week,160.0,84.0,Female,1974.0
+930772,6,7,Very bad,3.0,2-3 times a month,168.0,40.0,Female,1957.0
+930780,7,9,Very good,,Once a week,204.0,112.0,Male,1983.0
+930811,8,Extremely happy,Very good,,Several times a week,175.0,95.0,Male,1937.0
+930829,7,9,Bad,,Once a week,185.0,116.0,Male,1958.0
+930853,5,8,Fair,,2-3 times a month,168.0,69.0,Female,1947.0
+930887,8,8,Good,,2-3 times a month,192.0,84.0,Male,1979.0
+930926,8,Extremely happy,Good,,Several times a week,174.0,83.0,Male,1948.0
+930968,8,8,Good,,Once a week,168.0,60.0,Female,1964.0
+930984,6,,Very good,,Once a week,163.0,69.0,,1973.0
+930992,9,9,Very good,,Several times a week,177.0,84.0,Male,1975.0
+931003,8,7,Good,,Once a week,168.0,74.0,,1980.0
+931037,9,5,Good,10.0,2-3 times a month,180.0,86.0,Male,1961.0
+931087,9,9,Good,,Once a week,165.0,71.0,Female,1989.0
+931095,2,6,Bad,,2-3 times a month,167.0,86.0,Female,1949.0
+931126,8,Extremely happy,Very good,,Less than once a month,162.0,81.0,Female,1961.0
+931142,8,9,Fair,,Once a month,,65.0,,1939.0
+931150,8,9,Very good,,Once a week,187.0,86.0,Male,1985.0
+931207,6,7,Fair,,Once a month,180.0,79.0,,1989.0
+931249,3,8,Very good,,Several times a week,176.0,66.0,Male,1975.0
+931281,5,7,Good,,2-3 times a month,186.0,83.0,,1988.0
+931320,,8,Very good,20.0,Once a week,185.0,81.0,Male,1974.0
+931338,8,8,Good,,Several times a week,175.0,53.0,Female,1965.0
+931354,6,8,Good,0.0,Once a week,165.0,54.0,Male,1998.0
+931469,,9,Good,,Less than once a month,168.0,75.0,Female,1953.0
+931540,8,9,Good,,2-3 times a month,164.0,56.0,Female,1971.0
+931566,Most people can be trusted,9,Fair,9.0,,160.0,47.0,Female,1946.0
+931574,7,Extremely happy,Fair,,Once a week,166.0,67.0,Male,1938.0
+931689,9,9,Good,15.0,Once a month,186.0,85.0,Male,1972.0
+931697,8,9,Very good,,2-3 times a month,150.0,52.0,Female,1946.0
+931728,5,3,Very good,1.0,Never,179.0,56.0,Male,1983.0
+931736,9,Extremely happy,Very good,,Once a week,175.0,80.0,Female,1965.0
+931794,5,Extremely happy,Very good,,,,,Male,1990.0
+931817,5,Extremely happy,Good,,Several times a week,167.0,65.0,Female,
+931825,7,,Very good,,Once a month,173.0,74.0,Male,1994.0
+931867,5,9,Very good,5.0,Once a month,168.0,58.0,Female,1994.0
+932025,1,8,Good,,Several times a week,170.0,80.0,Female,1944.0
+932041,7,9,Very good,,2-3 times a month,179.0,84.0,Male,1954.0
+932067,5,6,Fair,,Never,188.0,137.0,Male,1966.0
+932083,,Extremely happy,Good,,Every day,160.0,44.0,Female,1934.0
+932091,6,9,Very good,,Several times a week,178.0,82.0,Male,1985.0
+932106,8,9,Good,,Less than once a month,170.0,,Female,1975.0
+932229,8,Extremely happy,Very good,20.0,Less than once a month,187.0,75.0,Male,1993.0
+932237,8,8,Good,,Several times a week,176.0,82.0,Male,1946.0
+932253,8,7,Very good,,Several times a week,170.0,57.0,Female,1971.0
+932261,7,Extremely happy,Very good,,2-3 times a month,180.0,85.0,Male,1996.0
+932287,9,9,Good,,Less than once a month,167.0,48.0,Female,1993.0
+932318,You can't be too careful,9,Good,,2-3 times a month,180.0,77.0,Male,1965.0
+932368,9,9,Good,,Several times a week,160.0,75.0,Female,1972.0
+932407,3,9,Very good,,2-3 times a month,184.0,66.0,Male,1998.0
+932499,5,Extremely happy,Fair,,2-3 times a month,166.0,,Female,1953.0
+932504,8,8,Good,0.0,2-3 times a month,172.0,67.0,Male,1976.0
+932562,8,Extremely happy,Very good,,Several times a week,167.0,78.0,Female,1955.0
+932596,9,Extremely happy,Very good,,Every day,158.0,48.0,Female,1960.0
+932601,7,8,,20.0,Once a week,183.0,86.0,Male,1948.0
+932669,8,9,Good,,Several times a week,182.0,85.0,Female,1986.0
+932685,3,3,Bad,,,165.0,55.0,,1925.0
+932708,9,9,Good,,Several times a week,178.0,92.0,Male,1951.0
+932716,3,8,Good,,Several times a week,166.0,71.0,Female,1940.0
+932724,5,9,Good,,Once a week,167.0,66.0,Female,1951.0
+932758,9,8,Good,,Once a week,165.0,51.0,Female,1926.0
+932871,2,5,Fair,2.0,Several times a week,175.0,68.0,Male,1942.0
+932889,9,8,Good,,2-3 times a month,175.0,,Female,1968.0
+932897,You can't be too careful,7,Fair,10.0,Several times a week,187.0,110.0,Male,1993.0
+932978,5,7,Fair,,Less than once a month,163.0,62.0,Female,1971.0
+933005,7,Extremely happy,,,Once a week,167.0,75.0,Female,1956.0
+933128,8,8,Fair,20.0,Once a week,174.0,71.0,Male,1949.0
+933144,8,9,Good,,2-3 times a month,190.0,72.0,Male,1993.0
+933259,9,8,Good,,Once a week,172.0,75.0,Male,1955.0
+933275,8,8,Fair,,2-3 times a month,171.0,72.0,Female,1938.0
+933348,7,9,Good,,Once a week,173.0,80.0,Male,1995.0
+933372,7,9,Good,,Once a week,178.0,88.0,Male,1971.0
+933398,7,8,Fair,15.0,Never,169.0,70.0,Male,1985.0
+933403,8,Extremely happy,Very good,10.0,2-3 times a month,158.0,,,1967.0
+933429,8,9,Fair,,2-3 times a month,166.0,65.0,Female,1953.0
+933461,8,8,Good,,Never,161.0,58.0,Female,1944.0
+933487,5,8,Very good,,Several times a week,167.0,80.0,Female,1929.0
+933518,5,7,Good,20.0,Once a month,169.0,80.0,Female,1985.0
+933542,You can't be too careful,,,,,,,Female,1978.0
+933607,3,9,Very good,,,174.0,72.0,Female,1958.0
+933623,4,Extremely happy,Very good,,2-3 times a month,183.0,77.0,Female,1958.0
+933673,1,Extremely happy,Very good,12.0,Once a week,162.0,48.0,Female,1922.0
+933704,9,9,Very good,,Several times a week,167.0,62.0,Female,1959.0
+933738,8,,Very good,,Several times a week,165.0,66.0,,1963.0
+933869,7,8,Fair,10.0,Once a month,176.0,65.0,Male,1990.0
+933893,9,8,Very good,,Once a week,182.0,70.0,Male,1990.0
+933916,8,8,Good,20.0,Every day,,57.0,Male,1965.0
+933924,Most people can be trusted,9,Very good,10.0,Less than once a month,174.0,80.0,Female,1974.0
+933940,8,9,Very good,,2-3 times a month,185.0,75.0,Male,
+934001,8,Extremely happy,Fair,,2-3 times a month,184.0,82.0,Male,1979.0
+934035,8,9,,,Every day,180.0,89.0,Male,1941.0
+934077,3,,Bad,,Less than once a month,173.0,72.0,Female,1962.0
+934108,6,6,Fair,,Once a week,180.0,81.0,Male,1971.0
+934190,7,8,Good,,Less than once a month,169.0,75.0,Female,1990.0
+934255,8,7,Good,,Once a week,170.0,80.0,Male,1931.0
+934263,8,9,Good,,Every day,181.0,96.0,Male,1967.0
+934386,6,9,Very good,7.0,Every day,165.0,59.0,Female,1964.0
+934433,8,8,Very good,4.0,Several times a week,170.0,76.0,Male,1953.0
+934475,8,8,Very good,,Several times a week,178.0,,Male,1985.0
+934645,8,6,Fair,8.0,Once a month,169.0,65.0,Female,
+934653,,7,Very good,,Once a month,163.0,57.0,Female,1977.0
+934726,4,Extremely happy,Very good,,Never,160.0,77.0,Female,1947.0
+934750,5,9,Very good,,Less than once a month,,69.0,Male,1942.0
+934784,,8,Very good,5.0,Every day,174.0,90.0,Male,1985.0
+934831,7,,Good,,,177.0,85.0,Male,1951.0
+934873,8,7,Good,,Never,170.0,75.0,Male,1973.0
+934912,5,8,Fair,0.0,2-3 times a month,180.0,88.0,Male,1963.0
+934954,Most people can be trusted,7,Good,,Several times a week,170.0,68.0,Female,1965.0
+934962,6,7,Good,,,169.0,58.0,Female,1976.0
+934970,8,9,Good,15.0,Several times a week,176.0,77.0,Female,1954.0
+935099,8,8,Very good,,,164.0,68.0,Female,1926.0
+935170,3,Extremely happy,Bad,30.0,Never,189.0,87.0,Male,1976.0
+935269,3,6,Fair,8.0,Every day,164.0,52.0,Female,1936.0
+935285,8,Extremely happy,Very good,,Every day,180.0,70.0,Male,1923.0
+935332,8,8,Very good,,Once a month,175.0,61.0,Female,1992.0
+935340,7,9,Very good,,Once a week,193.0,72.0,Male,1997.0
+935382,5,8,Very good,15.0,Never,,63.0,Female,1955.0
+935439,8,9,Fair,,Once a month,159.0,80.0,Female,1923.0
+935463,4,,Fair,,Less than once a month,165.0,,,1985.0
+935489,9,6,Good,,Several times a week,173.0,70.0,Male,1988.0
+935502,9,8,Very good,20.0,Several times a week,179.0,82.0,Male,1971.0
+935536,7,9,Very good,,Once a month,182.0,92.0,Male,
+935560,5,8,Very good,,Never,173.0,90.0,Female,1981.0
+935586,4,4,Fair,10.0,2-3 times a month,175.0,63.0,Male,1961.0
+935594,4,8,Very good,,2-3 times a month,187.0,79.0,Male,1997.0
+935633,,9,Very good,,Several times a week,163.0,63.0,Female,1962.0
+935641,8,9,Very good,,Several times a week,186.0,88.0,Male,1958.0
+935706,8,9,Very good,,Once a week,170.0,82.5,Male,1965.0
+935764,5,8,Very good,,Less than once a month,156.0,54.0,Female,1980.0
+935780,5,9,Very good,,Once a week,169.0,70.0,Female,1975.0
+935829,8,9,Good,,2-3 times a month,175.0,60.0,Female,1980.0
+935845,7,Extremely happy,Very good,,Less than once a month,167.0,92.0,Female,1980.0
+935853,8,8,Good,,2-3 times a month,173.0,95.0,Male,1945.0
+935879,7,8,Very good,,Several times a week,173.0,69.0,Male,1984.0
+935887,7,9,Very good,1.0,Less than once a month,173.0,68.0,Female,1969.0
+935984,8,7,Good,20.0,Several times a week,183.0,81.0,Male,1972.0
+936053,8,9,Good,3.0,Several times a week,183.0,94.0,Male,1979.0
+936079,5,7,Fair,,,172.0,85.0,Female,1962.0
+936087,8,7,Good,,Several times a week,177.0,61.0,Female,1973.0
+936100,8,,Very good,,Less than once a month,160.0,,Female,1983.0
+936118,Most people can be trusted,9,Very good,,Several times a week,170.0,82.0,Female,
+936150,8,9,Very good,,Several times a week,182.0,73.0,Male,1955.0
+936184,9,9,Good,,Several times a week,183.0,83.0,Male,1968.0
+936207,8,8,Good,,Once a month,168.0,63.0,Female,1984.0
+936273,7,7,Very good,,Several times a week,176.0,70.0,Female,1966.0
+936312,3,Extremely happy,,,Several times a week,162.0,64.0,Female,1951.0
+936320,6,Extremely happy,Very good,20.0,Less than once a month,175.0,74.0,Male,1983.0
+936346,6,9,Very good,,Once a month,186.0,80.0,Male,1993.0
+936362,8,9,Good,,Every day,174.0,72.0,Male,1945.0
+936370,8,Extremely happy,Fair,,Several times a week,167.0,72.0,Female,1950.0
+936435,8,Extremely happy,Good,,Never,163.0,75.0,Female,1945.0
+936516,8,9,Good,,Several times a week,172.0,66.0,Female,1961.0
+936540,6,Extremely happy,Very good,,Several times a week,182.0,88.0,Male,1959.0
+936697,8,8,Fair,,Several times a week,172.0,80.0,Male,1950.0
+936728,8,9,Very good,,Once a week,183.0,91.0,Male,1969.0
+936736,8,8,Fair,,Every day,172.0,63.0,Female,1941.0
+936744,5,Extremely happy,Good,12.0,Several times a week,163.0,58.0,Male,1988.0
+936752,5,9,Good,20.0,Never,168.0,65.0,Female,1960.0
+936778,7,6,Good,15.0,Several times a week,174.0,82.0,Male,1960.0
+936794,5,8,Good,,,185.0,83.0,Male,1947.0
+936859,5,8,,,Every day,183.0,106.0,Male,1946.0
+936883,5,8,Good,,2-3 times a month,163.0,64.0,Female,1945.0
+937009,7,9,Good,,Once a week,173.0,96.0,Male,1964.0
+937017,8,9,Very good,,Every day,164.0,78.0,Female,1950.0
+937041,2,9,Fair,2.0,Once a week,160.0,71.0,Female,1981.0
+937059,4,8,Very good,19.0,Never,184.0,64.0,Male,1990.0
+937083,4,9,Very good,,Several times a week,185.0,80.0,Male,1972.0
+937114,8,8,Very good,,Once a month,172.0,61.0,Female,1981.0
+937148,5,8,Fair,,Once a week,169.0,120.0,Female,1959.0
+937172,8,9,Very good,2.0,Several times a week,168.0,60.0,Female,1982.0
+937198,4,Extremely happy,Very good,10.0,Less than once a month,164.0,60.0,Female,1993.0
+937245,8,9,Good,,2-3 times a month,165.0,65.0,Female,1963.0
+937318,8,9,Good,,Never,164.0,59.0,Female,1959.0
+937342,5,5,Very good,4.0,Several times a week,175.0,83.0,Male,1943.0
+937368,4,Extremely happy,Fair,,Every day,162.0,104.0,Male,1948.0
+937384,8,8,Good,,2-3 times a month,183.0,89.0,Male,1975.0
+937392,7,9,Very good,,Several times a week,170.0,80.0,Male,1955.0
+937465,4,8,Very good,20.0,Every day,168.0,64.0,Male,1968.0
+937499,8,9,Fair,,,162.0,,Female,1968.0
+937504,Most people can be trusted,Extremely happy,Very good,,Less than once a month,157.0,,Female,1937.0
+937562,7,7,Very good,,Once a week,167.0,82.0,Female,1946.0
+937596,7,7,Good,,Once a month,168.0,58.0,Female,1980.0
+937643,9,8,Fair,,Once a month,164.0,70.0,Female,1960.0
+937716,8,9,Good,8.0,Once a week,170.0,78.0,Female,1943.0
+937774,7,9,Good,,Once a week,163.0,58.0,Female,1976.0
+937782,8,9,Good,,Several times a week,186.0,96.0,Male,1959.0
+937813,5,8,Very good,,Several times a week,183.0,92.0,Male,1975.0
+937821,3,,Fair,,2-3 times a month,178.0,110.0,Male,1953.0
+937863,8,8,Very good,,Several times a week,187.0,66.0,Male,1967.0
+937910,4,7,Good,20.0,Once a week,,,Male,1963.0
+938005,9,9,Very good,,Once a week,177.0,73.0,Female,1988.0
+938039,9,7,Very good,1.0,Several times a week,187.0,84.0,Male,1973.0
+938047,8,9,Fair,,Never,178.0,66.0,Male,1956.0
+938055,8,Extremely happy,Very good,,Less than once a month,,72.0,Female,
+938102,5,Extremely happy,Very good,,Once a week,178.0,93.0,Male,1963.0
+938178,5,8,Good,12.0,Less than once a month,161.0,106.0,Female,1991.0
+938194,6,Extremely happy,Fair,,2-3 times a month,172.0,60.0,Male,1926.0
+938241,6,5,Fair,20.0,Once a week,168.0,68.0,Female,1961.0
+938283,7,8,Good,,Once a month,171.0,62.0,Female,1992.0
+938356,6,Extremely happy,Very good,,Less than once a month,192.0,90.0,Male,1975.0
+938364,7,Extremely happy,Very good,,2-3 times a month,185.0,90.0,Male,1985.0
+938398,7,9,Very good,,Several times a week,190.0,94.0,Male,
+938437,6,8,Good,,Once a month,168.0,50.0,Male,1998.0
+938461,8,8,Fair,,Less than once a month,189.0,80.0,Male,1973.0
+938623,9,9,Good,,Once a week,176.0,70.0,Male,1991.0
+938631,7,8,Very good,,2-3 times a month,167.0,62.0,Female,1959.0
+938665,4,8,Very good,,2-3 times a month,173.0,65.0,Female,1996.0
+938681,8,7,Good,,Once a month,162.0,51.0,Female,1991.0
+938704,Most people can be trusted,8,Fair,,Once a month,164.0,92.0,Female,1965.0
+938843,8,7,Very good,,Once a month,170.0,64.0,Female,1978.0
+938885,8,7,,20.0,Several times a week,,72.0,Male,1953.0
+938940,7,8,Good,,2-3 times a month,184.0,68.0,Female,1997.0
+938966,8,Extremely happy,Very good,,Every day,169.0,70.0,Male,1943.0
+938974,7,7,Good,,Less than once a month,165.0,68.0,Female,1975.0
+939001,8,,Very good,,Once a week,184.0,80.0,Male,1974.0
+939124,3,Extremely happy,Good,,,172.0,51.0,Female,1943.0
+939140,8,7,Good,,2-3 times a month,186.0,110.0,Male,1989.0
+939182,8,9,Good,,Less than once a month,191.0,89.0,Male,1965.0
+939271,7,7,Good,,Less than once a month,163.0,75.0,Female,1946.0
+939344,8,8,Fair,,Several times a week,176.0,73.0,Male,1944.0
+939386,9,Extremely happy,,,2-3 times a month,184.0,62.0,Male,1992.0
+939467,5,2,Fair,,Less than once a month,184.0,88.0,Male,1945.0
+939483,7,9,Fair,,Less than once a month,156.0,63.0,Female,1979.0
+939530,,8,Bad,,Several times a week,149.0,56.0,Female,1983.0
+939556,6,8,Good,,Once a week,188.0,126.0,Male,1985.0
+939700,9,9,Very good,,Once a week,179.0,78.0,Male,
+939718,6,Extremely happy,Fair,,Once a month,158.0,67.0,Female,1936.0
+939742,6,7,Bad,,Every day,176.0,71.0,Male,1947.0
+939792,You can't be too careful,9,Fair,10.0,2-3 times a month,155.0,38.0,Female,1955.0
+939807,7,8,Very good,,Once a month,163.0,62.0,Female,1954.0
+939865,,6,Fair,,2-3 times a month,179.0,53.0,Male,1997.0
+939873,5,7,Very good,18.0,Less than once a month,172.0,95.0,Male,1989.0
+939881,8,Extremely happy,Very good,,2-3 times a month,176.0,69.0,Female,1970.0
+939938,8,9,Very good,,Less than once a month,169.0,62.0,Female,1978.0
+939970,,9,Very good,,Several times a week,204.0,113.0,Male,1961.0
+940026,8,7,Good,,Never,165.0,55.0,Female,1999.0
+940050,7,Extremely happy,Very good,,Less than once a month,170.0,52.0,Female,1999.0
+940084,9,Extremely happy,Good,,Never,171.0,72.0,Female,1980.0
+940107,7,8,Good,4.0,2-3 times a month,180.0,74.0,Male,1995.0
+940165,7,8,Good,,Once a week,164.0,68.0,Female,1938.0
+940173,8,Extremely happy,Good,,Once a month,168.0,90.0,Male,1932.0
+940246,7,9,Very good,,2-3 times a month,176.0,95.0,Female,1960.0
+940254,6,8,Very good,,Once a week,176.0,75.0,Male,1987.0
+940296,7,8,Very good,,Once a week,175.0,68.0,Male,1980.0
+940319,5,9,Good,,Once a week,165.0,70.0,Female,1976.0
+940335,2,3,Good,,2-3 times a month,153.0,42.0,Female,1999.0
+940351,5,4,Bad,5.0,Never,163.0,,Female,1979.0
+940385,4,9,Good,,Once a month,176.0,69.0,Female,1993.0
+940458,3,7,Fair,,Once a week,150.0,70.0,Female,1936.0
+940466,6,8,,,Once a week,185.0,78.0,Male,1987.0
+940490,8,9,Very good,,2-3 times a month,185.0,90.0,Male,1992.0
+940547,9,Extremely happy,Good,0.0,Several times a week,174.0,84.0,Male,1943.0
+940678,6,8,Bad,,Less than once a month,,53.0,Female,1950.0
+940717,Most people can be trusted,8,Very good,,Several times a week,165.0,67.0,Female,1972.0
+940725,8,Extremely happy,Very good,,Several times a week,158.0,70.0,Female,1954.0
+940759,5,6,Fair,,2-3 times a month,165.0,51.0,Female,1998.0
+940783,8,7,,,Several times a week,196.0,135.0,Male,1954.0
+940848,7,9,Good,,Several times a week,168.0,72.0,,1947.0
+940864,4,,Good,,Once a month,164.0,65.0,Female,1971.0
+940880,8,6,Fair,12.0,Once a week,185.0,92.0,Male,1957.0
+940979,8,9,Fair,0.0,Several times a week,188.0,123.0,Male,1965.0
+940987,Most people can be trusted,8,Very good,,Once a week,172.0,65.0,Female,1955.0
+941153,4,6,Good,,Once a week,197.0,62.0,Male,1951.0
+941195,8,9,Good,,2-3 times a month,161.0,65.0,Male,1992.0
+941226,8,8,Good,,Several times a week,182.0,88.0,Male,1957.0
+941242,,8,Very good,,Several times a week,182.0,89.0,Male,1948.0
+941268,6,9,Good,,Once a week,,72.0,Female,1970.0
+941284,7,4,Fair,,Several times a week,175.0,65.0,Female,1952.0
+941365,7,9,Fair,,Never,157.0,121.0,Female,1960.0
+941373,5,Extremely happy,Good,8.0,2-3 times a month,190.0,70.0,Male,1992.0
+941412,5,7,Fair,,Less than once a month,176.0,66.0,Female,1990.0
+941438,6,7,Very good,,Several times a week,177.0,70.0,Male,1958.0
+941535,3,9,Very good,,Once a week,169.0,52.0,,1988.0
+941543,8,9,Good,,Once a week,178.0,75.0,Male,1975.0
+941551,,3,Bad,,Less than once a month,172.0,110.0,Male,1956.0
+941569,9,Extremely happy,Fair,,Less than once a month,168.0,60.0,Female,1986.0
+941721,9,Extremely happy,Good,,Once a week,156.0,58.0,Female,1926.0
+941747,4,5,Fair,20.0,Less than once a month,160.0,60.0,Female,1955.0
+941771,8,7,Very good,,Several times a week,162.0,,Female,1956.0
+941828,7,8,Very good,,Every day,175.0,90.0,Male,1945.0
+941844,9,6,Bad,,Never,182.0,61.0,Male,1926.0
+941860,7,Extremely happy,Very good,,Less than once a month,164.0,57.0,Female,1979.0
+941886,9,7,Good,,2-3 times a month,168.0,,Female,1968.0
+941909,8,9,Very good,,Once a week,171.0,77.0,Female,1950.0
+941975,8,7,Very good,,Once a week,178.0,69.0,Female,1961.0
+941991,9,9,Good,,Less than once a month,165.0,83.0,Female,1970.0
+942036,7,9,Bad,,Several times a week,167.0,,,1967.0
+942078,7,8,Good,1.0,Several times a week,182.0,90.0,Male,1975.0
+942094,8,,Very good,,Less than once a month,173.0,83.0,Male,1929.0
+942117,7,7,Good,,Several times a week,175.0,70.0,Female,1975.0
+942141,7,8,Very good,15.0,Several times a week,169.0,,Female,1963.0
+942175,2,Extremely unhappy,Very bad,30.0,Less than once a month,,55.0,Female,1992.0
+942183,5,6,Good,,Once a week,167.0,90.0,Female,1969.0
+942298,Most people can be trusted,Extremely happy,Very good,,Several times a week,192.0,91.0,Male,1980.0
+942442,9,9,,,Several times a week,176.0,71.0,Male,1961.0
+942468,8,8,Good,,Once a week,186.0,83.0,Male,1961.0
+942476,4,7,Fair,,Once a week,158.0,60.0,Female,1981.0
+942492,3,Extremely happy,Fair,,2-3 times a month,164.0,73.0,Female,1970.0
+942515,8,6,Fair,12.0,Once a week,180.0,84.0,Male,1958.0
+942531,9,8,Good,,Once a week,178.0,120.0,,1959.0
+942557,9,8,Fair,6.0,Once a week,178.0,,Female,1958.0
+942565,9,9,Good,,Once a month,173.0,115.0,Female,1984.0
+942599,7,7,Very good,,2-3 times a month,174.0,62.0,Female,1957.0
+942662,8,7,Good,15.0,2-3 times a month,173.0,73.0,Female,1963.0
+942743,3,,Fair,,2-3 times a month,179.0,98.0,Male,1958.0
+942785,8,9,Very good,,Every day,184.0,75.0,Male,1951.0
+942808,5,8,Very good,,Once a week,168.0,77.5,Female,1956.0
+942816,4,4,Good,,2-3 times a month,195.0,117.0,Male,1974.0
+942824,8,5,Good,,Every day,182.0,75.0,Male,1925.0
+942840,8,8,Very good,13.0,2-3 times a month,170.0,,Female,1965.0
+942874,5,7,Very bad,,Less than once a month,155.0,45.3,Female,1931.0
+942913,7,9,Good,,Once a week,165.0,65.0,Male,1979.0
+942939,8,Extremely happy,Good,,2-3 times a month,185.0,117.0,Male,1962.0
+942947,9,8,Fair,,Several times a week,187.0,91.0,Male,1947.0
+942955,8,9,Very good,,2-3 times a month,190.0,86.0,Male,1990.0
+942963,1,Extremely happy,Very good,,2-3 times a month,179.0,88.0,Male,1952.0
+943008,7,9,Fair,,2-3 times a month,164.0,,Female,1940.0
+943040,8,Extremely happy,Very good,,Several times a week,184.0,85.0,Male,1977.0
+943066,9,9,Very good,,Less than once a month,179.0,70.0,Male,1975.0
+943082,9,8,Good,20.0,Every day,183.0,90.0,Male,1965.0
+943105,8,8,Very good,,Once a week,187.0,87.0,,1957.0
+943147,8,9,Very good,,Less than once a month,189.0,62.0,Male,1996.0
+943155,9,9,Fair,,Several times a week,164.0,82.0,Female,1950.0
+943171,8,8,Very good,,2-3 times a month,,70.0,Male,1985.0
+943236,1,Extremely happy,Good,,,160.0,57.0,Female,1946.0
+943260,5,8,Bad,,Never,186.0,112.0,Male,1945.0
+943278,8,8,Fair,4.0,Once a month,171.0,58.0,Female,1974.0
+943294,5,8,,,Several times a week,180.0,82.0,Male,1958.0
+943325,4,8,Good,,2-3 times a month,172.0,64.0,Female,1978.0
+943341,4,7,Fair,7.0,Less than once a month,187.0,84.0,Male,1988.0
+943430,Most people can be trusted,5,Very good,,2-3 times a month,168.0,65.0,Female,1973.0
+943545,4,5,Bad,,Several times a week,173.0,90.0,Male,1953.0
+943634,7,,Good,,Several times a week,194.0,88.0,Male,
+943642,5,7,Fair,,Once a week,162.0,70.0,Female,1957.0
+943668,9,9,Very good,,Once a week,184.0,92.0,Male,1946.0
+943749,5,9,,,Never,148.0,54.0,Female,1964.0
+943773,8,2,Bad,,Several times a week,163.0,69.0,Female,1946.0
+943846,2,,Good,,Several times a week,178.0,76.0,Male,1945.0
+943896,8,9,Very good,,Every day,171.0,76.0,Male,1941.0
+943951,8,8,Very good,,2-3 times a month,173.0,63.0,Female,1970.0
+943985,8,7,Good,,Once a week,173.0,70.0,Male,1975.0
+943993,7,8,Good,,Every day,175.0,66.0,Male,1928.0
+944004,9,9,Good,5.0,Once a week,183.0,105.0,Male,1960.0
+944012,8,9,Very good,,Never,160.0,64.0,Female,1974.0
+944046,9,7,Very good,,Several times a week,193.0,90.0,Male,1963.0
+944070,6,8,Good,10.0,Several times a week,168.0,110.0,Female,1993.0
+944088,7,9,Good,14.0,Several times a week,178.0,72.0,Male,1976.0
+944119,3,5,Fair,20.0,2-3 times a month,156.0,50.0,Female,1990.0
+944193,7,9,Good,0.0,Once a week,182.0,92.0,Female,1979.0
+944216,5,Extremely happy,Fair,,Once a week,188.0,115.0,Male,1942.0
+944266,7,8,Good,,,170.0,85.0,Female,1976.0
+944313,2,9,Good,,Never,152.0,,Female,1929.0
+944363,8,8,Fair,12.0,Once a month,172.0,66.0,Female,1968.0
+944436,9,Extremely happy,Very good,,Several times a week,180.0,69.0,Male,1947.0
+944517,7,9,Fair,,,180.0,88.0,Male,1978.0
+944525,3,Extremely happy,Bad,,Once a month,182.0,66.0,Male,1944.0
+944541,6,9,Very good,,Less than once a month,183.0,88.0,Male,1969.0
+944575,7,Extremely happy,Very good,20.0,Once a week,181.0,93.0,Male,1966.0
+944622,8,8,Fair,,Once a week,170.0,89.0,Female,1968.0
+944630,8,8,Very good,,Never,181.0,78.0,Male,1944.0
+944664,7,7,Very good,6.0,Every day,177.0,82.0,Female,1947.0
+944711,8,8,Very good,,Once a week,188.0,,Male,1977.0
+944779,5,8,Fair,,Several times a week,187.0,103.0,Male,1945.0
+944818,8,6,Fair,,2-3 times a month,175.0,85.0,Male,1968.0
+944923,9,Extremely happy,Good,,Less than once a month,170.0,69.0,Female,1992.0
+944949,,9,Good,,Once a week,186.0,80.0,Male,1976.0
+944999,7,7,Fair,,Every day,160.0,,Female,1954.0
+945018,8,8,Good,,Several times a week,186.0,104.0,Male,1957.0
+945034,9,8,Good,,Less than once a month,173.0,60.0,Female,1942.0
+945042,6,8,,,Once a week,180.0,82.0,Male,1962.0
+945068,5,4,Bad,102.0,Several times a week,187.0,80.0,Male,1962.0
+945076,7,8,Fair,20.0,Never,164.0,75.0,Female,1949.0
+945092,8,8,Good,,2-3 times a month,190.0,87.0,Male,1996.0
+945107,7,Extremely happy,Very bad,,2-3 times a month,172.0,114.0,Female,1954.0
+945149,8,9,Very good,,Once a month,168.0,68.0,Female,1983.0
+945262,7,Extremely happy,Very good,20.0,Every day,162.0,68.0,,1952.0
+945296,7,9,Good,,Less than once a month,176.0,92.0,Male,1966.0
+945301,7,8,Good,,Once a week,178.0,66.0,Male,1972.0
+945555,,8,Fair,,Less than once a month,169.0,68.0,Female,1996.0
+945563,Most people can be trusted,9,Good,,Every day,162.0,72.0,Female,1950.0
+945571,8,8,Fair,,Less than once a month,181.0,117.0,Male,1981.0
+945652,4,8,Very good,10.0,Once a week,191.0,80.0,Male,1998.0
+945660,6,9,Good,,Several times a week,177.0,89.0,Male,1949.0
+945733,9,8,Fair,,Several times a week,173.0,80.0,Female,1951.0
+945759,7,9,Very good,,2-3 times a month,181.0,82.0,Male,1987.0
+945791,3,Extremely happy,Very good,,Once a week,172.0,80.0,Male,1935.0
+945856,9,Extremely happy,Good,,Once a week,170.0,66.0,Male,1988.0
+945937,8,8,Very good,,Several times a week,184.0,93.0,Male,1959.0
+945961,5,7,Fair,30.0,Several times a week,186.0,83.0,Male,1990.0
+946030,7,8,Very good,,Several times a week,182.0,76.0,Male,1983.0
+946153,6,7,Bad,,Never,159.0,50.0,Female,1933.0
+946161,7,5,Very good,,Once a month,174.0,65.0,Male,1993.0
+946218,8,8,Good,20.0,Several times a week,185.0,83.0,Male,1972.0
+946250,6,8,Good,7.0,2-3 times a month,187.0,66.0,Male,1997.0
+946268,5,9,Very good,10.0,2-3 times a month,180.0,74.0,Male,1966.0
+946292,8,9,Very good,,Once a month,163.0,66.0,Female,1998.0
+946349,4,7,Fair,,Several times a week,170.0,74.0,Female,1977.0
+946519,5,Extremely happy,Fair,,Less than once a month,173.0,70.0,Female,1998.0
+946527,8,,Bad,,Every day,177.0,66.0,Female,1932.0
+946535,8,8,Good,,2-3 times a month,164.0,63.0,Female,1971.0
+946585,8,Extremely happy,Good,,Several times a week,168.0,58.0,Female,1963.0
+946616,8,8,Very good,,Less than once a month,167.0,114.0,Female,1964.0
+946624,8,8,Fair,,Several times a week,178.0,76.0,Male,1970.0
+946682,8,8,Good,,Once a month,188.0,95.0,Male,1974.0
+946690,5,8,Very good,20.0,Several times a week,179.0,82.0,Male,1963.0
+946747,3,8,Good,,Several times a week,168.0,76.0,Male,1938.0
+946810,5,8,Very good,,Once a week,180.0,78.0,Male,1989.0
+946828,,9,Very good,,Once a week,165.0,68.0,Male,1933.0
+946836,8,8,Very good,,Several times a week,171.0,95.0,Female,1952.0
+946852,8,Extremely happy,Very good,,Several times a week,175.0,85.0,Female,1967.0
+946967,You can't be too careful,8,Fair,,Every day,160.0,45.0,Female,1941.0
+946975,8,9,Fair,,Once a week,178.0,76.0,Male,1963.0
+947010,8,7,Fair,,Several times a week,174.0,80.0,Male,1955.0
+947117,7,9,Very good,,2-3 times a month,170.0,71.0,Female,1963.0
+947141,8,9,Good,,Once a month,165.0,74.0,Female,1973.0
+947167,8,Extremely happy,Good,,Never,173.0,78.0,Female,1957.0
+947230,7,8,Very good,,2-3 times a month,162.0,,Female,1968.0
+947248,Most people can be trusted,Extremely happy,Very good,,2-3 times a month,169.0,61.0,Female,1977.0
+947256,9,6,Very good,,Several times a week,170.0,73.0,Female,1948.0
+947272,5,4,Fair,,Several times a week,182.0,54.0,Male,1990.0
+947337,Most people can be trusted,8,Good,,2-3 times a month,160.0,59.0,Female,1945.0
+947345,8,9,Good,10.0,Once a week,174.0,104.0,Male,1984.0
+947379,8,9,Good,,Once a week,,70.0,Male,1979.0
+947395,,8,Fair,,Once a week,183.0,87.0,Male,1949.0
+947484,3,Extremely happy,Fair,,Once a month,160.0,78.0,Female,1964.0
+947492,8,9,Good,,Once a week,165.0,61.0,Female,
+947507,3,Extremely happy,Very good,,Every day,172.0,80.0,Male,1935.0
+947515,Most people can be trusted,9,Good,5.0,Several times a week,172.0,62.0,Female,1958.0
+947565,9,8,Good,,Several times a week,175.0,75.0,Male,1955.0
+947612,7,8,Very good,3.0,Once a week,165.0,58.0,Female,1940.0
+947638,Most people can be trusted,9,Good,,Several times a week,168.0,63.0,Female,1936.0
+947735,7,8,Very good,,2-3 times a month,175.0,77.0,Male,1972.0
+947751,6,8,Bad,,Every day,176.0,66.0,Male,1954.0
+947769,8,9,Fair,,Several times a week,176.0,110.0,Female,1959.0
+947808,9,7,Very good,20.0,Once a week,169.0,57.0,Female,1957.0
+947840,9,9,Very good,,Once a week,185.0,86.0,Male,1995.0
+947858,8,9,Very good,,Several times a week,181.0,71.0,Male,1992.0
+947874,9,9,Good,,Once a week,184.0,89.0,Male,1985.0
+947882,7,7,Very good,,2-3 times a month,164.0,68.0,Female,1973.0
+948016,7,7,,8.0,Less than once a month,165.0,53.0,Female,1965.0
+948074,5,8,Good,,Once a week,165.0,68.0,Female,
+948082,5,8,Fair,,Once a week,180.0,89.0,Male,1947.0
+948113,Most people can be trusted,Extremely happy,Fair,3.0,Once a week,167.0,79.0,Female,1983.0
+948121,8,9,Good,,Several times a week,178.0,93.0,Male,1941.0
+948197,9,8,Good,,Several times a week,182.0,86.0,,1961.0
+948202,9,Extremely happy,Fair,,Once a week,168.0,62.0,Female,1955.0
+948391,7,7,Good,,Less than once a month,176.0,63.0,Female,1995.0
+948406,7,8,Fair,,2-3 times a month,176.0,58.0,Male,1949.0
+948414,7,8,Good,,Less than once a month,168.0,,Female,1974.0
+948448,8,7,Fair,,Several times a week,185.0,95.0,Male,1957.0
+948472,8,8,Good,,Once a month,171.0,56.0,Female,1977.0
+948480,8,,Very good,,2-3 times a month,168.0,80.0,Male,1966.0
+948545,7,7,Good,,2-3 times a month,168.0,,Female,1953.0
+948595,8,Extremely happy,Good,,Several times a week,178.0,92.0,Male,1947.0
+948600,3,7,Good,,2-3 times a month,185.0,90.0,Male,1965.0
+948618,4,8,Good,,Never,166.0,73.0,Female,1997.0
+948676,7,8,Fair,,Once a month,174.0,82.0,Female,1965.0
+948715,9,6,Very good,,Once a week,198.0,84.0,Male,1993.0
+948731,8,8,Good,,2-3 times a month,175.0,60.0,Female,1974.0
+948765,5,8,Very good,,Less than once a month,153.0,57.0,Female,
+948838,8,7,Good,,Several times a week,185.0,83.0,Male,
+948846,5,7,Good,,2-3 times a month,159.0,60.0,Female,1997.0
+948854,2,,Very good,15.0,2-3 times a month,175.0,64.0,Male,1964.0
+948919,8,9,Good,,Never,160.0,72.0,Female,1965.0
+948927,8,8,Very good,,Once a week,180.0,74.0,Male,1960.0
+948943,4,8,Good,,Several times a week,172.0,71.0,Female,1938.0
+948993,8,7,Good,,Once a week,164.0,58.0,Female,1956.0
+949004,6,9,Very good,10.0,Several times a week,180.0,65.0,Male,1963.0
+949020,8,6,Good,,Once a week,178.0,66.0,Male,1962.0
+949054,9,Extremely happy,Very good,,2-3 times a month,166.0,71.0,Female,1939.0
+949070,,,Very good,,2-3 times a month,167.0,95.0,Female,1983.0
+949096,4,5,Very good,,Less than once a month,186.0,73.0,Male,1979.0
+949119,9,9,Very good,,Once a week,165.0,65.0,Female,1954.0
+949143,8,8,Good,,2-3 times a month,172.0,62.0,Female,1972.0
+949224,7,Extremely happy,Fair,,2-3 times a month,161.0,86.0,Female,1941.0
+949313,Most people can be trusted,Extremely happy,Good,,Several times a week,178.0,74.0,Male,1988.0
+949321,8,Extremely happy,Very good,1.0,2-3 times a month,176.0,77.0,Female,1972.0
+949339,7,Extremely happy,Good,,Every day,181.0,77.0,Male,1930.0
+949389,8,Extremely happy,Good,,2-3 times a month,,60.0,,1927.0
+949397,7,8,Very good,,2-3 times a month,176.0,67.0,Male,1942.0
+949486,8,8,Good,,Once a week,164.0,75.0,Female,1962.0
+949541,8,8,Fair,,Less than once a month,172.0,110.0,Female,1958.0
+949583,7,4,Fair,,Once a week,165.0,,Female,1958.0
+949614,8,8,Very good,,Several times a week,186.0,90.0,Male,1934.0
+949630,7,8,Very good,10.0,Several times a week,168.0,55.0,Female,1995.0
+949745,6,8,Very good,,Several times a week,190.0,83.0,Male,1957.0
+949779,7,Extremely happy,Good,,Several times a week,178.0,84.2,Male,1933.0
+949787,9,8,Very good,20.0,Once a week,176.0,58.0,Female,1967.0
+949800,8,9,Good,5.0,Once a week,173.0,78.0,Female,1958.0
+949826,Most people can be trusted,9,Very good,,2-3 times a month,184.0,82.0,Male,1962.0
+949868,8,9,Fair,15.0,2-3 times a month,174.0,,Female,1971.0
+949876,7,,Very good,,2-3 times a month,194.0,,Male,1995.0
+949892,6,3,Fair,20.0,Every day,174.0,,Male,1964.0
+949907,7,8,Very good,,Several times a week,180.0,80.0,Male,1942.0
+949931,7,Extremely happy,Fair,,Once a week,160.0,72.0,Female,1924.0
+949981,7,Extremely happy,Very good,,Several times a week,170.0,80.0,Male,1946.0
+950037,5,,Good,,Once a week,172.0,110.0,Male,1944.0
+950053,7,Extremely happy,Good,,Several times a week,175.0,70.0,Female,1959.0
+950079,6,9,Very good,,Never,172.0,76.0,Male,1973.0
+950118,8,8,Good,,Several times a week,165.0,,Female,1965.0
+950134,9,9,Very good,,Less than once a month,170.0,52.0,Female,1960.0
+950150,6,8,Good,,Several times a week,186.0,80.0,Male,1956.0
+950273,2,7,Fair,,Less than once a month,174.0,60.0,Female,1980.0
+950304,Most people can be trusted,Extremely happy,Very good,,Several times a week,172.0,50.0,Female,1940.0
+950346,7,9,Good,,Several times a week,156.0,60.0,Female,1955.0
+950354,8,9,Very good,,Every day,170.0,66.0,Male,1945.0
+950362,4,9,Good,,Once a month,176.0,68.0,Male,1979.0
+950443,5,,Very good,,Once a week,195.0,87.0,Male,1995.0
+950477,8,8,Good,,2-3 times a month,,90.0,Male,1942.0
+950493,5,9,Good,,Once a week,183.0,86.0,Male,1955.0
+950516,3,Extremely happy,Very good,,2-3 times a month,168.0,75.0,Female,1942.0

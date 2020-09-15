@@ -30,8 +30,8 @@ rows1 = random.sample(rows, int(ess.shape[0]/2))
 rows2 = [row for row in rows if row not in rows1]
 
 # Create subsets
-ess1 = ess.loc[rows1, :]
-ess2 = ess.loc[rows2, :]
+ess1 = ess_withnan.loc[rows1, :]
+ess2 = ess_withnan.loc[rows2, :]
 
 # Save subsets
 ess1.to_csv('../datasets/ESS2014DK_sub1.csv', index = False)
