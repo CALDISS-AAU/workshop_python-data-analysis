@@ -2,3 +2,5 @@ public/
 themes/
 add_gh-pages.sh
 */*.zip
+*.ipynb_check*
+
